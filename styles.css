@@ -42,7 +42,8 @@ section h2 {
   color: #5a86ad;
 }
 footer {
-  padding: 24px;
+  margin-bottom: 0;
+  padding: 10px 24px;
   text-align: center;
   background: #e8edf4;
   font-size: 0.9rem;

@@ -14,8 +14,8 @@ a {
 }
 header {
   /* background: linear-gradient(120deg, #04AA6D, #058457); */
-  background: #5a86ad;
-  color: #5a86ad;
+  background: #84a1c4;
+  color: #84a1c4;
   width: 100%;
   padding: 20px 20px;
   text-align: center;
@@ -39,7 +39,7 @@ section {
 }
 section h2 {
   margin-top: 0;
-  color: #5a86ad;
+  color: #84a1c4;
 }
 footer {
   margin-bottom: 0;

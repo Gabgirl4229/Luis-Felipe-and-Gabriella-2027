@@ -64,3 +64,18 @@ footer {
   width: 100%;
   height: auto;
 }
+
+.portrait {
+    height: 200px;
+    width: 160px;
+}
+
+.landscape {
+    height: 90px;
+    width: 160px;
+}
+
+.square {
+    height: 160px;
+    width: 160px;
+}

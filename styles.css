@@ -15,6 +15,9 @@ header {
 }
 nav {
   display: block;
+  color: #5a86ad;
+  padding: 60px 20px;
+  text-align: center;
 }
 main {
   max-width: 960px;

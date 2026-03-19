@@ -14,7 +14,9 @@ a {
 }
 header {
   /* background: linear-gradient(120deg, #04AA6D, #058457); */
+  background: #5a86ad;
   color: #5a86ad;
+  width: 100%;
   padding: 20px 20px;
   text-align: center;
 }

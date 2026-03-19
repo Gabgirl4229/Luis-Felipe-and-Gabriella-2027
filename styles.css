@@ -7,6 +7,10 @@ body {
   background: #f4f7fb;
   color: #253238;
 }
+a {
+  color: #fff;
+  text-decoration: none;
+}
 header {
   background: linear-gradient(120deg, #04AA6D, #058457);
   color: #fff;

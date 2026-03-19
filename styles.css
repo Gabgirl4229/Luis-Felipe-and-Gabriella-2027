@@ -66,16 +66,16 @@ footer {
 }
 
 .portrait {
-    height: 200px;
-    width: 160px;
+    height: 400px;
+    width: 320px;
 }
 
 .landscape {
-    height: 90px;
-    width: 160px;
+    height: 180px;
+    width: 320px;
 }
 
 .square {
-    height: 160px;
-    width: 160px;
+    height: 320px;
+    width: 320px;
 }

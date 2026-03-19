@@ -54,8 +54,8 @@ footer {
   padding: 0 4px;
 }
 .column {
-  flex: 33%;
-  padding: 0 4px;
+  flex: 30%;
+  padding: 0 5%;
 }
 .column img {
   margin-top: 8px;

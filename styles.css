@@ -54,7 +54,7 @@ footer {
   padding: 0 4px;
 }
 .column {
-  flex: 50%;
+  flex: 33%;
   padding: 0 4px;
 }
 .column img {

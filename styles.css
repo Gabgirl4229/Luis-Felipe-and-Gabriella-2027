@@ -12,14 +12,15 @@ a {
   text-decoration: none;
 }
 header {
-  background: linear-gradient(120deg, #04AA6D, #058457);
+  /* background: linear-gradient(120deg, #04AA6D, #058457); */
+  backgroung: #5a86ad;
   color: #fff;
   padding: 60px 20px;
   text-align: center;
 }
 nav {
   display: block;
-  color: #5a86ad;
+  color: #fff;
 }
 main {
   max-width: 960px;

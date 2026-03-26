@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>RSVP</title>
   <link rel="stylesheet" href="styles.css" type="text/css">
-  <script type="text/javascript" src="rsvp.js"> </script>
+  <script type="text/javascript" src="rsvp.js" defer> </script>
 </head>
 <body>
     <header>
@@ -28,8 +28,7 @@
         <input type="text" id="fname" name="fname" required><br>
         <label for="lname">Last Name:</label><br>
         <input type="text" id="lname" name="lname" required><br><br>
-        <input type="submit" value="Search">
-        <script>tryMe('testing testing 1 2 3');</script>
+        <button id="guestsearch">Search</button>
       </form> 
     </section>
   </main>

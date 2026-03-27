@@ -1,5 +1,5 @@
-function tryMe() {
-  alert("testing testing 1 2 3");
+function tryMe(firstName, lastName) {
+  alert("Hello " + firstName + " " + lastName + "!");
 }
 
 function searchGuest(firstName, lastName) {
@@ -21,7 +21,7 @@ function showResults(results) {
   resultsContainer.innerHTML = userCard;
 }
 
-document.getElementById("guestSearch").addEventListener("click", tryMe);
+document.getElementById("guestSearch").addEventListener("click", tryMe(document.getElementById("fname"), document.getElementById("lname")));
 //const guestName = document.getElementById("guestSearch").addEventListener("click", tryMe);
 //const results = document.getElementById("results");
 

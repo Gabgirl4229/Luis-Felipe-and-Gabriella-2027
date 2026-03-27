@@ -10,12 +10,14 @@ body {
   padding-bottom: 50px;
 }
 a {
+  font-family: Avanta Garde, Geneva, Helvetica, Roboto, sans-serif;
   color: #fff;
   font-size: 24px;
   text-decoration: none;
 }
 header {
   /* background: linear-gradient(120deg, #04AA6D, #058457); */
+  font-family: Avanta Garde, Geneva, Helvetica, Roboto, sans-serif;
   background: #84a1c4;
   color: #84a1c4;
   width: 100%;
@@ -44,6 +46,7 @@ section h2 {
   color: #84a1c4;
 }
 footer {
+  font-family: Avanta Garde, Geneva, Helvetica, Roboto, sans-serif;
   position: fixed;
   bottom: 0;
   width: 100%;

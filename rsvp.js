@@ -1,6 +1,6 @@
 function sayName() {
-  fname = document.getElementById("fname");
-  lname = document.getElementById("lname");
+  fname = document.getElementById("fname").value;
+  lname = document.getElementById("lname").value;
   alert("Welcome, " + fname + " " + lname + "!");
 }
 

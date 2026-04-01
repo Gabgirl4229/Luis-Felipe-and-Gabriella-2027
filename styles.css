@@ -45,6 +45,11 @@ section h2 {
   margin-top: 0;
   color: #84a1c4;
 }
+section h3 {
+  margin-top: 0;
+  text-align: center;
+  color: #84a1c4;
+}
 footer {
   font-family: Avanta Garde, Geneva, Helvetica, Roboto, sans-serif;
   position: fixed;

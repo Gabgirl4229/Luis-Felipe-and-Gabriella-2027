@@ -45,6 +45,9 @@ section {
   margin-bottom: 24px;
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
 }
+.hidden {
+  display: none;
+}
 
 /* Header styles */
 section h2 {

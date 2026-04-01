@@ -70,21 +70,15 @@ footer {
   flex: 33%;
   padding: 0 4px;
 }
+.col4 {
+  flex: 24%;
+  padding: 0 4px;
+}
 .column img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
   height: auto;
-}
-
-.portrait {
-    height: 400px;
-    width: 320px;
-}
-
-.landscape {
-    height: 180px;
-    width: 320px;
 }
 
 .square {

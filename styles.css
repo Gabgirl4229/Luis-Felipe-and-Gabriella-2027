@@ -51,10 +51,15 @@ section h2 {
   margin-top: 0;
   color: #84a1c4;
 }
-section h2-mid {
+section h2 mid {
   margin-top: 0;
   text-align: center;
   color: #84a1c4;
+}
+section h4 {
+  margin-top: 0;
+  text-align: center;
+  color: #748469;
 }
 
 /* Footer of the homepage */

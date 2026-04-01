@@ -15,6 +15,8 @@ a {
   font-size: 24px;
   text-decoration: none;
 }
+
+/* Top menu with all website pages */
 header {
   /* background: linear-gradient(120deg, #04AA6D, #058457); */
   font-family: Avanta Garde, Geneva, Helvetica, Roboto, sans-serif;
@@ -29,6 +31,8 @@ nav {
   color: #fff;
   font-size: 24px;
 }
+
+
 main {
   max-width: 960px;
   margin: 0 auto;
@@ -41,6 +45,8 @@ section {
   margin-bottom: 24px;
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
 }
+
+/* Header styles */
 section h2 {
   margin-top: 0;
   color: #84a1c4;
@@ -50,6 +56,8 @@ section h2-mid {
   text-align: center;
   color: #84a1c4;
 }
+
+/* Footer of the homepage */
 footer {
   font-family: Avanta Garde, Geneva, Helvetica, Roboto, sans-serif;
   position: fixed;
@@ -61,6 +69,8 @@ footer {
   background: #e8edf4;
   font-size: 0.9rem;
 }
+
+/* Rows and Columns with Images */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -77,7 +87,65 @@ footer {
   height: auto;
 }
 
-.square {
-    height: 320px;
-    width: 320px;
+/* Carousel images */
+.slideshow-container {
+  max-width: 100%;
+  padding: 0 4px;
+  position: relative;
+  margin: auto;
 }
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+

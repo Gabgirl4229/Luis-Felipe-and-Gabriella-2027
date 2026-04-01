@@ -4,4 +4,4 @@ function sayName() {
   alert("Welcome, " + fname + " " + lname + "!");
 }
 
-document.getElementById("guestSearch").addEventListener("click", sayName());
+//document.getElementById("guestSearch").addEventListener("click", sayName());

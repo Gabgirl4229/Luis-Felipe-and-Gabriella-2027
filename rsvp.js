@@ -1,11 +1,13 @@
 function searchGuest() {
   fname = document.getElementById("fname").value;
   lname = document.getElementById("lname").value;
-  alert("Welcome, " + fname + " " + lname + "!");
   document.getElementById("searchResult").innerHTML = "Welcome, " + fname + " " + lname + "!";
 }
 
-/*
+function tryMe() {
+  alert("YIPPEE");
+}
+
 function validateGuestName() {
   //const guests = JSON.parse(response)
   fetch('guests.json')
@@ -21,7 +23,8 @@ function validateGuestName() {
   .catch(error => {
     console.error('There was a problem with the fetch operation:', error);
   });
+
+  tryMe();
 }
-*/
 
 //document.getElementById("guestSearch").addEventListener("click", sayName());

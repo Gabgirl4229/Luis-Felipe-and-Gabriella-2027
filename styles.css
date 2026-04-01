@@ -45,7 +45,7 @@ section {
   margin-bottom: 24px;
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
 }
-.hidden {
+.hidden, .mySlides {
   display: none;
 }
 
@@ -107,11 +107,6 @@ footer {
   margin: auto;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
 /* Next & previous buttons */
 /*
 .prev, .next {
@@ -130,8 +125,8 @@ footer {
 }
 */
 .prev, .next {
-  position: absolute;
-  top: 50%;
+  position: relative;
+  top: 10%;
   width: auto;
   margin-top: -22px;
   padding: 16px;

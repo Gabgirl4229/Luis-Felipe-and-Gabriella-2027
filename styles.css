@@ -65,6 +65,7 @@ section h4 {
   margin-top: 0;
   margin: auto;
   text-align: center;
+  width: 100%;
   color: #748469;
 }
 
@@ -77,6 +78,7 @@ footer {
   margin-bottom: 0;
   padding: 10px 24px;
   text-align: center;
+  width: 100%;
   background: #e8edf4;
   font-size: 0.9rem;
 }

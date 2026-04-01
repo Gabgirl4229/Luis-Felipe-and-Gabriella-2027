@@ -1,6 +1,7 @@
 function searchGuest() {
   fname = document.getElementById("fname").value;
   lname = document.getElementById("lname").value;
+  document.getElementById("validate").classList.remove("hidden");
   document.getElementById("searchResult").innerHTML = "Welcome, " + fname + " " + lname + "!";
 }
 

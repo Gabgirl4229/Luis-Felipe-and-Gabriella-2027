@@ -141,7 +141,7 @@ footer {
 }
 
 .prev {
-  right: calc(-50px - 8px);
+  right: calc(-(-50px - 8px));
   border-radius: 0 3px 3px 0;
 }
 

@@ -25,6 +25,10 @@ function validateGuestName() {
     console.error('There was a problem with the fetch operation:', error);
   });
 
+  for (const guest in guests) {
+
+  }
+
   tryMe();
 }
 

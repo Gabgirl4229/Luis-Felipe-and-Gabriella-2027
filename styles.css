@@ -54,19 +54,25 @@ section h2 {
   margin-top: 0;
   color: #84a1c4;
 }
-section h2-mid {
-  font-size: 30px;
-  margin-top: 0;
+section h2.mid {
   margin: auto;
   text-align: center;
-  color: #84a1c4;
+}
+section h3 {
+  margin-top: 0;
+  color: #748469;
+}
+section h3.mid {
+  margin: auto;
+  text-align: center;
 }
 section h4 {
   margin-top: 0;
+  color: #748469;
+}
+section h4.mid {
   margin: auto;
   text-align: center;
-  width: 100%;
-  color: #748469;
 }
 
 /* Footer of the homepage */

@@ -1,16 +1,9 @@
 function searchGuest() {
+  // Collect input of first and last name
   fname = document.getElementById("fname").value;
   lname = document.getElementById("lname").value;
-  document.getElementById("validate").classList.remove("hidden");
-  document.getElementById("searchResult").innerHTML = "Welcome, " + fname + " " + lname + "!";
-}
 
-function tryMe() {
-  alert("YIPPEE");
-}
-
-function validateGuestName() {
-  //const guests = JSON.parse(response)
+  // Read the guest list
   fetch('guests.json')
   .then(response => {
     if (!response.ok) {
@@ -18,18 +11,30 @@ function validateGuestName() {
     }
     return response.json();
   })
+  // Check for a match between first + last name
   .then(data => {
-    console.log(data); // Now you have the JSON data to work with
+    const guest = data.find(g => 
+      g.firstName == fname && 
+      g.lastName == lname
+    );
+
+    // Reveal results of the search
+    if (guest) {
+      document.getElementById("validateSuccess").classList.remove("hidden");
+    } else {
+      document.getElementById("validateFailure").classList.remove("hidden");
+    }
   })
   .catch(error => {
     console.error('There was a problem with the fetch operation:', error);
   });
+}
 
-  for (const guest in guests) {
+function tryMe() {
+  alert("YIPPEE");
+}
 
-  }
+function validateGuest() {
 
   tryMe();
 }
-
-//document.getElementById("guestSearch").addEventListener("click", sayName());

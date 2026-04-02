@@ -21,9 +21,9 @@ function searchGuest() {
     // Reveal results of the search
     if (guest) {
 
-      phoneLast4 = guest.phoneNumber;
+      phoneLast4 = guest.phoneNumber.Substring(phoneNumber.Length - 4);
       document.getElementById("displayGuestName").innerHTML += fname + " " + lname + ".";
-      document.getElementById("displayPhoneNumber").innerHTML += " " + ":"; 
+      document.getElementById("displayPhoneNumber").innerHTML += phoneLast4 + ":"; 
       if (!(document.getElementById("validateFailure").classList.contains("hidden"))) {
         document.getElementById("validateFailure").classList.add("hidden");
       }

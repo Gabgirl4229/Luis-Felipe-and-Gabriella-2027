@@ -45,7 +45,7 @@ function searchGuest() {
 }
 
 function validateGuest() {
-  phone = document.GetElementById("phone").value;
+  phone = document.getElementById("phone").value;
 
   fetch('guests.json')
   .then(response => {

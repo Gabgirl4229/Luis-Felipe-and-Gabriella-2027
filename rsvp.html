@@ -28,14 +28,19 @@
       <label for="lname">Last Name:</label><br>
       <input type="text" id="lname" name="lname" required><br><br>
       <button id="guestSearch" onclick="searchGuest()">Search</button>
-      <br>
-      <div id ="validate" class="hidden">
-        <h2 id="searchResult"></h2>
+      <br><br><br>
+      <div id ="validateSuccess" class="hidden">
+        <h2>Success!</h2>
         <p>We found your invitation under the name of </p>
         <p>Please confirm your identity by entering the digits of your phone number ending in </p>
         <label for="phone">Phone Number:</label><br>
         <input type="text" id="phone" name="phone" required><br><br>
         <button id="validateGuest" onclick="validateGuestName()">Confirm</button>
+      </div>
+      <div id ="validateFailure" class="hidden">
+        <h2>Oops!</h2>
+        <p>There was a problem finding your invitation. </p>
+        <p>Please try again. Make sure your name is capitalized and matches your invitation. </p>
       </div>
     </section>
   </main>

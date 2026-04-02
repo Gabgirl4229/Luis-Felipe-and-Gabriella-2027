@@ -22,8 +22,8 @@ function searchGuest() {
     if (guest) {
 
       /* collect last 4 digits of phonen number here */
-      document.getElementById("displayGuestName").innerHTML += " " + fname + " " + lname + ".";
-      document.getElementById("displayPhoneNumber").innerHTML += " " + 
+      document.getElementById("displayGuestName").innerHTML += fname + " " + lname + ".";
+      document.getElementById("displayPhoneNumber").innerHTML += " " + ":"; 
       if (!(document.getElementById("validateFailure").classList.contains("hidden"))) {
         document.getElementById("validateFailure").classList.add("hidden");
       }

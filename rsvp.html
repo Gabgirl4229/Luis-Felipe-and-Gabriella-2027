@@ -29,7 +29,7 @@
       <input type="text" id="lname" name="lname" required><br><br>
       <button id="guestSearch" onclick="searchGuest()">Search</button>
       <br><br><br>
-      <div id ="validateSuccess" class="hidden">
+      <div id ="searchSuccess" class="hidden">
         <h2>Success!</h2>
         <p id="displayGuestName">We found your invitation under the name of </p>
         <p id="displayPhoneNumber">Please confirm your identity by entering the digits of your phone number ending in </p>
@@ -37,11 +37,26 @@
         <input type="text" id="phone" name="phone" required><br><br>
         <button id="validateGuest" onclick="validateGuestName()">Confirm</button>
       </div>
-      <div id ="validateFailure" class="hidden">
+      <div id ="searchFailure" class="hidden">
         <h2>Oops!</h2>
         <p>There was a problem finding your invitation. </p>
         <p>Please try again. Make sure your name is capitalized and matches your invitation. </p>
       </div>
+      <br><br><br>
+      <div id=validateSuccess" class="hidden">
+        <h2 id="greeting"> Welcome, </h2>
+        <p>Please fill out the RSVP form below.</p>
+      </div>
+      <div id="validateFailure" class="hidden">
+        <h2>Oops!</h2>
+        <p>There was a problem validating your identity. </p>
+        <p>Please try again. Enter the phone number that received your invitation, with numbers only (no parentheses or dashes). </p>
+      </div>
+      <br><br>
+      <h4>----------------------------------</h4>
+      <br><br>
+      <h2>???</h2>
+      <p>Placeholder</p>
     </section>
   </main>
 </body>

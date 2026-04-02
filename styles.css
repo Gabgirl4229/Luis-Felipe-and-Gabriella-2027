@@ -131,16 +131,22 @@ footer {
   padding: 0;      /* remove old padding */
   transition: 0.6s ease;
   user-select: none;
+  z-index: 10;
 }
 
-/* Position the "next button" to the right */
+/* Position the buttons right and left */
 .next {
-  right: 0;
+  right: calc(-50px - 8px);
   border-radius: 3px 0 0 3px;
 }
 
+.prev {
+  right: calc(-50px - 8px);
+  border-radius: 0 3px 3px 0;
+}
+
 .prev img, .next img {
-  width: 30px;   /* 👈 adjust this */
+  width: 30px;
   height: auto;
 }
 

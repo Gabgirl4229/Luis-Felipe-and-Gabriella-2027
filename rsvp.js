@@ -20,8 +20,14 @@ function searchGuest() {
 
     // Reveal results of the search
     if (guest) {
+      if (!(document.getElementById("validateFailure").classList.contains("hidden"))) {
+        document.getElementById("validateFailure").classList.add("hidden");
+      }
       document.getElementById("validateSuccess").classList.remove("hidden");
     } else {
+      if (!(document.getElementById("validateSuccess").classList.contains("hidden"))) {
+        document.getElementById("validateSuccess").classList.add("hidden");
+      }
       document.getElementById("validateFailure").classList.remove("hidden");
     }
   })

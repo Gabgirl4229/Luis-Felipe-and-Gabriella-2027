@@ -134,6 +134,12 @@ footer {
   height: auto;
 }
 
+.arrow {
+  width: 15px;
+  height: auto;
+  margin-left: 20px;
+}
+
 /* The dots/bullets/indicators */
 .dot-container {
   display: flex;

@@ -60,13 +60,8 @@ function validateGuest() {
       g.phoneNumber == phone
     );
 
-    // Reveal results of the search
-    if (guest) { 
-      if (!(document.getElementById("validateFailure").classList.contains("hidden"))) {
-        document.getElementById("validateFailure").classList.add("hidden");
-      }
-      document.getElementById("validateSuccess").classList.remove("hidden");
-
+    // Reveal results of validation
+    if (guest) {
       document.getElementById("verifyIdentity").classList.add("hidden");
       document.getElementById("answerQueestions").classList.remove("hidden");
       collectResponses();

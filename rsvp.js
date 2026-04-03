@@ -20,7 +20,8 @@ function searchGuest() {
     const guest = data.find(g => 
       (g.firstName == fname && 
       g.lastName == lname) || 
-      (g. == fname + " " + lname)
+      (g.groupMembers.partner == (fname + " " + lname)) || 
+      (g.groupMembers.child == (fname + " " + lname))
     );
 
     // Reveal results of the search

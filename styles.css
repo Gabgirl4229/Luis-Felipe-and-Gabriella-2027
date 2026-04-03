@@ -50,29 +50,22 @@ section {
 }
 
 /* Header styles */
-section h2 {
+section h2, h3, h4 {
   margin-top: 0;
-  color: #84a1c4;
-}
-section h2.mid {
-  margin: auto;
-  text-align: center;
-}
-section h3 {
-  margin-top: 0;
-  color: #748469;
-}
-section h3.mid {
-  margin: auto;
-  text-align: center;
-}
-section h4 {
-  margin-top: 0;
-  color: #748469;
 }
 section h4.mid {
   margin: auto;
   text-align: center;
+}
+section .mid {
+  margin: auto;
+  text-align: center;
+}
+section .blue {
+  color: #84a1c4;
+}
+section .green {
+  color: #748469;
 }
 
 /* Footer of the homepage */

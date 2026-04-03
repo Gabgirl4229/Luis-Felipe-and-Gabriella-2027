@@ -177,3 +177,62 @@ footer {
   to {opacity: 1}
 }
 
+/* Hide the default radio button */
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #3498db;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Style the checked state */
+input[type="radio"]:checked {
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    box-shadow: inset 0 0 0 4px #fff;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/*
+label {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #2c3e50;
+    cursor: pointer;
+}
+*/
+
+.toggle-radio-group {
+    background: #eee;
+    padding: 5px;
+    border-radius: 25px;
+    display: inline-flex;
+}
+
+.toggle-radio-group label {
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.toggle-radio-group input[type="radio"]:checked + label {
+    background: #3498db;
+    color: white;
+}

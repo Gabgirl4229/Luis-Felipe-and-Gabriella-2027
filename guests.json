@@ -9,10 +9,7 @@
     "attending": "N",
     "foodRestrictions": "none",
     "messages": "none",
-    "groupMembers": {
-      "partner": "none",
-      "child": "none"
-    }
+    "groupMembers": []
   },
   
   { 
@@ -25,8 +22,5 @@
     "attending": "Y",
     "foodRestrictions": "none",
     "messages": "none",
-    "groupMembers": {
-      "partner": "Maria Rodriguez"
-    }
-  }
+    "groupMembers": ["Maria Rodriguez"]
 ]

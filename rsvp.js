@@ -71,9 +71,17 @@ function validateGuest() {
         document.getElementById("validateSuccess").classList.add("hidden");
       }
       document.getElementById("validateFailure").classList.remove("hidden");
+      document.getElementById("verifyIdentity").classList.add("hidden");
+      document.getElementById("answerQueestions").classList.remove("hidden");
+      collectResponses();
+      
     }
   })
   .catch(error => {
     console.error('There was a problem with the fetch operation:', error);
   });
+}
+
+function collectResponses() {
+  tryMe();
 }

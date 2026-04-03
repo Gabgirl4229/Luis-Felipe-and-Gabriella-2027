@@ -49,12 +49,7 @@ section {
   display: none;
 }
 
-/* Header styles */
-section h2, h3, h4 {
-  /*margin-top: 0;*/
-}
 section .mid {
-  margin: auto;
   text-align: center;
 }
 section .blue {

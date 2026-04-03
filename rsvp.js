@@ -64,7 +64,7 @@ function validateGuest() {
     if (guest) {
       document.getElementById("answerQuestions").classList.remove("hidden");
       document.getElementById("verifyIdentity").classList.add("hidden");
-      collectResponses();
+      collectResponses(guest);
     } else {
       document.getElementById("validateFailure").classList.remove("hidden");
     }
@@ -74,6 +74,7 @@ function validateGuest() {
   });
 }
 
-function collectResponses() {
+function collectResponses(guest) {
+  document.getElementById("displayGuestName").innerHTML += guest.firstName + " " + guest.lastName;
   tryMe();
 }

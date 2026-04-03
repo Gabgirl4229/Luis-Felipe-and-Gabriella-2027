@@ -51,10 +51,7 @@ section {
 
 /* Header styles */
 section h2, h3, h4 {
-}
-section h4.mid {
-  margin: auto;
-  text-align: center;
+  /*margin-top: 0;*/
 }
 section .mid {
   margin: auto;

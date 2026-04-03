@@ -135,6 +135,23 @@ footer {
 }
 
 /* The dots/bullets/indicators */
+.dot-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* space between text and dots */
+}
+
+.dots {
+  display: flex;
+  gap: 6px; /* space between dots */
+}
+
+.dot-label {
+  font-size: 14px;
+  color: #555;
+}
+
 .dot {
   cursor: pointer;
   height: 15px;

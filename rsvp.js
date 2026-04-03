@@ -62,7 +62,7 @@ function validateGuest() {
 
     // Reveal results of validation
     if (guest) {
-      document.getElementById("verifyIdentity").classList.add("hidden");
+      //document.getElementById("verifyIdentity").classList.add("hidden");
       document.getElementById("answerQuestions").classList.remove("hidden");
       collectResponses();
     } else {

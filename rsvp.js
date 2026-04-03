@@ -66,9 +66,6 @@ function validateGuest() {
       document.getElementById("answerQueestions").classList.remove("hidden");
       collectResponses();
     } else {
-      if (!(document.getElementById("validateSuccess").classList.contains("hidden"))) {
-        document.getElementById("validateSuccess").classList.add("hidden");
-      }
       document.getElementById("validateFailure").classList.remove("hidden");
     }
   })

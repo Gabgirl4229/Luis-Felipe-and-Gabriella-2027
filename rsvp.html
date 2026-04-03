@@ -21,7 +21,7 @@
   </header>
   <main>
     <section id="verifyIdentity">
-      <h2>Online RSVP Check-in:</h2>
+      <h2 class="blue">Online RSVP Check-in:</h2>
       <p>Please enter your full name (as shown on your invitation):</p>
       <label for="fname">First Name:</label><br>
       <input type="text" id="fname" name="fname" required><br>
@@ -30,7 +30,7 @@
       <button id="guestSearch" onclick="searchGuest()">Search</button>
       <br><br><br>
       <div id ="searchSuccess" class="hidden">
-        <h2>Success!</h2>
+        <h2 class="blue">Success!</h2>
         <p id="displayGuestName">We found your invitation under the name of </p>
         <p id="displayPhoneNumber">Please confirm your identity by entering the digits of your phone number ending in </p>
         <label for="phone">Phone Number:</label><br>
@@ -38,20 +38,20 @@
         <button id="validateGuest" onclick="validateGuest()">Confirm</button>
       </div>
       <div id ="searchFailure" class="hidden">
-        <h2>Oops!</h2>
+        <h2 class="blue">Oops!</h2>
         <p>There was a problem finding your invitation. </p>
         <p>Please try again. Make sure your name is capitalized and matches your invitation. </p>
       </div>
       <br><br><br>
       <div id="validateFailure" class="hidden">
-        <h2>Oops!</h2>
+        <h2 class="blue">Oops!</h2>
         <p>There was a problem validating your identity. </p>
         <p>Please try again. Enter the phone number that received your invitation, with numbers only (no parentheses or dashes). </p>
       </div>
     </section>
     <section id="answerQuestions" class="hidden">
-      <h2>Online RSVP Check-in:</h2>
-      <h3>Attendance</h3>
+      <h2 class="blue">Online RSVP Check-in:</h2>
+      <h3 class="green">Attendance</h3>
       <p>Will you be attending our wedding?</p>
       <div class="toggle-radio-group">
         <p id="displayGuestName"></p>

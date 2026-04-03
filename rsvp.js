@@ -62,8 +62,8 @@ function validateGuest() {
 
     // Reveal results of validation
     if (guest) {
-      //document.getElementById("verifyIdentity").classList.add("hidden");
       document.getElementById("answerQuestions").classList.remove("hidden");
+      document.getElementById("verifyIdentity").classList.add("hidden");
       collectResponses();
     } else {
       document.getElementById("validateFailure").classList.remove("hidden");

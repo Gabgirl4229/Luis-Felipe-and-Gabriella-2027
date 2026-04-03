@@ -18,8 +18,9 @@ function searchGuest() {
   // Check for a match between first + last name
   .then(data => {
     const guest = data.find(g => 
-      g.firstName == fname && 
-      g.lastName == lname
+      (g.firstName == fname && 
+      g.lastName == lname) || 
+      (g. == fname + " " + lname)
     );
 
     // Reveal results of the search

@@ -66,15 +66,15 @@ function validateGuest() {
         document.getElementById("validateFailure").classList.add("hidden");
       }
       document.getElementById("validateSuccess").classList.remove("hidden");
+
+      document.getElementById("verifyIdentity").classList.add("hidden");
+      document.getElementById("answerQueestions").classList.remove("hidden");
+      collectResponses();
     } else {
       if (!(document.getElementById("validateSuccess").classList.contains("hidden"))) {
         document.getElementById("validateSuccess").classList.add("hidden");
       }
       document.getElementById("validateFailure").classList.remove("hidden");
-      document.getElementById("verifyIdentity").classList.add("hidden");
-      document.getElementById("answerQueestions").classList.remove("hidden");
-      collectResponses();
-      
     }
   })
   .catch(error => {

@@ -77,20 +77,21 @@ function validateGuest() {
 function collectResponses(guest) {
   document.getElementById("displayGuestName").textContent = guest.firstName + " " + guest.lastName;
 
- fetch('http://localhost:3000/guests')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok ' + response.statusText);
-    }
-    return response.json();
+ /*
+fetch('http://localhost:3000/update-guest', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    phoneNumber: phone,
+    attending: selectedAttendance,  // true/false
+    language: selectedLanguage
   })
-  // 
-  .then(data => {
-    const guest = data.find(g => 
-      g.phoneNumber == phone
-    );
-  })
-  .catch(error => {
-    console.error('There was a problem with the fetch operation:', error);
-  }); 
+})
+.then(res => res.json())
+.then(data => {
+  console.log('Saved!', data);
+});
+ */
 }

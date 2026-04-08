@@ -75,5 +75,5 @@ function validateGuest() {
 }
 
 function collectResponses(guest) {
-  document.getElementById("displayGuestName").innerHTML = guest.firstName + " " + guest.lastName;
+  document.getElementById("displayGuestName").textContent = guest.firstName + " " + guest.lastName;
 }

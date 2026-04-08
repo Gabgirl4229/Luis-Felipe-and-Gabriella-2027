@@ -8,7 +8,7 @@ function searchGuest() {
   lname = document.getElementById("lname").value;
 
   // Read the guest list
-  fetch('guests.json')
+  fetch('http://localhost:3000/guests')
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not ok ' + response.statusText);
@@ -47,7 +47,7 @@ function searchGuest() {
 function validateGuest() {
   phone = document.getElementById("phone").value;
 
-  fetch('guests.json')
+  fetch('http://localhost:3000/guests')
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not ok ' + response.statusText);
@@ -77,7 +77,7 @@ function validateGuest() {
 function collectResponses(guest) {
   document.getElementById("displayGuestName").textContent = guest.firstName + " " + guest.lastName;
 
- fetch('guests.json')
+ fetch('http://localhost:3000/guests')
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not ok ' + response.statusText);

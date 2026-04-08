@@ -26,7 +26,7 @@ function searchGuest() {
     if (guest) {
 
       const phoneLast4 = guest.phoneNumber.substring(guest.phoneNumber.length - 4);
-      document.getElementById("displayGuestName").innerHTML += fname + " " + lname + ".";
+      document.getElementById("displayGuestName").innerHTML += guest.firstName + " " + guest.lastName + ".";
       document.getElementById("displayPhoneNumber").innerHTML += phoneLast4 + ":"; 
       if (!(document.getElementById("searchFailure").classList.contains("hidden"))) {
         document.getElementById("searchFailure").classList.add("hidden");
@@ -76,4 +76,21 @@ function validateGuest() {
 
 function collectResponses(guest) {
   document.getElementById("displayGuestName").textContent = guest.firstName + " " + guest.lastName;
+
+ fetch('guests.json')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok ' + response.statusText);
+    }
+    return response.json();
+  })
+  // 
+  .then(data => {
+    const guest = data.find(g => 
+      g.phoneNumber == phone
+    );
+  })
+  .catch(error => {
+    console.error('There was a problem with the fetch operation:', error);
+  }); 
 }

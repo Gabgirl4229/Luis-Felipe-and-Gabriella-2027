@@ -64,7 +64,7 @@ function validateGuest() {
     if (guest) {
       document.getElementById("answerQuestions").classList.remove("hidden");
       document.getElementById("verifyIdentity").classList.add("hidden");
-      document.getElementById("displayGuestName").textContent = guest.firstName + " " + guest.lastName;
+      document.getElementById("displayGuestName").innerHTML = guest.firstName + " " + guest.lastName;
     } else {
       document.getElementById("validateFailure").classList.remove("hidden");
     }

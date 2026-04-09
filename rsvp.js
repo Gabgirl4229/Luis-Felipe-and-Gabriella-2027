@@ -1,3 +1,5 @@
+let currentGuest = null;
+
 function tryMe() {
   alert("YIPPEE");
 }
@@ -24,7 +26,8 @@ function searchGuest() {
 
     // Reveal results of the search
     if (guest) {
-
+      currentGuest = guest;
+      
       const phoneLast4 = guest.phoneNumber.substring(guest.phoneNumber.length - 4);
       document.getElementById("displayGuestName").innerHTML += guest.firstName + " " + guest.lastName + ".";
       document.getElementById("displayPhoneNumber").innerHTML += phoneLast4 + ":"; 
@@ -42,41 +45,24 @@ function searchGuest() {
   .catch(error => {
     console.error('There was a problem with the fetch operation:', error);
   });
+
+  console.log(currentGuest);
 }
 
 function validateGuest() {
   phone = document.getElementById("phone").value;
 
-  fetch('http://localhost:3000/guests')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok ' + response.statusText);
-    }
-    return response.json();
-  })
-  // Check for a match between first + last name
-  .then(data => {
-    const guest = data.find(g => 
-      g.phoneNumber == phone
-    );
-
-    // Reveal results of validation
-    if (guest) {
-      document.getElementById("answerQuestions").classList.remove("hidden");
-      document.getElementById("verifyIdentity").classList.add("hidden");
-      document.getElementById("displayGuestName").innerHTML = guest.firstName + " " + guest.lastName;
-    } else {
-      document.getElementById("validateFailure").classList.remove("hidden");
-    }
-  })
-  .catch(error => {
-    console.error('There was a problem with the fetch operation:', error);
-  });
+  // Reveal results of validation
+  if (currentGuest.phoneNumber == phone) {
+    document.getElementById("answerQuestions").classList.remove("hidden");
+    document.getElementById("verifyIdentity").classList.add("hidden");
+    document.getElementById("displayGuestName").innerHTML = guest.firstName + " " + guest.lastName;
+  } else {
+    document.getElementById("validateFailure").classList.remove("hidden");
+  }
 }
 
-function collectResponses() {
-  const phone = document.getElementById("phone").value;
-  
+function collectResponses() {  
   const attendanceValue = document.querySelector('input[name="attendance"]:checked')?.value;
   const attending = attendanceValue === "yes" ? "Y" : "N";
 
@@ -110,7 +96,7 @@ function collectResponses() {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      phoneNumber: phone,
+      phoneNumber: currentGuest.phoneNumber,
       attending: attending,
       preferredLanguage: selectedLanguage,
       foodRestrictions: foodRestrictions,

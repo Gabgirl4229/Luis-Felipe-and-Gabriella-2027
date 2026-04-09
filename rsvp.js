@@ -75,19 +75,56 @@ function validateGuest() {
 }
 
 function collectResponses() {
+  const phone = document.getElementById("phone").value;
+  
+  const attendanceValue = document.querySelector('input[name="attendance"]:checked')?.value;
+  const attending = attendanceValue === "yes" ? "Y" : "N";
 
-fetch('http://localhost:3000/update-guest', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({
-    //attending: selectedAttendance,
-    //language: selectedLanguage
+  const selectedLanguage = document.querySelector('input[name="language"]:checked')?.value;
+
+  let foodRestrictions = Array.from(
+    document.querySelectorAll('input[type="checkbox"]:checked')
+  ).map(cb => cb.value);
+
+  const allergyChecked = document.getElementById("restriction8").checked;
+  const allergyText = document.getElementById("allergy").value;
+
+  if (allergyChecked && allergyText) {
+    foodRestrictions = foodRestrictions.filter(r => r !== "Allergy");
+    foodRestrictions.push("Allergy: " + allergyText);
+  }
+
+  const otherChecked = document.getElementById("restriction9").checked;
+  const otherText = document.getElementById("otherRestriction").value;
+
+  if (otherChecked && otherText) {
+    foodRestrictions = foodRestrictions.filter(r => r !== "Other");
+    foodRestrictions.push("Other: " + otherText);
+  }
+
+  const message = document.getElementById("comment").value;
+
+  fetch('http://localhost:3000/update-guest', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      phoneNumber: phone,
+      attending: attending,
+      preferredLanguage: selectedLanguage,
+      foodRestrictions: foodRestrictions,
+      messages: message
+    })
   })
-})
-.then(res => res.json())
-.then(data => {
-  console.log('Saved!', data);
-});
+  .then(res => res.json())
+  .then(data => {
+    console.log('Saved!', data);
+    alert("RSVP submitted successfully!");
+  })
+  .catch(error => {
+    console.error('Error saving RSVP:', error);
+  });
+}
+
 }

@@ -53,8 +53,8 @@
       <h3 class="green">Attendance</h3>
       <p>Will you be attending our wedding?</p>
       <div class="toggle-radio-group">
+        <span id="displayGuestName">X</span>
         <div class="radio-option">
-          <label id=displayGuestName"></label>
           <input type="radio" id="yes-toggle" name="attendance" value="yes">
           <label for="yes-toggle">Yes</label>
         </div>
@@ -86,21 +86,18 @@
       
       <h3 class="green">Language</h3>
       <p>What is your preferred language?</p>
-      <div> 
-        <span id="displayGuestName" class="toggle-text">X</span>
-        <div class="toggle-radio-group">
-          <div class="radio-option">
-            <input type="radio" id="lang-english" name="language" value="english">
-            <label for="lang-english">English</label>
-          </div>
-          <div class="radio-option">
-            <input type="radio" id="lang-spanish" name="language" value="spanish">
-            <label for="lang-spanish">Spanish</label>
-          </div>
-          <div class="radio-option">
-            <input type="radio" id="lang-portuguese" name="language" value="portuguese">
-            <label for="lang-portuguese">Portuguese</label>
-          </div>
+      <div class="toggle-radio-group">
+        <div class="radio-option">
+          <input type="radio" id="lang-english" name="language" value="english">
+          <label for="lang-english">English</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio" id="lang-spanish" name="language" value="spanish">
+          <label for="lang-spanish">Spanish</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio" id="lang-portuguese" name="language" value="portuguese">
+          <label for="lang-portuguese">Portuguese</label>
         </div>
       </div>
       <h3 class="green">Messages</h3>

@@ -64,7 +64,7 @@ function validateGuest() {
     if (guest) {
       document.getElementById("answerQuestions").classList.remove("hidden");
       document.getElementById("verifyIdentity").classList.add("hidden");
-      collectResponses(guest);
+      document.getElementById("displayGuestName").textContent = guest.firstName + " " + guest.lastName;
     } else {
       document.getElementById("validateFailure").classList.remove("hidden");
     }
@@ -74,24 +74,20 @@ function validateGuest() {
   });
 }
 
-function collectResponses(guest) {
-  document.getElementById("displayGuestName").textContent = guest.firstName + " " + guest.lastName;
+function collectResponses() {
 
- /*
 fetch('http://localhost:3000/update-guest', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json'
   },
   body: JSON.stringify({
-    phoneNumber: phone,
-    attending: selectedAttendance,  // true/false
-    language: selectedLanguage
+    //attending: selectedAttendance,
+    //language: selectedLanguage
   })
 })
 .then(res => res.json())
 .then(data => {
   console.log('Saved!', data);
 });
- */
 }

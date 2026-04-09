@@ -125,6 +125,5 @@ function collectResponses() {
   .catch(error => {
     console.error('Error saving RSVP:', error);
   });
-}
 
 }

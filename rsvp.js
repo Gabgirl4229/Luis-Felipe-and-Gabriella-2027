@@ -56,7 +56,7 @@ function validateGuest() {
   if (currentGuest.phoneNumber == phone) {
     document.getElementById("answerQuestions").classList.remove("hidden");
     document.getElementById("verifyIdentity").classList.add("hidden");
-    document.getElementById("displayGuestName").innerHTML = guest.firstName + " " + guest.lastName;
+    document.getElementById("displayGuestName").innerHTML = currentGuest.firstName + " " + currentGuest.lastName;
   } else {
     document.getElementById("validateFailure").classList.remove("hidden");
   }
@@ -89,8 +89,6 @@ function collectResponses() {
   }
 
   const message = document.getElementById("comment").value;
-
-  document.getElementById("displayGuestName").textContent = currentGuest.firstName + currentGuest.lastName;
 
   fetch('http://localhost:3000/update-guest', {
     method: 'POST',

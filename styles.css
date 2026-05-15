@@ -259,10 +259,6 @@ label {
 }
 
 details {
-  font:
-    16px "Open Sans",
-    "Calibri",
-    sans-serif;
   width: 620px;
 }
 
@@ -277,9 +273,8 @@ details > summary {
   cursor: pointer;
 
   font-family: Avanta Garde, Geneva, Helvetica, Roboto, sans-serif;
-  /*background: #84a1c4;*/
+  font-size: 20px;
   color: #748469;
   width: 100%;
   padding: 20px 20px;
-  text-align: center;
 }

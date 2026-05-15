@@ -90,6 +90,14 @@ function collectResponses() {
 
   const message = document.getElementById("comment").value;
 
+  console.log({
+  phoneNumber: currentGuest.phoneNumber,
+  attending: attending,
+  preferredLanguage: selectedLanguage,
+  foodRestrictions: foodRestrictions,
+  messages: message
+  });
+  
   fetch('http://localhost:3000/update-guest', {
     method: 'POST',
     headers: {

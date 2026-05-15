@@ -90,6 +90,8 @@ function collectResponses() {
 
   const message = document.getElementById("comment").value;
 
+  document.getElementById("displayGuestName").textContent = currentGuest.firstName + currentGuest.lastName;
+
   fetch('http://localhost:3000/update-guest', {
     method: 'POST',
     headers: {

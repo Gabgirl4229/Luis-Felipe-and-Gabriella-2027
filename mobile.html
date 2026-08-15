@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello Web!</title>
+  <style>
+    :root {
+      --primary: #4f8cff;
+      --secondary: #f7b731;
+      --bg-gradient: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+      --card-bg: #fff;
+      --shadow: 0 4px 24px rgba(80, 120, 200, 0.08);
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--bg-gradient);
+      min-height: 100vh;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--primary);
+      color: #fff;
+      padding: 1.2rem 2.5rem;
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #fff;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .nav-links a:hover {
+      background: var(--secondary);
+      color: #222;
+    }
+    .container {
+      display: flex;
+      gap: 2rem;
+      max-width: 1100px;
+      margin: 2.5rem auto;
+      background: var(--card-bg);
+      padding: 2.5rem 2rem;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      align-items: flex-start;
+    }
+    .main-content {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .main-content h1 {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+    .main-content p {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+    .cta-btn {
+      display: inline-block;
+      background: var(--secondary);
+      color: #222;
+      font-weight: bold;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      box-shadow: 0 2px 8px rgba(247,183,49,0.12);
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s, transform 0.2s;
+      margin-bottom: 1rem;
+    }
+    .cta-btn:hover {
+      background: #ffd36b;
+      color: #111;
+      transform: translateY(-2px) scale(1.03);
+    }
+    img.responsive-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(80,120,200,0.07);
+    }
+    .sidebar {
+      flex: 1;
+      background: #f6faff;
+      padding: 1.5rem 1rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(80,120,200,0.07);
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      align-items: flex-start;
+    }
+    .sidebar h2 {
+      color: var(--primary);
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .sidebar p {
+      color: #444;
+      font-size: 1.05rem;
+    }
+    /* Responsive styles */
+    @media (max-width: 900px) {
+      .container {
+        max-width: 98vw;
+        padding: 1.2rem 0.5rem;
+      }
+    }
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem 1.2rem;
+      }
+      .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+        margin-top: 0.5rem;
+      }
+      .container {
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 1rem 0.5rem;
+        border-radius: 10px;
+      }
+      .main-content h1 {
+        font-size: 1.7rem;
+      }
+      .main-content p, .sidebar p, .nav-links a {
+        font-size: 1rem;
+      }
+      .sidebar {
+        width: 100%;
+        align-items: stretch;
+        padding: 1rem 0.5rem;
+      }
+      .main-content, .sidebar {
+        width: 100%;
+        padding: 0.5rem 0;
+      }
+      .cta-btn {
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+      }
+    }
+    @media (max-width: 480px) {
+      .navbar {
+        padding: 0.7rem 0.5rem;
+      }
+      .container {
+        padding: 0.5rem 0.2rem;
+      }
+      .main-content h1 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Hello Web!</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+  <div class="container" id="home">
+    <div class="main-content">
+      <h1>Welcome to My Modern Page</h1>
+      <p>This is a beautiful, responsive web page. Try resizing your browser or use Chrome DevTools to see the mobile layout in action!</p>
+      <a href="#login" class="cta-btn">Get Started</a>
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Sample" class="responsive-img">
+    </div>
+    <aside class="sidebar">
+      <h2>Quick Info</h2>
+      <p>Enjoy a seamless experience on any device. This sidebar uses a card style and stacks below the main content on mobile.</p>
+      <p><strong>Tip:</strong> Use the navigation bar to explore more!</p>
+    </aside>
+  </div>
+  <section id="login" style="max-width: 400px; margin: 2rem auto; background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(80,120,200,0.07); padding: 2rem 1.5rem;">
+    <h2 style="color: var(--primary); margin-top: 0; text-align:center;">Login</h2>
+    <form style="display: flex; flex-direction: column; gap: 1.2rem;">
+      <input type="text" placeholder="Username" required style="padding: 0.7rem; border-radius: 6px; border: 1px solid #ccc; font-size: 1rem;">
+      <input type="password" placeholder="Password" required style="padding: 0.7rem; border-radius: 6px; border: 1px solid #ccc; font-size: 1rem;">
+      <button type="submit" style="background: var(--primary); color: #fff; font-weight: bold; border: none; border-radius: 6px; padding: 0.8rem; font-size: 1.1rem; cursor: pointer; transition: background 0.2s;">Login</button>
+    </form>
+  </section>
+  <section id="about" style="max-width: 900px; margin: 2rem auto; background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(80,120,200,0.07); padding: 2rem 1.5rem;">
+    <h2 style="color: var(--primary); margin-top: 0;">About Us</h2>
+    <p style="color: #444; font-size: 1.1rem;">We are passionate about creating beautiful, responsive websites that work on any device. Our mission is to deliver seamless user experiences with modern design and best practices.</p>
+  </section>
+  <section id="contact" style="max-width: 900px; margin: 2rem auto 3rem auto; background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(80,120,200,0.07); padding: 2rem 1.5rem;">
+    <h2 style="color: var(--primary); margin-top: 0;">Contact</h2>
+    <p style="color: #444; font-size: 1.1rem;">Have questions or want to work with us? <a href="mailto:info@example.com" style="color: var(--primary); text-decoration: underline;">Email us</a> and we’ll get back to you soon!</p>
+  </section>
+  <script>
+    // Enable smooth scrolling for anchor links
+    document.documentElement.style.scrollBehavior = 'smooth';
+  </script>
+</body>
+</html>

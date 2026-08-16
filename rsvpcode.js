@@ -21,66 +21,92 @@ async function searchGuest() {
     return;
   }
 
-  // Search for said guest
-  const { data: exactMatch, error: exactError } = await supabase
-    .from("guests")
-    .select("*")
-    .eq("firstName", fname)
-    .eq("lastName", lname)
-    .maybeSingle();
+  // Ask Supabase to search for said guest
+  const { data, error } =
+    await supabase.functions.invoke(
+      "wedding-rsvp",
+      {
+        body: {
+          action: "search",
+          firstName: fname,
+          lastName: lname
+        }
+      }
+    );
 
-  if (exactError) {
-    console.error("Error searching for guest:", exactError);
-    showSearchFailure();
+  // If guest not found
+  if (error) {
+    console.error("Search error:", error);
+    document.getElementById("searchSuccess").classList.add("hidden");
+    document.getElementById("searchFailure").classList.remove("hidden");
     return;
   }
 
-  // Display success or failure
-  let guest = exactMatch;
-
-  if (guest) {
-    currentGuest = guest;
-
-    const phoneLast4 = String(guest.phoneNumber).slice(-4);
-
-    document.getElementById("displayGuestName").textContent =
-      `We found your invitation under the name of ${guest.firstName} ${guest.lastName}.`;
-
-    document.getElementById("displayPhoneNumber").textContent =
-      `Please confirm your identity by entering the digits of your phone number ending in ${phoneLast4}:`;
-
-    document.getElementById("searchFailure").classList.add("hidden");
-    document.getElementById("validateFailure").classList.add("hidden");
-    document.getElementById("searchSuccess").classList.remove("hidden");
-
-  } else {
+  if (!data.found) {
     currentGuest = null;
     document.getElementById("searchSuccess").classList.add("hidden");
     document.getElementById("searchFailure").classList.remove("hidden");
+    return;
   }
+
+  // If guest found
+  currentGuest = {
+    id: data.guestId,
+    guestName: data.guestName
+  };
+
+  document.getElementById("displayGuestName").textContent =
+    `We found your invitation under the name of ${data.guestName}.`;
+  document.getElementById("displayPhoneNumber").textContent =
+    `Please confirm your identity by entering the digits of your phone number ending in ${data.phoneLast4}:`;
+
+  document.getElementById("searchFailure").classList.add("hidden");
+  document.getElementById("validateFailure").classList.add("hidden");
+  document.getElementById("searchSuccess").classList.remove("hidden");
 }
 
-function validateGuest() {
+async function validateGuest() {
   const phone = document.getElementById("phone").value.trim();
 
   if (!currentGuest) {
     return;
   }
-  
-  // Reveal results of validation
-  if (String(currentGuest.phoneNumber) === phone) {
+
+  // Ask Supabase to verify phone info
+  const { data, error } =
+    await supabase.functions.invoke(
+      "wedding-rsvp",
+      {
+        body: {
+          action: "verify",
+          guestId: currentGuest.id,
+          phone: phone
+        }
+      }
+    );
+
+  // If phone doesn't match
+  if (error) {
+    console.error("Verification error:", error);
+    document.getElementById("validateFailure").classList.remove("hidden");
+    return;
+  }
+
+  // If phone does match
+  if (data.verified) {
+    currentGuest.phone = phone;
     document.getElementById("answerQuestions").classList.remove("hidden");
     document.getElementById("verifyIdentity").classList.add("hidden");
     document.getElementById("validateFailure").classList.add("hidden");
-    document.getElementById("displayGuestNameConfirmed").textContent = `${currentGuest.firstName} ${currentGuest.lastName}`;
+    document.getElementById("displayGuestNameConfirmed").textContent = data.guestName;
   } else {
     document.getElementById("validateFailure").classList.remove("hidden");
   }
 }
 
 async function collectResponses() {  
-  if (!currentGuest) {
-    console.error("No guest is currently selected.");
+  if (!currentGuest || !currentGuest.phone) {
+    console.error("Guest has not been verified.");
     return;
   }
   
@@ -117,7 +143,7 @@ async function collectResponses() {
   const messages = message ? [message] : [];
 
   console.log({
-  phoneNumber: currentGuest.phoneNumber,
+  phoneNumber: currentGuest.phone,
   attending: attending,
   preferredLanguage: selectedLanguage,
   foodRestrictions: foodRestrictions,
@@ -125,16 +151,21 @@ async function collectResponses() {
   });
 
   // Update Supabase with guest responses
-  const { data, error } = await supabase
-    .from("guests")
-    .update({
-      attending: attending,
-      preferredLanguage: selectedLanguage,
-      foodRestrictions: foodRestrictions,
-      messages: messages
-    })
-    .eq("id", currentGuest.id)
-    .select();
+  const { data, error } =
+    await supabase.functions.invoke(
+      "wedding-rsvp",
+      {
+        body: {
+          action: "submit",
+          guestId: currentGuest.id,
+          phone: currentGuest.phone,
+          attending: attending,
+          preferredLanguage: selectedLanguage,
+          foodRestrictions: foodRestrictions,
+          messages: messages
+        }
+      }
+    );
 
    if (error) {
     console.error("Error saving RSVP:", error);
@@ -142,6 +173,10 @@ async function collectResponses() {
     return;
   }
 
-  console.log("RSVP saved:", data);
+  if (!data.success) {
+    alert("There was a problem submitting your RSVP. Please try again.");
+    return;
+  }
+  
   alert("RSVP submitted successfully!");
 }

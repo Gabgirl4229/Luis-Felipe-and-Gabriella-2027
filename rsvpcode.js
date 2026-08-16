@@ -87,7 +87,14 @@ async function validateGuest() {
 
   // If phone doesn't match
   if (error) {
-    console.error("Verification error:", error);
+    if (error.context) {
+      try {
+        const errorBody = await error.context.json();
+        console.error("Verification function response:", errorBody);
+      } catch (e) {
+        console.error("Could not read verification response:", e);
+      }
+    }
     document.getElementById("validateFailure").classList.remove("hidden");
     return;
   }

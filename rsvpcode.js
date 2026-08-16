@@ -182,6 +182,8 @@ async function collectResponses() {
     );
 
    if (error) {
+    console.log("RSVP response data:", data);
+    console.log("RSVP response error:", error);
     console.error("Error saving RSVP:", error);
     alert("There was a problem submitting your RSVP. Please try again.");
     return;

@@ -55,6 +55,9 @@ async function searchGuest() {
     guestName: data.guestName
   };
 
+  console.log("Guest found:", data);
+  console.log("currentGuest:", currentGuest);
+
   document.getElementById("displayGuestName").textContent =
     `We found your invitation under the name of ${data.guestName}.`;
   document.getElementById("displayPhoneNumber").textContent =
@@ -67,6 +70,10 @@ async function searchGuest() {
 
 async function validateGuest() {
   const phone = document.getElementById("phone").value.trim();
+
+  console.log("VERIFY currentGuest:", currentGuest);
+  console.log("VERIFY guestId:", currentGuest?.id);
+  console.log("VERIFY phone:", phone);
 
   if (!currentGuest) {
     return;

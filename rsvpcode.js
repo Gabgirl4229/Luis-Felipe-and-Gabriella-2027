@@ -180,3 +180,8 @@ async function collectResponses() {
   
   alert("RSVP submitted successfully!");
 }
+
+// Start the correct functions when the corresponding buttons are clicked
+document.getElementById("guestSearch").addEventListener("click", searchGuest);
+document.getElementById("validateGuest").addEventListener("click", validateGuest);
+document.getElementById("collectResponses").addEventListener("click", collectResponses);

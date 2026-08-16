@@ -23,7 +23,7 @@ async function searchGuest() {
 
   // Ask Supabase to search for said guest
   const { data, error } =
-    await supabase.functions.invoke(
+    await supabaseClient.functions.invoke(
       "wedding-rsvp",
       {
         body: {
@@ -74,7 +74,7 @@ async function validateGuest() {
 
   // Ask Supabase to verify phone info
   const { data, error } =
-    await supabase.functions.invoke(
+    await supabaseClient.functions.invoke(
       "wedding-rsvp",
       {
         body: {
@@ -152,7 +152,7 @@ async function collectResponses() {
 
   // Update Supabase with guest responses
   const { data, error } =
-    await supabase.functions.invoke(
+    await supabaseClient.functions.invoke(
       "wedding-rsvp",
       {
         body: {

@@ -12,69 +12,86 @@ function tryMe() {
   alert("YIPPEE");
 }
 
-function searchGuest() {
+async function searchGuest() {
   // Collect input of first and last name
-  fname = document.getElementById("fname").value;
-  lname = document.getElementById("lname").value;
+  const fname = document.getElementById("fname").value.trim();
+  const lname = document.getElementById("lname").value.trim();
 
-  // Read the guest list
-  fetch('http://localhost:3000/guests')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok ' + response.statusText);
-    }
-    return response.json();
-  })
-  // Check for a match between first + last name
-  .then(data => {
-    const guest = data.find(g => 
-      (g.firstName == fname && g.lastName == lname) || 
-      (g.groupMembers && g.groupMembers.includes(fname + " " + lname))
-    );
+  if (!fname || !lname) {
+    return;
+  }
 
-    // Reveal results of the search
-    if (guest) {
-      currentGuest = guest;
-      
-      const phoneLast4 = guest.phoneNumber.substring(guest.phoneNumber.length - 4);
-      document.getElementById("displayGuestName").innerHTML += guest.firstName + " " + guest.lastName + ".";
-      document.getElementById("displayPhoneNumber").innerHTML += phoneLast4 + ":"; 
-      if (!(document.getElementById("searchFailure").classList.contains("hidden"))) {
-        document.getElementById("searchFailure").classList.add("hidden");
-      }
-      document.getElementById("searchSuccess").classList.remove("hidden");
-    } else {
-      if (!(document.getElementById("searchSuccess").classList.contains("hidden"))) {
-        document.getElementById("searchSuccess").classList.add("hidden");
-      }
-      document.getElementById("searchFailure").classList.remove("hidden");
-    }
-  })
-  .catch(error => {
-    console.error('There was a problem with the fetch operation:', error);
-  });
+  // Search for said guest
+  const { data: exactMatch, error: exactError } = await supabase
+    .from("guests")
+    .select("*")
+    .eq("firstName", fname)
+    .eq("lastName", lname)
+    .maybeSingle();
 
-  console.log(currentGuest);
+  if (exactError) {
+    console.error("Error searching for guest:", exactError);
+    showSearchFailure();
+    return;
+  }
+
+  // Display success or failure
+  let guest = exactMatch;
+
+  if (guest) {
+    currentGuest = guest;
+
+    const phoneLast4 = String(guest.phoneNumber).slice(-4);
+
+    document.getElementById("displayGuestName").textContent =
+      `We found your invitation under the name of ${guest.firstName} ${guest.lastName}.`;
+
+    document.getElementById("displayPhoneNumber").textContent =
+      `Please confirm your identity by entering the digits of your phone number ending in ${phoneLast4}:`;
+
+    document.getElementById("searchFailure").classList.add("hidden");
+    document.getElementById("validateFailure").classList.add("hidden");
+    document.getElementById("searchSuccess").classList.remove("hidden");
+
+  } else {
+    currentGuest = null;
+    document.getElementById("searchSuccess").classList.add("hidden");
+    document.getElementById("searchFailure").classList.remove("hidden");
+  }
 }
 
 function validateGuest() {
-  phone = document.getElementById("phone").value;
+  const phone = document.getElementById("phone").value.trim();
 
+  if (!currentGuest) {
+    return;
+  }
+  
   // Reveal results of validation
-  if (currentGuest.phoneNumber == phone) {
+  if (String(currentGuest.phoneNumber) === phone) {
     document.getElementById("answerQuestions").classList.remove("hidden");
     document.getElementById("verifyIdentity").classList.add("hidden");
-    document.getElementById("displayGuestName").innerHTML = currentGuest.firstName + " " + currentGuest.lastName;
+    document.getElementById("validateFailure").classList.add("hidden");
+    document.getElementById("displayGuestNameConfirmed").textContent = `${currentGuest.firstName} ${currentGuest.lastName}`;
   } else {
     document.getElementById("validateFailure").classList.remove("hidden");
   }
 }
 
-function collectResponses() {  
+async function collectResponses() {  
+  if (!currentGuest) {
+    console.error("No guest is currently selected.");
+    return;
+  }
+  
   const attendanceValue = document.querySelector('input[name="attendance"]:checked')?.value;
+  if (!attendanceValue) {
+    alert("Please select whether you will be attending.");
+    return;
+  }
   const attending = attendanceValue === "yes" ? "Y" : "N";
 
-  const selectedLanguage = document.querySelector('input[name="language"]:checked')?.value;
+  const selectedLanguage = document.querySelector('input[name="language"]:checked')?.value || null;
 
   let foodRestrictions = Array.from(
     document.querySelectorAll('input[type="checkbox"]:checked')
@@ -85,7 +102,7 @@ function collectResponses() {
 
   if (allergyChecked && allergyText) {
     foodRestrictions = foodRestrictions.filter(r => r !== "Allergy");
-    foodRestrictions.push("Allergy: " + allergyText);
+    foodRestrictions.push(`Allergy: ${allergyText}`);
   }
 
   const otherChecked = document.getElementById("restriction9").checked;
@@ -93,10 +110,11 @@ function collectResponses() {
 
   if (otherChecked && otherText) {
     foodRestrictions = foodRestrictions.filter(r => r !== "Other");
-    foodRestrictions.push("Other: " + otherText);
+    foodRestrictions.push(`Other: ${otherText}`);
   }
 
-  const message = document.getElementById("comment").value;
+  const message = document.getElementById("comment").value.trim();
+  const messages = message ? [message] : [];
 
   console.log({
   phoneNumber: currentGuest.phoneNumber,
@@ -105,27 +123,25 @@ function collectResponses() {
   foodRestrictions: foodRestrictions,
   messages: message
   });
-  
-  fetch('http://localhost:3000/update-guest', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      phoneNumber: currentGuest.phoneNumber,
+
+  // Update Supabase with guest responses
+  const { data, error } = await supabase
+    .from("guests")
+    .update({
       attending: attending,
       preferredLanguage: selectedLanguage,
       foodRestrictions: foodRestrictions,
-      messages: message
+      messages: messages
     })
-  })
-  .then(res => res.json())
-  .then(data => {
-    console.log('Saved!', data);
-    alert("RSVP submitted successfully!");
-  })
-  .catch(error => {
-    console.error('Error saving RSVP:', error);
-  });
+    .eq("id", currentGuest.id)
+    .select();
 
+   if (error) {
+    console.error("Error saving RSVP:", error);
+    alert("There was a problem submitting your RSVP. Please try again.");
+    return;
+  }
+
+  console.log("RSVP saved:", data);
+  alert("RSVP submitted successfully!");
 }

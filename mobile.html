@@ -3,27 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello Web!</title>
+  <title>Home</title>
   <style>
     :root {
-      --primary: #4f8cff;
+      --gray: #f4f7fb;
+      --blue: #84a1c4;
       --secondary: #f7b731;
-      --bg-gradient: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
       --card-bg: #fff;
       --shadow: 0 4px 24px rgba(80, 120, 200, 0.08);
     }
     body {
-      font-family: 'Segoe UI', Arial, sans-serif;
+      font-family: Avanta Garde, Geneva, Helvetica, Roboto, sans-serif;
       margin: 0;
       padding: 0;
-      background: var(--bg-gradient);
+      background: var(--gray);
       min-height: 100vh;
     }
     .navbar {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: var(--primary);
+      background: var(--blue);
       color: #fff;
       padding: 1.2rem 2.5rem;
       box-shadow: var(--shadow);
@@ -48,11 +48,10 @@
       font-size: 1.1rem;
       font-weight: 500;
       padding: 0.5rem 1rem;
-      border-radius: 4px;
+      /* border-radius: 4px; */
       transition: background 0.2s, color 0.2s;
     }
     .nav-links a:hover {
-      background: var(--secondary);
       color: #222;
     }
     .container {
@@ -188,11 +187,14 @@
 </head>
 <body>
   <nav class="navbar">
-    <div class="logo">Hello Web!</div>
+    <div class="logo">Our Wedding</div>
     <div class="nav-links">
       <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="#ourstory">Our Story</a>
+      <a href="#details">Details</a>
+      <a href="#photos">Photos</a>
+      <a href="#weddingparty">Wedding Party</a>
+      <a href="#rsvp">RSVP</a>
     </div>
   </nav>
   <div class="container" id="home">

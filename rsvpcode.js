@@ -1,7 +1,7 @@
 const SUPABASE_URL = "https://jgrbmhfdlctagwchclkg.supabase.co";
 const SUPABASE_KEY = "sb_publishable_reN-mHjmzkjaDsHH3xOWnw_y9kzTpmK";
 
-const supabase = window.supabase.createClient(
+const supabaseClient = window.supabase.createClient(
   SUPABASE_URL,
   SUPABASE_KEY
 );

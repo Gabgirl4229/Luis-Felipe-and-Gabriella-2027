@@ -1,14 +1,16 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: Avanta Garde, Geneva, Helvetica, Roboto, sans-serif;
   margin: 0;
-  background: #f4f7fb;
-  color: #253238;
-  overflow-y: auto;
   padding-bottom: 50px;
+  background: #f4f7fb;
+  /*overflow-y: auto;*/
+  min-height: 100vh;
 }
+
 a {
   font-family: Avanta Garde, Geneva, Helvetica, Roboto, sans-serif;
   color: #fff;

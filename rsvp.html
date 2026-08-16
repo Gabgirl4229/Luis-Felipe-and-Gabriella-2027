@@ -27,7 +27,7 @@
       <input type="text" id="fname" name="fname" required><br>
       <label for="lname">Last Name:</label><br>
       <input type="text" id="lname" name="lname" required><br><br>
-      <button id="guestSearch" onclick="searchGuest()">Search</button>
+      <button id="guestSearch">Search</button>
       <br><br><br>
       <div id ="searchSuccess" class="hidden">
         <h2 class="blue">Success!</h2>
@@ -35,7 +35,7 @@
         <p id="displayPhoneNumber">Please confirm your identity by entering the digits of your phone number ending in </p>
         <label for="phone">Phone Number:</label><br>
         <input type="text" id="phone" name="phone" required><br><br>
-        <button id="validateGuest" onclick="validateGuest()">Confirm</button>
+        <button id="validateGuest">Confirm</button>
       </div>
       <div id ="searchFailure" class="hidden">
         <h2 class="blue">Oops!</h2>
@@ -104,7 +104,7 @@
       <p>Do you have anything you'd like to share with us?</p>
       <p>Please use this field to ask any questions, express heartfelt sentiments, or send a message to us!</p>
       <textarea id="comment" name="comment" rows="4" cols="50" maxlength="1000" placeholder="Type your message here..."></textarea><br><br>
-      <button id="collectResponses" onclick="collectResponses()">Submit</button>
+      <button id="collectResponses">Submit</button>
     </section>
   </main>
 </body>

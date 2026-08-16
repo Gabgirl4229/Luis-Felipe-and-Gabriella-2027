@@ -280,3 +280,419 @@ details > summary {
   width: 100%;
   padding: 20px 20px;
 }
+
+/* =========================================================
+   Responsive / Mobile-Friendly Styles
+   ========================================================= */
+
+/* Tablets and smaller laptops */
+@media (max-width: 900px) {
+
+  /* Main content */
+  main {
+    max-width: 98vw;
+    padding: 30px 15px;
+  }
+
+  /* Existing sections */
+  section {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* Modern HTML container */
+  .container {
+    max-width: 95vw;
+    padding: 2rem 1.5rem;
+    gap: 1.5rem;
+  }
+
+  /* Images */
+  .responsive-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Image columns */
+  .column {
+    flex: 50%;
+  }
+
+  /* Carousel */
+  .slideshow-container {
+    max-width: 85%;
+  }
+
+  /* Details / accordion */
+  details {
+    width: 100%;
+  }
+}
+
+
+/* =========================================================
+   Mobile Devices
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  body {
+    padding-bottom: 0;
+    min-height: 100vh;
+  }
+
+  /* ---------------------------------------------------------
+     Navigation
+     --------------------------------------------------------- */
+
+  header {
+    padding: 15px;
+  }
+
+  nav {
+    font-size: 20px;
+  }
+
+  /* Navigation used by the new HTML */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 1.2rem;
+  }
+
+  .logo {
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    width: 100%;
+  }
+
+  /* Existing links */
+  a {
+    font-size: 20px;
+  }
+
+
+  /* ---------------------------------------------------------
+     Main / Container
+     --------------------------------------------------------- */
+
+  main {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 95%;
+    max-width: 95%;
+    gap: 1.2rem;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .main-content,
+  .sidebar {
+    width: 100%;
+    flex: none;
+    padding: 0.5rem 0;
+  }
+
+
+  /* ---------------------------------------------------------
+     Typography
+     --------------------------------------------------------- */
+
+  .main-content h1 {
+    font-size: 1.7rem;
+    line-height: 1.2;
+  }
+
+  .main-content p,
+  .sidebar p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .sidebar h2 {
+    font-size: 1.3rem;
+  }
+
+
+  /* ---------------------------------------------------------
+     Buttons
+     --------------------------------------------------------- */
+
+  .cta-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
+
+
+  /* ---------------------------------------------------------
+     Images
+     --------------------------------------------------------- */
+
+  img.responsive-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .row {
+    padding: 0;
+  }
+
+  .column {
+    flex: 100%;
+    padding: 0;
+  }
+
+  .column img {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+
+  /* ---------------------------------------------------------
+     Existing Sections
+     --------------------------------------------------------- */
+
+  section {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 18px;
+    border-radius: 10px;
+  }
+
+
+  /* ---------------------------------------------------------
+     Carousel
+     --------------------------------------------------------- */
+
+  .slideshow-container {
+    max-width: 90%;
+    padding: 0;
+  }
+
+  .prev,
+  .next {
+    width: 40px;
+    height: 40px;
+  }
+
+  .next {
+    right: -45px;
+  }
+
+  .prev {
+    left: -45px;
+  }
+
+  .prev img,
+  .next img {
+    width: 24px;
+  }
+
+  .arrow {
+    height: 12px;
+    margin-left: 10px;
+  }
+
+
+  /* ---------------------------------------------------------
+     Radio Buttons
+     --------------------------------------------------------- */
+
+  .radio-group {
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .radio-option {
+    width: 100%;
+  }
+
+  .toggle-radio-group {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .toggle-radio-group label {
+    flex: 1;
+    text-align: center;
+    padding: 8px 10px;
+  }
+
+
+  /* ---------------------------------------------------------
+     Google Map
+     --------------------------------------------------------- */
+
+  .google-map {
+    padding-bottom: 65%;
+  }
+
+
+  /* ---------------------------------------------------------
+     Details / Summary
+     --------------------------------------------------------- */
+
+  details {
+    width: 100%;
+  }
+
+  details > summary {
+    font-size: 18px;
+    padding: 15px 10px;
+  }
+
+
+  /* ---------------------------------------------------------
+     Footer
+     --------------------------------------------------------- */
+
+  footer {
+    position: relative;
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 0.85rem;
+  }
+}
+
+
+/* =========================================================
+   Small Phones
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  /* Navigation */
+  .navbar {
+    padding: 0.7rem 0.8rem;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .nav-links {
+    gap: 0.25rem;
+  }
+
+  .nav-links a {
+    font-size: 0.95rem;
+    padding: 0.4rem 0;
+  }
+
+
+  /* Main container */
+  .container {
+    width: 98%;
+    max-width: 98%;
+    margin: 1rem auto;
+    padding: 0.7rem;
+    border-radius: 8px;
+  }
+
+  /* Headings */
+  .main-content h1 {
+    font-size: 1.3rem;
+  }
+
+  .sidebar h2 {
+    font-size: 1.2rem;
+  }
+
+  /* Text */
+  .main-content p,
+  .sidebar p {
+    font-size: 0.95rem;
+  }
+
+  /* Existing sections */
+  section {
+    width: 98%;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  /* Buttons */
+  .cta-btn {
+    font-size: 0.95rem;
+    padding: 0.7rem 1rem;
+  }
+
+  /* Carousel */
+  .slideshow-container {
+    max-width: 82%;
+  }
+
+  .prev,
+  .next {
+    width: 32px;
+    height: 32px;
+  }
+
+  .prev {
+    left: -38px;
+  }
+
+  .next {
+    right: -38px;
+  }
+
+  .prev img,
+  .next img {
+    width: 20px;
+  }
+
+  /* Dots */
+  .dot-container {
+    gap: 8px;
+  }
+
+  .dot-label {
+    font-size: 12px;
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+  }
+
+  /* Details */
+  details > summary {
+    font-size: 16px;
+    padding: 12px 8px;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+}
+

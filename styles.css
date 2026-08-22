@@ -7,7 +7,7 @@
 
 /* General webpage look */
 body {
-  font-family: Avanta Garde, Geneva, Helvetica, Roboto, sans-serif; /* Fonts */
+  /* font-family: Avanta Garde, Geneva, Helvetica, Roboto, sans-serif;*/ /* Fonts */
   margin: 0;
   /* Extra space for top and bottom of site */
   padding-top: 20px;

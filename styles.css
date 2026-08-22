@@ -19,18 +19,11 @@ body {
   min-height: 100%;
 }
 
-/* Hyperlinks */
-a {
-  color: #fff;
-  font-size: 24px;
-  text-decoration: none; /* No underlines */
-}
-
 /* Top menu with all website pages */
 header {
   background: #84a1c4;
   width: 100%;
-  padding: 20px;
+  /* padding: 20px; */
   text-align: center;
 }
 nav {
@@ -38,7 +31,11 @@ nav {
   display: block;
   font-size: 24px;
 }
-
+a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none; /* No underlines */
+}
 
 main {
   max-width: 96%;

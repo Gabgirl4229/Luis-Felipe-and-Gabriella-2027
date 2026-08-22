@@ -82,6 +82,15 @@
     <p style="color: #444; font-size: 1.1rem;">Have questions or want to work with us? <a href="mailto:info@example.com" style="color: var(--blue); text-decoration: underline;">Email us</a> and we’ll get back to you soon!</p>
   </section>
   <script>
+    // Allow nav bar to open and close
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
     // Enable smooth scrolling for anchor links
     document.documentElement.style.scrollBehavior = 'smooth';
   </script>

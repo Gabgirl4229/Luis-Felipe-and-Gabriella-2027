@@ -9,6 +9,7 @@ body {
   background: #ffffff/*#f4f7fb*/;
   /*overflow-y: auto;*/
   min-height: 100vh;
+  max-width: 95vh;
 }
 
 a {

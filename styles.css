@@ -7,12 +7,14 @@
 
 /* General webpage look */
 body {
-  font-family: Avanta Garde, Geneva, Helvetica, Roboto, sans-serif;
+  font-family: Avanta Garde, Geneva, Helvetica, Roboto, sans-serif; /* Fonts */
   margin: 0;
+  /* Extra space for top and bottom of site */
   padding-top: 20px;
   padding-bottom: 20px;
-  background: #f4f7fb;
-  overflow-y: auto;
+  background: #f4f7fb; /* background page color */
+  overflow-y: auto; /* allows for scrolling down instead of text wrapping sideways */
+  /* Page width and height */
   max-width: 100%;
   min-height: 100%;
 }

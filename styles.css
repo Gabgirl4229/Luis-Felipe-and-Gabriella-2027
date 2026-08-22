@@ -20,7 +20,7 @@ body {
 header {
   background: #84a1c4;
   width: 100%;
-  /* padding: 20px; */
+  padding: 20px;
   text-align: center;
 }
 nav {

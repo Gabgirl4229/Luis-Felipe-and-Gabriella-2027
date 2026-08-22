@@ -19,11 +19,12 @@ body {
   min-height: 100%;
 }
 
+/* Hyperlinks */
 a {
   /* font-family: Avanta Garde, Geneva, Helvetica, Roboto, sans-serif; */
   color: #fff;
   font-size: 24px;
-  text-decoration: none;
+  text-decoration: none; /* No underlines */
 }
 
 /* Top menu with all website pages */

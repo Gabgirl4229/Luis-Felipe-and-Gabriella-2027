@@ -10,7 +10,7 @@
 /* General webpage look */
 body {
   /* Extra space for top and bottom of site */
-  padding-top: 20px;
+  /* padding-top: 20px; */
   padding-bottom: 20px;
   background: #f4f7fb; /* background page color */
   overflow-y: auto; /* allows for scrolling down instead of text wrapping sideways */
@@ -23,7 +23,7 @@ body {
 header {
   background: #84a1c4;
   width: 100%;
-  /* padding: 20px; */
+  padding: 20px;
   text-align: center;
 }
 nav {

@@ -1,4 +1,4 @@
-/* Prevents elements expanding past my set width */
+g/* Prevents elements expanding past my set width */
 *, *::before, *::after {
   box-sizing: border-box;
 }

@@ -9,9 +9,6 @@
 
 /* General webpage look */
 body {
-  /* Extra space for top and bottom of site */
-  /* padding-top: 20px; */
-  padding-bottom: 20px;
   background: #f4f7fb; /* background page color */
   overflow-y: auto; /* allows for scrolling down instead of text wrapping sideways */
   /* Page width and height */
@@ -23,7 +20,7 @@ body {
 header {
   background: #84a1c4;
   width: 100%;
-  padding: 20px;
+  /* padding: 20px; */
   text-align: center;
 }
 nav {
@@ -37,6 +34,7 @@ a {
   text-decoration: none; /* No underlines */
 }
 
+/* Most of the webpage */
 main {
   max-width: 96%;
   margin: 0 auto;
@@ -53,6 +51,7 @@ section {
   display: none;
 }
 
+/* Different title text styles */
 section .mid {
   text-align: center;
 }

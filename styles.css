@@ -52,8 +52,12 @@ a.icon {
   top: 0;
 }
 
+a.icon:hover {
+  background-color: #A7C1E1;
+}
+
 .active {
-  background-color: #04AA6D;
+  background-color: #84A1C4;
   color: white;
 }
 

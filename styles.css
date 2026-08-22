@@ -1,14 +1,14 @@
-/* Prevents elements expanding past my set width */
-*, *::before, *::after {
+/* All elements */
+* {
+  /* Prevents elements expanding past my set width */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Avanta Garde, Geneva, Helvetica, Roboto, sans-serif; /* Fonts */
 }
 
 /* General webpage look */
 body {
-  font-family: Avanta Garde, Geneva, Helvetica, Roboto, sans-serif; /* Fonts */
-  margin: 0;
   /* Extra space for top and bottom of site */
   padding-top: 20px;
   padding-bottom: 20px;
@@ -21,7 +21,6 @@ body {
 
 /* Hyperlinks */
 a {
-  /* font-family: Avanta Garde, Geneva, Helvetica, Roboto, sans-serif; */
   color: #fff;
   font-size: 24px;
   text-decoration: none; /* No underlines */
@@ -29,7 +28,6 @@ a {
 
 /* Top menu with all website pages */
 header {
-  font-family: Avanta Garde, Geneva, Helvetica, Roboto, sans-serif;
   background: #84a1c4;
   /* width: 100%; */
   padding: 20px 20px;

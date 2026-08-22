@@ -1,7 +1,9 @@
-* {
+/* Prevents elements expanding past my set width */
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
+/* General webpage look */
 body {
   font-family: Avanta Garde, Geneva, Helvetica, Roboto, sans-serif;
   margin: 0;

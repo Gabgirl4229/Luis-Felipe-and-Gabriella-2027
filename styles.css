@@ -6,7 +6,7 @@ body {
   font-family: Avanta Garde, Geneva, Helvetica, Roboto, sans-serif;
   margin: 0;
   padding-bottom: 50px;
-  background: #ffffff/*#f4f7fb*/;
+  background: #f4f7fb;
   /*overflow-y: auto;*/
   min-height: 100vh;
   max-width: 95vh;

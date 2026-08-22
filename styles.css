@@ -32,7 +32,7 @@ nav {
 /* Navigation area with all the links */
 .topnav {
   overflow: hidden;
-  background-color: #444;
+  background-color: #a7c1e1;
   position: relative;
 }
 
@@ -53,7 +53,7 @@ a.icon {
 }
 
 a.icon:hover {
-  background-color: #A7C1E1;
+  background-color: #a7c1e1;
 }
 
 .active {

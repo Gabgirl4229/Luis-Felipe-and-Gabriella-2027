@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding-bottom: 50px;
   background: #f4f7fb;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   min-height: 100vh;
 }
 

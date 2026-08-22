@@ -10,6 +10,7 @@ body {
   padding-bottom: 50px;
   background: #f4f7fb;
   overflow-y: auto;
+  max-width: 100%;
   min-height: 100vh;
 }
 

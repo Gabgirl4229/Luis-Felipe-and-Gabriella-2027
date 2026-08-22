@@ -8,6 +8,7 @@ body {
   padding-bottom: 50px;
   background: #f4f7fb;
   min-height: 100vh;
+  max-width: 100vh;
 }
 
 a {

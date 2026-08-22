@@ -29,6 +29,12 @@ nav {
   padding: 30px;
 }
 
+a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none; /* No underlines */
+}
+
 /* Navigation area with all the links */
 .topnav {
   overflow: hidden;
@@ -40,7 +46,7 @@ nav {
   display: none;
 }
 
-.topnav a, a{
+.topnav a {
   color: #fff;
   font-size: 24px;
   text-decoration: none; /* No underlines */
@@ -50,10 +56,6 @@ nav {
   position: absolute;
   right: 0;
   top: 0;
-}
-
-a.icon:hover {
-  background-color: #a7c1e1;
 }
 
 .active {

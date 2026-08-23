@@ -58,7 +58,7 @@ a {
   top: 0;
 }
 
-.active {
+.topnav .active {
   background-color: #84a1c4;
   color: white;
 }

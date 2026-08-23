@@ -25,7 +25,7 @@ nav {
   overflow: hidden; /* Other links hidden by default */
   background-color: #84a1c4;
   position: relative;
-  padding: 10% 0%;
+  padding: 5% 0%;
 }
 
 a {
@@ -39,7 +39,7 @@ a {
   overflow: hidden;
   background-color: #84a1c4;
   position: relative;
-  padding: 10%;
+  padding: 5% 0%;
 }
 
 .topnav #myLinks {

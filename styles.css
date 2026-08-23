@@ -30,8 +30,10 @@ nav {
 }
 
 a {
+  background-color: #84a1c4;
   color: #fff;
   font-size: 24px;
+  display: block;
   text-decoration: none; /* No underlines */
 }
 

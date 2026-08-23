@@ -22,10 +22,10 @@ header {
   width: 100%;
 }
 nav {
-  overflow: hidden;
+  overflow: hidden; /* Other links hidden by default */
   background-color: #84a1c4;
   position: relative;
-  padding: 10%;
+  padding: 10% 0%;
 }
 
 a {

@@ -26,7 +26,7 @@ nav {
   overflow: hidden; /* Other links hidden by default */
   background-color: #84a1c4;
   position: relative;
-  padding: 10px 0px;
+  padding: 10px 0px 0px;
 }
 
 a {

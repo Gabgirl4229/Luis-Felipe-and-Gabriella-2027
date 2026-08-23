@@ -42,11 +42,11 @@ a {
   position: relative;
 }
 
-#myLinks {
+.topnav #myLinks {
   display: none;
 }
 
-#myLinks a {
+.topnav #myLinks a {
   color: #fff;
   font-size: 24px;
   display: block;
@@ -56,7 +56,7 @@ a {
 }
 
 /* Hamburger button */
-a.icon {
+.topnav a.icon {
   background: red;
   /* position: absolute;
   right: 0;
@@ -75,7 +75,7 @@ a.icon {
 }
 
 /* Hamburger container */
-a.icon .menu {
+.topnav a.icon .menu {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -84,7 +84,7 @@ a.icon .menu {
 }
 
 /* Hamburger lines */
-a.icon .menu span {
+.topnav a.icon .menu span {
   display: block;
   width: 30px;
   height: 4px;

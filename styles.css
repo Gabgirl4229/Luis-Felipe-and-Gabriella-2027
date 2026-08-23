@@ -20,7 +20,6 @@ body {
 header {
   background: #84a1c4;
   width: 100%;
-  text-align: center;
 }
 nav {
   color: #fff;
@@ -121,13 +120,13 @@ section {
 }
 
 /* Different title text styles */
-section .mid {
+.mid {
   text-align: center;
 }
-section .blue {
+.blue {
   color: #84a1c4;
 }
-section .green {
+.green {
   color: #748469;
 }
 

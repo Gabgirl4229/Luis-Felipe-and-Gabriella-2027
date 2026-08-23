@@ -51,6 +51,10 @@ padding: 15px 0px;
   /* display: none; */
 }
 
+a.icon {
+  background: red;
+}
+
 /* Hamburger button */
 .topnav a.icon {
   /* background: red; */

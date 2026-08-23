@@ -23,8 +23,8 @@ function showSlides(n, num) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" dots-active", "");
   }
   slides[slideIndexes[num]-1].style.display = "block";
-  dots[slideIndexes[num]-1].className += " active";
+  dots[slideIndexes[num]-1].className += " dots-active";
 }

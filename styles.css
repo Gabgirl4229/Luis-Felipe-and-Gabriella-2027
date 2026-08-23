@@ -47,7 +47,8 @@ a {
 }
 
 #navLinks {
-  display: none;
+  background-color: a7c1e1;
+  /* display: none; */
 }
 
 /* Hamburger button */

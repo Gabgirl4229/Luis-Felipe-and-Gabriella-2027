@@ -30,6 +30,7 @@ nav {
 a {
   color: #fff;
   font-size: 24px;
+  padding: 5px 0px;
   display: block;
   text-decoration: none; /* No underlines */
 }

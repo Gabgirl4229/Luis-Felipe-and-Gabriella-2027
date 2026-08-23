@@ -43,7 +43,7 @@ a {
   overflow: hidden;
   background-color: #84a1c4;
   position: relative;
-  padding: 10px 0px;
+  padding: 10px 0px !important;
 }
 
 #navLinks {

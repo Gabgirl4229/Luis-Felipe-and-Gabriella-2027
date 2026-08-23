@@ -92,7 +92,7 @@ a.icon .menu span {
   border-radius: 2px;
 }
 
-.active {
+.nav-active {
   background-color: #84a1c4;
   color: white;
   display: block;

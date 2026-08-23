@@ -33,7 +33,7 @@ a {
   background-color: #84a1c4;
   color: #fff;
   font-size: 24px;
-  display: block !important;
+  display: block;
   text-decoration: none; /* No underlines */
 }
 

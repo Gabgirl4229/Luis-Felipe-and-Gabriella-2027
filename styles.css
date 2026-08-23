@@ -42,11 +42,11 @@ a {
   position: relative;
 }
 
-.topnav #myLinks {
+#myLinks {
   display: none;
 }
 
-.topnav #myLinks a {
+#myLinks a {
   color: #fff;
   font-size: 24px;
   display: block;
@@ -55,14 +55,8 @@ a {
   text-decoration: none;
 }
 
-.topnav a {
-  color: #fff;
-  font-size: 24px;
-  text-decoration: none; /* No underlines */
-}
-
 /* Hamburger button */
-.topnav a.icon {
+a.icon {
   background: red;
   /* position: absolute;
   right: 0;
@@ -81,7 +75,7 @@ a {
 }
 
 /* Hamburger container */
-.topnav a.icon .menu {
+a.icon .menu {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -90,7 +84,7 @@ a {
 }
 
 /* Hamburger lines */
-.topnav a.icon .menu span {
+a.icon .menu span {
   display: block;
   width: 30px;
   height: 4px;
@@ -98,7 +92,7 @@ a {
   border-radius: 2px;
 }
 
-.topnav .active {
+.active {
   background-color: #84a1c4;
   color: white;
   display: block;
@@ -234,7 +228,7 @@ footer {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-.active, .dot:hover {
+.dots-active, .dot:hover {
   background-color: #748469;
 }
 

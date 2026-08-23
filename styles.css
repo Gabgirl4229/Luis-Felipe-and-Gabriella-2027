@@ -22,10 +22,10 @@ header {
   width: 100%;
 }
 nav {
-  color: #fff;
-  display: block;
-  font-size: 24px;
-  padding: 30px;
+  overflow: hidden;
+  background-color: #84a1c4;
+  position: relative;
+  padding: 10%;
 }
 
 a {
@@ -39,6 +39,7 @@ a {
   overflow: hidden;
   background-color: #84a1c4;
   position: relative;
+  padding: 10%;
 }
 
 .topnav #myLinks {

@@ -52,6 +52,9 @@ padding: 15px 0px;
 }
 
 a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
   background: red;
 }
 

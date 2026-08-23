@@ -56,11 +56,20 @@ a {
   position: absolute;
   right: 0;
   top: 0;
+  z-index: 10;
+}
+
+.topnav .menu {
+  font-size: 32px;
+  font-style: normal;
 }
 
 .topnav .active {
   background-color: #84a1c4;
   color: white;
+  display: block;
+  text-align: center;
+  padding: 15ps 50px;
 }
 
 /* Most of the webpage */

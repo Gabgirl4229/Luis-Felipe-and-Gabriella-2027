@@ -41,6 +41,12 @@ a {
   position: relative;
 }
 
+.nav-active {
+  background-color: #84a1c4;
+  color: white;
+  display: block;
+}
+
 .topnav #myLinks {
   display: none;
 }
@@ -88,12 +94,6 @@ a {
   height: 4px;
   background-color: white;
   border-radius: 2px;
-}
-
-.nav-active {
-  background-color: #84a1c4;
-  color: white;
-  display: block;
 }
 
 /* Most of the webpage */

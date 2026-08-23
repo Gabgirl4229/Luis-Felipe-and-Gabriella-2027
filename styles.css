@@ -62,6 +62,7 @@ a {
   text-decoration: none; /* No underlines */
 }
 
+/* Hamburger icon container */
 .topnav a.icon {
   position: absolute;
   right: 0;
@@ -69,9 +70,22 @@ a {
   z-index: 10;
 }
 
+/* Hamburger */
 .topnav .menu {
-  font-size: 32px;
-  font-style: normal;
+  width: 32px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Hamburger lines */
+.topnav .menu span {
+  display: block;
+  width: 32px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
 }
 
 .topnav .active {

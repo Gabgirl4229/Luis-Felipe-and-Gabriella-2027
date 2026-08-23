@@ -46,6 +46,16 @@ a {
   display: none;
 }
 
+.topnav #myLinks a {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
 .topnav a {
   color: #fff;
   font-size: 24px;

@@ -46,16 +46,8 @@ a {
   padding: 10px 0px;
 }
 
-.topnav #myLinks {
+#navLinks {
   display: none;
-}
-
-.topnav #myLinks a {
-  color: #fff;
-  font-size: 24px;
-  display: block;
-  width: 100%;
-  padding: 12px 20px;
 }
 
 /* Hamburger button */

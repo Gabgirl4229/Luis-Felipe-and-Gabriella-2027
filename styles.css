@@ -46,12 +46,6 @@ a {
   padding: 10px 0px;
 }
 
-.nav-active {
-  background-color: #84a1c4;
-  color: white;
-  display: block;
-}
-
 .topnav #myLinks {
   display: none;
 }

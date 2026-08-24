@@ -53,11 +53,10 @@ padding: 15px 0px;
 
 a.icon {
   position: absolute;
-  right: 0;
-  top: 0;
-  background: red;
-  width: 60px;
-  height: 60px;
+  left: 0;
+  vertical-align: middle;
+  height: 100%;
+  width: auto;
   padding: 0;
   margin: 0;
 }

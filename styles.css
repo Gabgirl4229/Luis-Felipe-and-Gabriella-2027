@@ -33,6 +33,7 @@ a {
   padding: 5px 0px;
   display: block;
   text-decoration: none; /* No underlines */
+  user-select: text; /* Makes it so you have to click the text and not just the box around it */
 }
 
 /* Navigation area with all the links */
@@ -64,11 +65,13 @@ a.icon {
 /* Hamburger button */
 .topnav a.icon {
   /* background: red; */
+  /* Position it on the left of the screen */
   position: absolute;
-  right: 0;
+  left: 0;
   top: 0;
-  width: 60px;
-  height: 60px;
+  /* Make its height fill the bar and ensure height/width are proportional */
+  height: 100%;
+  width: auto;
   padding: 0;
   margin: 0;
   display: flex;

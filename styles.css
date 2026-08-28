@@ -25,6 +25,7 @@ header {
 nav {
   overflow: hidden; /* Other links hidden by default */
   position: relative;
+  display: block;
 }
 
 a {

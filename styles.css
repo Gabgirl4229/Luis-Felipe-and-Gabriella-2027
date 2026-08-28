@@ -25,16 +25,15 @@ header {
 nav {
   overflow: hidden; /* Other links hidden by default */
   position: relative;
-  display: block;
 }
 
 a {
   color: #fff;
   font-size: 24px;
   padding: 5px 0px;
-  display: inline-block;
+  display: block; /* Gives the text its own row */
+  width: fit-content; /* Makes it so you have to click the text specifically */
   text-decoration: none; /* No underlines */
-  user-select: text; /* Makes it so you have to click the text and not just the box around it */
 }
 
 /* Navigation area with all the links */

@@ -31,7 +31,7 @@ a {
   color: #fff;
   font-size: 24px;
   padding: 5px 0px;
-  display: block;
+  display: inline-block;
   text-decoration: none; /* No underlines */
   user-select: text; /* Makes it so you have to click the text and not just the box around it */
 }

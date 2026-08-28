@@ -32,7 +32,8 @@ a {
   font-size: 24px;
   padding: 5px 0px;
   display: block; /* Gives the text its own row */
-  width: fit-content; /* Makes it so you have to click the text specifically */
+  /* Makes it so you have to click the text specifically */
+  width: fit-content;
   margin: 0 auto;
   text-decoration: none; /* No underlines */
 }
@@ -50,7 +51,6 @@ padding: 15px 0px;
 #navLinks {
   background-color: #a7c1e1;
   padding: 10px;
-  display: block;
 }
 
 a.icon {

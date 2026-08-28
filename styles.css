@@ -66,7 +66,7 @@ a.icon {
 */
 
 /* Hamburger button */
-.topnav a.icon {
+a.icon {
   /* Position it on the left of the screen */
   position: absolute;
   left: 0;
@@ -81,7 +81,7 @@ a.icon {
 }
 
 /* Transparent hamburger container */
-.topnav a.icon .menu {
+a.icon .menu {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -90,7 +90,7 @@ a.icon {
 }
 
 /* Hamburger lines */
-.topnav a.icon .menu span {
+a.icon .menu span {
   height: 15%;
   background-color: #fff;
 }

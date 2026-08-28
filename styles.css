@@ -64,7 +64,7 @@ a.icon {
 
 /* Hamburger button */
 .topnav a.icon {
-  /* background: red; */
+  background: red;
   /* Position it on the left of the screen */
   position: absolute;
   left: 0;

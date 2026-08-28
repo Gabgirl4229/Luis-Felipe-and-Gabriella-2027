@@ -33,6 +33,7 @@ a {
   padding: 5px 0px;
   display: block; /* Gives the text its own row */
   width: fit-content; /* Makes it so you have to click the text specifically */
+  margin: 0 auto;
   text-decoration: none; /* No underlines */
 }
 

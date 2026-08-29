@@ -77,13 +77,13 @@ a.icon .menu {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 60%;
-  height: 60%;
+  width: 50%;
+  height: 50%;
 }
 
 /* Hamburger lines */
 a.icon .menu span {
-  height: 15%;
+  height: 20%;
   background-color: #fff;
 }
 

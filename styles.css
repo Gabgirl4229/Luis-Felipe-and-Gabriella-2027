@@ -28,7 +28,7 @@ nav {
 }
 
 nav > div {
-  position: relative;
+  position: relative; /* Allows the hamburger bar to fit into the top section of the nav bar */
 }
 
 a {
@@ -42,19 +42,13 @@ a {
   text-decoration: none; /* No underlines */
 }
 
-/* Navigation area with all the links */
-.topnav {
-  overflow: hidden;
-  position: relative;
-}
-
 #navTitle {
-padding: 15px 0px;
+  padding: 15px 0px;
 }
 
 #navLinks {
   background-color: #a7c1e1;
-  padding: 10px;
+  padding: 10px 0px;
   display: none;
 }
 

@@ -23,13 +23,6 @@ header {
   position: relative;
 }
 
-nav {
-  /*
-  overflow: hidden; Other links hidden by default
-  position: relative;
-  */
-}
-
 header > div {
   position: relative; /* Allows the hamburger bar to fit into the top section of the nav bar */
 }

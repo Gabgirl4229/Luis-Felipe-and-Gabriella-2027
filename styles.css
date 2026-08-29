@@ -19,11 +19,15 @@ body {
 /* Top menu with all website pages */
 header {
   background: #84a1c4;
+  overflow: hidden; /* Other links hidden by default */
+  position: relative;
 }
 
 nav {
-  overflow: hidden; /* Other links hidden by default */
+  /*
+  overflow: hidden; Other links hidden by default
   position: relative;
+  */
 }
 
 nav > div {

@@ -105,6 +105,9 @@ section {
 .green {
   color: #748469;
 }
+.h {
+  font: Quattrocento;
+}
 
 /* Footer of the homepage */
 footer {
@@ -282,8 +285,7 @@ input[type="radio"]:checked {
 }
 
 .google-map iframe {
-     height: 100%;
-     width: 100%;
+     size: 100%; /* Sets both height and width */
      position: absolute;
 }
 

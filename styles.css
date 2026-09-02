@@ -109,6 +109,17 @@ section {
   font: Quattrocento;
 }
 
+.rsvp-btn {
+  background-color: transparent;
+  color: #333333;
+  border: 2px solid #333333;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
 /* Footer of the homepage */
 footer {
   background: #e8edf4;

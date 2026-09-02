@@ -296,7 +296,8 @@ input[type="radio"]:checked {
 }
 
 .google-map iframe {
-     size: 100%; /* Sets both height and width */
+     width: 100%; 
+  height: 100%;
      position: absolute;
 }
 

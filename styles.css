@@ -4,7 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Avanta Garde, Geneva, Helvetica, Roboto, sans-serif; /* Fonts */
+  font-family: Spectral, Baskerville, Lora, Monserrat, Roboto Serif, Open Sans, sans-serif; /* Paragraph Fonts */
+  /* font-family: Quattrocento, Luxurious Script, Pinyon Script, Great Vibes, EB Garamond; /* Header Fonts */
 }
 
 /* General webpage look */
@@ -121,12 +122,12 @@ footer {
   padding: 0 4px;
 }
 .column {
-  flex: 25%;
+  flex: 20%;
   padding: 0 4px;
 }
 .column img {
   margin-top: 8px;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   width: 100%;
   height: auto;
 }

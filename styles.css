@@ -322,8 +322,10 @@ details > summary {
 
   /* Main content */
   main {
+    /*
     max-width: 98vw;
     padding: 30px 15px;
+    */
   }
 
   /* Existing sections */
@@ -369,8 +371,10 @@ details > summary {
 @media (max-width: 768px) {
 
   body {
+    /*
     padding-bottom: 0;
     min-height: 100vh;
+    */
   }
 
   /* ---------------------------------------------------------
@@ -378,7 +382,9 @@ details > summary {
      --------------------------------------------------------- */
 
   header {
+    /*
     padding: 15px;
+    */
   }
 
   nav {
@@ -421,9 +427,11 @@ details > summary {
      --------------------------------------------------------- */
 
   main {
+    /*
     width: 100%;
     max-width: 100%;
     padding: 20px 10px;
+    */
   }
 
   .container {

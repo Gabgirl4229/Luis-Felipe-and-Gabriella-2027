@@ -20,7 +20,7 @@ body {
 header {
   background: #84a1c4;
   overflow: hidden; /* Other links hidden by default */
-  position: relative;
+  position: sticky;
 }
 
 header > div {

@@ -80,7 +80,7 @@ a.icon .menu span {
 
 /* Most of the webpage */
 main {
-  padding: 40px 20px;
+  padding: 32px 24px;
 }
 section {
   background: #fff;
@@ -88,6 +88,16 @@ section {
   padding: 24px;
   margin-bottom: 20px;
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+/* Footer of the homepage */
+footer {
+  background: #e8edf4;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  padding: 15px 0px;
+  font-size: 1.5rem;
 }
 
 /* Different text styles */
@@ -100,31 +110,21 @@ section {
 .green {
   color: #748469;
 }
-.display {
+.fancy {
   font-family: Quattrocento, Luxurious Script, Pinyon Script, Great Vibes, EB Garamond; /* Header fonts */
 }
 
+/* RSVP button for homepage */
 .rsvp-btn {
   background-color: transparent;
   color: #333333;
   border: 2px solid #333333;
   border-radius: 8px;
   padding: 10px 20px;
-  size: 60%;
   display: block;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-/* Footer of the homepage */
-footer {
-  background: #e8edf4;
-  text-align: center;
-  position: relative;
-  bottom: 0;
-  padding: 15px 0px;
-  font-size: 1.5rem;
 }
 
 /* Rows and Columns with Images */
@@ -320,10 +320,7 @@ details > summary {
 
   /* Main content */
   main {
-    /*
-    max-width: 98vw;
-    padding: 30px 15px;
-    */
+    padding: 20px 15px;
   }
 
   /* Existing sections */

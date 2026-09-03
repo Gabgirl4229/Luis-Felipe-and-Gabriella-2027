@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Spectral, Baskerville, Lora, Monserrat, Roboto Serif, Open Sans, sans-serif; /* Paragraph Fonts */
+  font-family: Spectral, Baskerville, Lora, Monserrat, Roboto Serif, Open Sans, sans-serif, Avant Garde; /* Paragraph Fonts */
 }
 
 /* General webpage look */
@@ -116,7 +116,7 @@ footer {
   color: #748469;
 }
 .fancy {
-  font-family: Quattrocento, Luxurious Script, Pinyon Script, Great Vibes, EB Garamond; /* Header fonts */
+  font-family: Quattrocento, Luxurious Script, Pinyon Script, Great Vibes, EB Garamond, Garamond; /* Header fonts */
 }
 
 /* RSVP button for homepage */
@@ -137,14 +137,16 @@ footer {
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 4px 0;
 }
 .column {
-  flex: 20%;
+  flex: 33%;
   padding: 0 4px;
+  align-items: center;
+  justify-content: center;
 }
 .column img {
-  margin-top: 8px;
+  margin: 4px 0;
   /* vertical-align: middle; */
   width: 100%;
   height: auto;

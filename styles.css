@@ -20,22 +20,13 @@ body {
 header {
   background: #84a1c4;
   overflow: hidden; /* Other links hidden by default */
+  position: -webkit-sticky; /* for iOS users */
   position: sticky;
+  top: 0;
 }
 
 header > div {
   position: relative; /* Allows the hamburger bar to fit into the top section of the nav bar */
-}
-
-a {
-  color: #fff;
-  font-size: 24px;
-  padding: 5px 0px;
-  display: block; /* Gives the text its own row */
-  /* Makes it so you have to click the text specifically */
-  width: fit-content;
-  margin: 0 auto;
-  text-decoration: none; /* No underlines */
 }
 
 #navTitle {
@@ -46,6 +37,18 @@ a {
   background-color: #a7c1e1;
   padding: 10px 0px;
   display: none;
+}
+
+/* Links */
+a {
+  color: #fff;
+  font-size: 24px;
+  padding: 5px 0px;
+  display: block; /* Gives the text its own row */
+  /* Makes it so you have to click the text specifically */
+  width: fit-content;
+  margin: 0 auto;
+  text-decoration: none; /* No underlines */
 }
 
 /* Hamburger button */
@@ -82,6 +85,7 @@ a.icon .menu span {
 main {
   padding: 40px 30px;
 }
+
 section {
   background: #fff;
   width: 94%;
@@ -89,6 +93,11 @@ section {
   border-radius: 12px;
   margin-bottom: 25px;
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+  /* Put everything in the middle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 /* Footer of the homepage */

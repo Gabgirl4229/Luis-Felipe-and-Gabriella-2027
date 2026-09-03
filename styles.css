@@ -376,12 +376,9 @@ details > summary {
   }
 
   section {
-    width: 96%;
-    /*
-    margin-left: auto;
-    margin-right: auto;
-    */
     padding: 18px;
+    margin-left: 2%;
+    margin-right: 2%;
     margin-bottom: 10px;
     border-radius: 10px;
   }
@@ -604,8 +601,9 @@ details > summary {
 
   /* Padding changes */
   section {
-    width: 98%;
     padding: 15px;
+    margin-left: 1%;
+    margin-right: 1%;
     border-radius: 8px;
   }
 

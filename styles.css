@@ -84,9 +84,10 @@ main {
 }
 section {
   background: #fff;
-  border-radius: 12px;
+  width: 94%;
   padding: 24px;
-  margin-bottom: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
 }
 
@@ -318,12 +319,11 @@ details > summary {
 /* Tablets and smaller laptops */
 @media (max-width: 900px) {
 
-  /* Main content */
+  /* Padding changes */
   main {
     padding: 32px 24px;
   }
-
-  /* Existing sections */
+  
   section {
     padding: 20px;
     margin-bottom: 20px;
@@ -365,15 +365,32 @@ details > summary {
 
 @media (max-width: 768px) {
 
+  /* Padding changes */ 
+  main {
+    padding: 20px 15px;
+  }
+
+  section {
+    width: 96%;
+    /*
+    margin-left: auto;
+    margin-right: auto;
+    */
+    padding: 18px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+
+  footer {
+    padding: 12px 0px;
+    font-size: 1.2rem;
+  }
+  
+  
   /* ---------------------------------------------------------
      Navigation
      --------------------------------------------------------- */
 
-  header {
-    /*
-    padding: 15px;
-    */
-  }
 
   nav {
     font-size: 20px;
@@ -413,10 +430,6 @@ details > summary {
   /* ---------------------------------------------------------
      Main / Container
      --------------------------------------------------------- */
-
-  main {
-    padding: 20px 15px;
-  }
 
   .container {
     flex-direction: column;
@@ -490,19 +503,6 @@ details > summary {
   .column img {
     width: 100%;
     margin-top: 8px;
-  }
-
-
-  /* ---------------------------------------------------------
-     Existing Sections
-     --------------------------------------------------------- */
-
-  section {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 18px;
-    border-radius: 10px;
   }
 
 
@@ -588,16 +588,6 @@ details > summary {
     font-size: 18px;
     padding: 15px 10px;
   }
-
-
-  /* ---------------------------------------------------------
-     Footer
-     --------------------------------------------------------- */
-
-  footer {
-    padding: 12px 0px;
-    font-size: 1.2rem;
-  }
 }
 
 
@@ -607,6 +597,18 @@ details > summary {
 
 @media (max-width: 480px) {
 
+  /* Padding changes */
+  section {
+    width: 98%;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  footer {
+    padding: 10px 0px;
+    font-size: 1rem;
+  }
+  
   body {
     font-size: 14px;
   }
@@ -652,13 +654,6 @@ details > summary {
   .main-content p,
   .sidebar p {
     font-size: 0.95rem;
-  }
-
-  /* Existing sections */
-  section {
-    width: 98%;
-    padding: 15px;
-    border-radius: 8px;
   }
 
   /* Buttons */
@@ -710,11 +705,4 @@ details > summary {
     font-size: 16px;
     padding: 12px 8px;
   }
-
-  /* Footer */
-  footer {
-    font-size: 1rem;
-    padding: 10px 0px;
-  }
 }
-

@@ -23,6 +23,7 @@ header {
   position: -webkit-sticky; /* for iOS users */
   position: sticky;
   top: 0;
+  z: 100; /* Ensures header is always visible */
 }
 
 header > div {
@@ -88,16 +89,10 @@ main {
 
 section {
   background: #fff;
-  width: 94%;
   padding: 24px;
   border-radius: 12px;
-  margin-bottom: 25px;
+  margin: 0px 3% 25px;
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
-  /* Put everything in the middle */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
 }
 
 /* Footer of the homepage */

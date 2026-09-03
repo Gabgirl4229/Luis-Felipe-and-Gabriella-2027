@@ -603,10 +603,12 @@ details > summary {
      --------------------------------------------------------- */
 
   footer {
+    /*
     position: relative;
     width: 100%;
     padding: 12px 15px;
     font-size: 0.85rem;
+    */
   }
 }
 

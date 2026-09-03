@@ -23,7 +23,7 @@ header {
   position: -webkit-sticky; /* for iOS users */
   position: sticky;
   top: 0;
-  z: 100; /* Ensures header is always visible */
+  z-index: 100; /* Ensures header is always visible */
 }
 
 header > div {

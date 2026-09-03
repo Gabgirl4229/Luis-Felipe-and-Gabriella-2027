@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Spectral, Baskerville, Lora, Monserrat, Roboto Serif, Open Sans, sans-serif; /* Paragraph Fonts */
-  /* font-family: Quattrocento, Luxurious Script, Pinyon Script, Great Vibes, EB Garamond; /* Header Fonts */
 }
 
 /* General webpage look */
@@ -81,11 +80,7 @@ a.icon .menu span {
 
 /* Most of the webpage */
 main {
-  /*
-  max-width: 96%;
-  margin: 0 auto;
   padding: 40px 20px;
-  */
 }
 section {
   background: #fff;
@@ -106,7 +101,7 @@ section {
   color: #748469;
 }
 .display {
-  font-family: Quattrocento, Luxurious Script, Pinyon Script, Great Vibes, EB Garamond;
+  font-family: Quattrocento, Luxurious Script, Pinyon Script, Great Vibes, EB Garamond; /* Header fonts */
 }
 
 .rsvp-btn {

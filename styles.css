@@ -105,8 +105,8 @@ section {
 .green {
   color: #748469;
 }
-.h {
-  font: Quattrocento;
+.display {
+  font-family: Quattrocento, Luxurious Script, Pinyon Script, Great Vibes, EB Garamond;
 }
 
 .rsvp-btn {

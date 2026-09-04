@@ -516,8 +516,10 @@ details > summary {
      --------------------------------------------------------- */
   .row {
     padding: 0;
+    flex-direction: column;
   }
 
+  /*
   .column {
     flex: 100%;
     padding: 0;
@@ -526,6 +528,7 @@ details > summary {
   .column img {
     margin-top: 8px;
   }
+  */
 
 
   /* ---------------------------------------------------------

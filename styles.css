@@ -14,6 +14,7 @@ body {
   /* Page width and height */
   width: 100%;
   min-height: 100%;
+  font-size: 20px;
 }
 
 /* Top menu with all website pages */

@@ -99,7 +99,7 @@ section {
 footer {
   background: #e8edf4;
   text-align: center;
-  position: relative;
+  position: absolute;
   bottom: 0;
   padding: 15px 0px;
   font-size: 1.5rem;
@@ -137,19 +137,15 @@ footer {
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 4px 0;
 }
 .column {
   flex: 33%;
   padding: 0 4px;
-  align-items: center;
-  justify-content: center;
 }
 .column img {
   margin: 4px 0;
-  /* vertical-align: middle; */
+  vertical-align: middle;
   width: 100%;
-  height: auto;
 }
 
 /* Carousel images */

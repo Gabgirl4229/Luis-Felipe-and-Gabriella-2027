@@ -97,7 +97,7 @@ section {
 }
 
 /* For when I want buffer space */
-section .invisible {
+section.invisible {
   background: transparent;
   visibility: hidden;
   box-shadow: none;

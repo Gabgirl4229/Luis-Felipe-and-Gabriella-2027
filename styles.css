@@ -143,7 +143,6 @@ footer {
 .row {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 8px;
 }
 
 .col {
@@ -180,7 +179,7 @@ img {
   height: auto;
 }
 
-.column img {
+.col img {
   margin: 4px 0;
   vertical-align: middle;
 }

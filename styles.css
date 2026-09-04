@@ -100,6 +100,7 @@ section {
 section .invisible {
   background: transparent;
   visibility: hidden;
+  box-shadow: none;
 }
 
 /* Footer of the homepage */

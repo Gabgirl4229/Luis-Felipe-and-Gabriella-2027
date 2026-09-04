@@ -154,7 +154,6 @@ img {
 .column img {
   margin: 4px 0;
   vertical-align: middle;
-  /* width: 100%; */
 }
 
 /* Carousel images */
@@ -200,7 +199,6 @@ img {
 }
 .prev img, .next img {
   width: 30px;
-  /* height: auto; */
 }
 
 .arrow {
@@ -309,7 +307,7 @@ input[type="radio"]:checked {
 .google-map iframe {
   width: 100%; 
   height: 100%;
-     position: absolute;
+  position: absolute;
 }
 
 details {
@@ -347,13 +345,7 @@ details > summary {
     padding: 2rem 1.5rem;
     gap: 1.5rem;
   }
-
-  /* Images */
-  .responsive-img {
-    max-width: 100%;
-    height: auto;
-  }
-
+  
   /* Image columns */
   .column {
     flex: 50%;
@@ -493,13 +485,6 @@ details > summary {
   /* ---------------------------------------------------------
      Images
      --------------------------------------------------------- */
-
-  img.responsive-img {
-    width: 100%;
-    /* max-width: 100%; */
-    height: auto;
-  }
-
   .row {
     padding: 0;
   }
@@ -510,7 +495,6 @@ details > summary {
   }
 
   .column img {
-    width: 100%;
     margin-top: 8px;
   }
 

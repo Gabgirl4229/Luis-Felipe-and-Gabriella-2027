@@ -178,15 +178,21 @@ img {
   height: auto;
 }
 
-/* Gallery page */
-#gallery {
-  margin: 2% 0;
-}
-
 .col img {
   margin: 4px 0;
   vertical-align: middle;
 }
+
+/* Setups for specific pages */
+#gallery {
+  margin: 2% 0;
+}
+
+#wedding-party-photos {
+  margin: 2% 3%;
+}
+
+
 
 /* Carousel images */
 .hidden, .mySlides {

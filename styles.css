@@ -612,49 +612,6 @@ details > summary {
     font-size: 14px;
   }
 
-  /* Navigation */
-  .navbar {
-    padding: 0.7rem 0.8rem;
-  }
-
-  .logo {
-    font-size: 1.3rem;
-  }
-
-  .nav-links {
-    gap: 0.25rem;
-  }
-
-  .nav-links a {
-    font-size: 0.95rem;
-    padding: 0.4rem 0;
-  }
-
-
-  /* Main container */
-  .container {
-    width: 98%;
-    max-width: 98%;
-    margin: 1rem auto;
-    padding: 0.7rem;
-    border-radius: 8px;
-  }
-
-  /* Headings */
-  .main-content h1 {
-    font-size: 1.3rem;
-  }
-
-  .sidebar h2 {
-    font-size: 1.2rem;
-  }
-
-  /* Text */
-  .main-content p,
-  .sidebar p {
-    font-size: 0.95rem;
-  }
-
   /* Buttons */
   .cta-btn {
     font-size: 0.95rem;

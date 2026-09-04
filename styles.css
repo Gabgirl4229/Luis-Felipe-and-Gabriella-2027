@@ -14,7 +14,7 @@ body {
   /* Page width and height */
   width: 100%;
   min-height: 100%;
-  font-size: 24px;
+  font-size: 24px; /* em will scale up or down based on this number */
 }
 
 /* Top menu with all website pages */
@@ -108,7 +108,7 @@ section {
 footer {
   background: #e8edf4;
   padding: 15px 0px;
-  font-size: 1.5rem;
+  font-size: 1em;
 }
 
 /* Different text styles */

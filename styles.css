@@ -415,7 +415,7 @@ details > summary {
   }
   
   /* Image grid changes */
-  .full, .half, .third, .two-thirds, .quarter, .three-quarters {
+  #gallery .half, #gallery .third, #gallery .two-thirds, #gallery .quarter, #gallery .three-quarters {
     grid-column: span 12;
   }
   

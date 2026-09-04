@@ -103,6 +103,11 @@ section {
   box-shadow: none;
 }
 
+/* Line dividers */
+hr {
+  border-top: 4px solid #bbb;
+}
+
 /* Footer of the homepage */
 footer {
   background: #e8edf4;

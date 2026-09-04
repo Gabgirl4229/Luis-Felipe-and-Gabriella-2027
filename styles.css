@@ -14,7 +14,6 @@ body {
   /* Page width and height */
   width: 100%;
   min-height: 100%;
-  font-size: 24px; /* em will scale up or down based on this number */
 }
 
 /* Top menu with all website pages */
@@ -33,7 +32,7 @@ header > div {
 
 #navTitle {
   padding: 15px 0px;
-  font-size: 1.5em;
+  font-size: 2rem;
 }
 
 #navLinks {
@@ -45,7 +44,7 @@ header > div {
 /* Links */
 a {
   color: #fff;
-  font-size: 24px;
+  font-size: 1.5rem;
   padding: 5px 0px;
   display: block; /* Gives the text its own row */
   /* Makes it so you have to click the text specifically */
@@ -108,7 +107,7 @@ section {
 footer {
   background: #e8edf4;
   padding: 15px 0px;
-  font-size: 1em;
+  font-size: 1.5rem;
 }
 
 /* Different text styles */
@@ -412,7 +411,7 @@ details > summary {
 
   footer {
     padding: 12px 0px;
-    font-size: 0.8em;
+    font-size: 1.25rem;
   }
   
   /* Image grid changes */
@@ -608,11 +607,6 @@ details > summary {
    ========================================================= */
 
 @media (max-width: 480px) {
-
-  /* Text size changes */
-  body {
-    font-size: 16px;
-  }
   
   /* Padding changes */
   section {
@@ -624,7 +618,6 @@ details > summary {
 
   footer {
     padding: 10px 0px;
-    font-size: 1em;
   }
 
   /* Buttons */

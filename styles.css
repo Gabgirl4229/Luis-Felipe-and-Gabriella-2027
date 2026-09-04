@@ -106,6 +106,7 @@ section {
 /* Line dividers */
 hr {
   border-top: 4px solid #bbb;
+  margin: 2% 0;
 }
 
 /* Footer of the homepage */

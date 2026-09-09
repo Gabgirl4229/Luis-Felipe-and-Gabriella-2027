@@ -430,6 +430,11 @@ details > summary {
     padding: 12px 0px;
     font-size: 1.25rem;
   }
+
+  hr {
+  border-top: 3px solid #bbb;
+  margin: 4% 0;
+}
   
   /* Image grid changes */
   #gallery .half, #gallery .third, #gallery .two-thirds, #gallery .quarter, #gallery .three-quarters {

@@ -103,6 +103,10 @@ section {
   box-shadow: none;
 }
 
+.mobile {
+  margin: 5% 3%;
+}
+
 /* Line dividers */
 hr {
   border-top: 4px solid #bbb;
@@ -193,12 +197,6 @@ img {
 #gallery {
   margin: 2% 0;
 }
-
-#mobile-section {
-  margin: 5% 3%;
-}
-
-
 
 /* Carousel images */
 .hidden, .mySlides {

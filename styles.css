@@ -642,6 +642,10 @@ details > summary {
     padding: 10px 0px;
   }
 
+  .rsvp-btn {
+    font-size: 60px;
+  }
+
   /* Buttons */
   .cta-btn {
     font-size: 0.95rem;

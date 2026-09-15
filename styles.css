@@ -418,43 +418,6 @@ details > summary {
    ========================================================= */
 
 @media (max-width: 768px) {
-  
-  /* ---------------------------------------------------------
-     Navigation
-     --------------------------------------------------------- */
-
-/*
-  nav {
-    font-size: 20px;
-  }
-  
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem 1.2rem;
-  }
-*/
-
-  .logo {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-/*
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    width: 100%;
-    margin-top: 0.5rem;
-  }
-
-  .nav-links a {
-    font-size: 1rem;
-    padding: 0.5rem 0;
-    width: 100%;
-  }
-*/
-
 
   /* ---------------------------------------------------------
      Main / Container
@@ -487,12 +450,6 @@ details > summary {
   .main-content h1 {
     font-size: 1.7rem;
     line-height: 1.2;
-  }
-
-  .main-content p,
-  .sidebar p {
-    font-size: 1rem;
-    line-height: 1.5;
   }
 
   .sidebar h2 {

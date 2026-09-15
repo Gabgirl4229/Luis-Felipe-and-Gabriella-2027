@@ -419,28 +419,7 @@ details > summary {
 
 @media (max-width: 768px) {
 
-  /* Padding changes */ 
-  main {
-    padding: 20px 15px;
-  }
-
-  section {
-    padding: 18px;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 10px;
-    border-radius: 10px;
-  }
-
-  footer {
-    padding: 12px 0px;
-    font-size: 1rem;
-  }
-
-  hr {
-  border-top: 3px solid #bbb;
-  margin: 4% 0;
-}
+  
   
   /* Image grid changes */
   #gallery .third, #outfits .half {
@@ -631,21 +610,44 @@ details > summary {
 
 
 /* =========================================================
-   Small Phones
+   Phones
    ========================================================= */
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
+  
+  /* Padding changes */ 
+  main {
+    padding: 20px 15px;
+  }
+
+  section {
+    padding: 18px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+
+  footer {
+    padding: 12px 0px;
+    font-size: 1rem;
+  }
+
+  hr {
+  border-top: 3px solid #bbb;
+  margin: 4% 0;
+}
   
   /* Padding changes */
   section {
-    padding: 15px;
+    /*padding: 15px;
     margin-left: 1%;
     margin-right: 1%;
     border-radius: 8px;
   }
 
   footer {
-    padding: 10px 0px;
+    padding: 10px 0px;*/
   }
 
   .rsvp-btn {

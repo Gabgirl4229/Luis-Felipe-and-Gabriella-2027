@@ -372,6 +372,10 @@ details > summary {
    Responsive / Mobile-Friendly Styles
    ========================================================= */
 
+/* Size limits - Phones (500px) < Tablets (900px) < Laptops/Desktops (4000px) */
+/* Phones will have mobile mode no matter what, laptops wilm have computer mode no matter what, tablets will change based on portrait/landscape mode */
+
+
 /* Tablets and smaller laptops */
 @media (max-width: 900px) {
 

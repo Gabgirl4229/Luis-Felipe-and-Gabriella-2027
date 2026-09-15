@@ -183,6 +183,10 @@ footer {
   grid-column: span 9;
 }
 
+.sixth {
+  grid-column: span 2;
+}
+
 img {
   width: 100%;
   height: auto;

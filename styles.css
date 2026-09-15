@@ -455,10 +455,6 @@ details > summary {
   }
 */
 
-  a {
-    font-size: 20px;
-  }
-
 
   /* ---------------------------------------------------------
      Main / Container
@@ -624,6 +620,11 @@ details > summary {
   footer {
     padding: 10px 0px;
     font-size: 1rem;
+  }
+
+  /* Header changes */
+  a {
+    /*font-size: 20px;*/
   }
 
   hr {

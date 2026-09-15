@@ -97,12 +97,12 @@ section {
 }
 
 /* For when I want buffer space */
-section .transparent {
+.transparent {
   background: transparent;
   box-shadow: none;
 }
 
-section .hidden {
+.invisible {
     background: transparent;
     box-shadow: none;
     visibility: hidden;

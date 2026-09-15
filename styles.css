@@ -456,7 +456,7 @@ details > summary {
 */
 
   .logo {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-bottom: 0.5rem;
   }
 
@@ -690,7 +690,7 @@ details > summary {
 
   /* Details */
   details > summary {
-    font-size: 16px;
-    padding: 12px 8px;
+    /*font-size: 18px;
+    padding: 12px 8px;*/
   }
 }

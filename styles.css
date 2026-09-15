@@ -97,10 +97,13 @@ section {
 }
 
 /* For when I want buffer space */
-.invisible {
+.transparent, .hidden{
   background: transparent;
-  visibility: hidden;
   box-shadow: none;
+}
+
+.hidden {
+    visibility: hidden;
 }
 
 .mobile {

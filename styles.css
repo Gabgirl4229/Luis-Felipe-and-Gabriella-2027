@@ -157,6 +157,8 @@ footer {
 .speaker-btn {
   background-color: transparent;
   border-color: transparent;
+  display: block;
+  margin: 0 auto;
   width: 20%;
   height: auto;
 }

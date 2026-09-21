@@ -153,6 +153,14 @@ footer {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
+/* Speaker icon button for music */
+.speaker-btn {
+  background-color: transparent;
+  border-color: transparent;
+  width: 20%;
+  height: auto;
+}
+
 /* Grid system for images */
 .row {
   display: grid;

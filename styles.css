@@ -19,6 +19,8 @@ body {
   /* Page width and height */
   width: 100%;
   min-height: 100%;
+  /* Properly separates header from main and main from footer */
+  display: grid;
 }
 
 /* Top menu with all website pages */
@@ -29,6 +31,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 100; /* Ensures header is always visible */
+  grid-column: 1; /* For body grid shape */
 }
 
 header > div {
@@ -91,6 +94,7 @@ a.icon .menu span {
 /* Most of the webpage */
 main {
   padding: 40px 30px;
+  grid-column: 1;
 }
 
 section {
@@ -128,8 +132,7 @@ footer {
   background: #e8edf4;
   padding: 15px 0px;
   font-size: 1.5rem;
-  position: fixed;
-  bottom: 0;
+  grid-column: 1;
 }
 
 /* Different text styles */
@@ -599,7 +602,6 @@ details > summary {
   footer {
     padding: 10px 0px;
     font-size: 1rem;
-    position: static;
   }
 
   /* Header changes */

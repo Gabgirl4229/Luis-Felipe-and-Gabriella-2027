@@ -123,6 +123,8 @@ footer {
   background: #e8edf4;
   padding: 15px 0px;
   font-size: 1.5rem;
+  position: fixed;
+  bottom: 0;
 }
 
 /* Different text styles */
@@ -592,6 +594,7 @@ details > summary {
   footer {
     padding: 10px 0px;
     font-size: 1rem;
+    position: static;
   }
 
   /* Header changes */

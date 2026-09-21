@@ -7,6 +7,11 @@
   font-family: Spectral, Baskerville, Lora, Monserrat, Roboto Serif, Open Sans, sans-serif, Avant Garde; /* Paragraph Fonts */
 }
 
+/* To fix the "header covering content when scrolling" issue on mobile */
+[id] {
+  scroll-margin-top: 70px;
+}
+
 /* General webpage look */
 body {
   background: #f4f7fb; /* background page color */

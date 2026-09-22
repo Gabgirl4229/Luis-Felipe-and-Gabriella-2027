@@ -171,6 +171,7 @@ footer {
   margin: 0 auto;
   width: 20%;
   height: auto;
+  cursor: pointer; /* Makes the little hand appear when you hover over it */
 }
 
 /* Grid system for images */

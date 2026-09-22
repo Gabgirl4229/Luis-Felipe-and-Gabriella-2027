@@ -1,4 +1,4 @@
-const audio = document.getElementById("audio");
+const audio = document.getElementById("song");
 const button = document.getElementById("audioToggle");
 const icon = document.getElementById("speakerIcon");
 

@@ -432,6 +432,10 @@ details > summary {
 
 @media (max-width: 880px) {
 
+  speaker-btn {
+    width: 70%;
+  }
+
   /* ---------------------------------------------------------
      Carousel
      --------------------------------------------------------- */
@@ -543,10 +547,6 @@ details > summary {
 
   .rsvp-btn {
     font-size: 3.75rem;
-  }
-
-  .speaker-btn {
-    width: 70%;
   }
 
   /* Carousel */

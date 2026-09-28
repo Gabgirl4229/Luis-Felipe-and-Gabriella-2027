@@ -557,7 +557,7 @@ details > summary {
   }
 
   .speaker-btn {
-    width: 65%;
+    width: 70%;
   }
 
   /* Carousel */
@@ -598,9 +598,11 @@ details > summary {
     height: 12px;
   }
 
+  details, details[open] {
+    padding: 12px;
+  }
   /* Details */
   details > summary {
-    /*font-size: 18px;
-    padding: 12px 8px;*/
+    font-size: 1.125rem;
   }
 }

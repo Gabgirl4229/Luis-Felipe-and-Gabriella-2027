@@ -113,7 +113,7 @@ section {
 }
 
 .invisible {
-    padding: 12px;
+    margin: 0 3%;
     background: transparent;
     box-shadow: none;
     visibility: hidden;

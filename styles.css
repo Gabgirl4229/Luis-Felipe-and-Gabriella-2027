@@ -556,6 +556,10 @@ details > summary {
     font-size: 3.75rem;
   }
 
+  .speaker-btn {
+    width: 60%;
+  }
+
   /* Carousel */
   .slideshow-container {
     max-width: 82%;

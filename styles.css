@@ -404,7 +404,7 @@ details[open] {
    ========================================================= */
 
 /* Size limits - Phones (500px) < Tablets (900px) < Laptops/Desktops (4000px) */
-/* Phones will have mobile mode no matter what, laptops wilm have computer mode no matter what, tablets will change based on portrait/landscape mode */
+/* Phones will have mobile mode no matter what, laptops will have computer mode no matter what, tablets will change based on portrait/landscape mode */
 
 
 /* Tablets and smaller laptops */
@@ -420,26 +420,9 @@ details[open] {
     margin-bottom: 20px;
   }
 
-  /* Modern HTML container */
-  .container {
-    max-width: 95vw;
-    padding: 2rem 1.5rem;
-    gap: 1.5rem;
-  }
-  
-  /* Image columns */
-  .column {
-    flex: 50%;
-  }
-
   /* Carousel */
   .slideshow-container {
     max-width: 85%;
-  }
-
-  /* Details / accordion */
-  details {
-    width: 100%;
   }
 }
 
@@ -449,57 +432,6 @@ details[open] {
    ========================================================= */
 
 @media (max-width: 768px) {
-
-  /* ---------------------------------------------------------
-     Main / Container
-     --------------------------------------------------------- */
-/*
-  .container {
-    flex-direction: column;
-    width: 95%;
-    max-width: 95%;
-    gap: 1.2rem;
-    margin: 1.5rem auto;
-    padding: 1rem;
-    border-radius: 10px;
-  }
-
-  .main-content,
-  .sidebar {
-    width: 100%;
-    flex: none;
-    padding: 0.5rem 0;
-  }
-
-  */
-
-
-  /* ---------------------------------------------------------
-     Typography
-     --------------------------------------------------------- */
-
-  .main-content h1 {
-    font-size: 1.7rem;
-    line-height: 1.2;
-  }
-
-  .sidebar h2 {
-    font-size: 1.3rem;
-  }
-
-
-  /* ---------------------------------------------------------
-     Buttons
-     --------------------------------------------------------- */
-
-  .cta-btn {
-    width: 100%;
-    text-align: center;
-    font-size: 1rem;
-    padding: 0.8rem 1rem;
-  }
-
-
 
   /* ---------------------------------------------------------
      Carousel
@@ -575,10 +507,6 @@ details[open] {
      Details / Summary
      --------------------------------------------------------- */
 
-  details {
-    width: 100%;
-  }
-
   details > summary {
     font-size: 18px;
     padding: 15px 10px;
@@ -627,12 +555,6 @@ details[open] {
 
   .rsvp-btn {
     font-size: 3.75rem;
-  }
-
-  /* Buttons */
-  .cta-btn {
-    font-size: 0.95rem;
-    padding: 0.7rem 1rem;
   }
 
   /* Carousel */

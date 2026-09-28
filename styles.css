@@ -432,7 +432,7 @@ details > summary {
 
 @media (max-width: 880px) {
 
-  speaker-btn {
+  .speaker-btn {
     width: 70%;
   }
 

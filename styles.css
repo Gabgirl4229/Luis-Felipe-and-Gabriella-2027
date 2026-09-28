@@ -541,7 +541,7 @@ details > summary {
   }
 
   /* Image grid changes */
-  #gallery .third, #outfits .half {
+  #gallery .third, #outfits .half, #wedding-party .half, #wedding-party .third, #wedding-party .quarter, #wedding-party .sixth {
     grid-column: span 12;
   }
 

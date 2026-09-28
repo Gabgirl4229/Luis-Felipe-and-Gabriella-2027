@@ -387,16 +387,15 @@ input[type="radio"]:checked {
   position: absolute;
 }
 
+details, details[open] {
+  padding: 10px 20px;
+}
+
 details > summary {
   cursor: pointer;
   font-size: 1.25rem;
   color: #748469;
   width: fit-content;
-  padding: 10px 20px;
-}
-
-details[open] {
-  padding: 10px 20px;
 }
 
 /* =========================================================

@@ -237,6 +237,7 @@ img {
 .hidden, .mySlides {
   display: none;
 }
+
 .slideshow-container {
   max-width: 70%;
   padding: 0 4px;
@@ -387,6 +388,7 @@ input[type="radio"]:checked {
   position: absolute;
 }
 
+/* Pages you can open and close */
 details, details[open] {
   padding: 10px 20px;
 }
@@ -399,14 +401,12 @@ details > summary {
 }
 
 /* =========================================================
-   Responsive / Mobile-Friendly Styles
+   Tablets (Landscape Mode)
    ========================================================= */
 
 /* Size limits - Phones (500px) < Tablets (900px) < Laptops/Desktops (4000px) */
 /* Phones will have mobile mode no matter what, laptops will have computer mode no matter what, tablets will change based on portrait/landscape mode */
 
-
-/* Tablets and smaller laptops */
 @media (max-width: 900px) {
 
   /* Padding changes */
@@ -421,23 +421,24 @@ details > summary {
 
   /* Carousel */
   .slideshow-container {
-    max-width: 85%;
+    max-width: 80%;
   }
 }
 
 
 /* =========================================================
-   Mobile Devices
+   Tablets (Portrait Mode)
    ========================================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 880px) {
 
   /* ---------------------------------------------------------
      Carousel
      --------------------------------------------------------- */
 
+  /* Carousel */
   .slideshow-container {
-    max-width: 90%;
+    max-width: 85%;
     padding: 0;
   }
 
@@ -492,23 +493,16 @@ details > summary {
     padding: 8px 10px;
   }
 
-
-  /* ---------------------------------------------------------
-     Google Map
-     --------------------------------------------------------- */
-
   .google-map {
     padding-bottom: 65%;
   }
 
-
-  /* ---------------------------------------------------------
-     Details / Summary
-     --------------------------------------------------------- */
+  details, details[open] {
+    padding: 10px 15px;
+  }
 
   details > summary {
-    font-size: 18px;
-    padding: 15px 10px;
+    font-size: 1.125rem;
   }
 }
 
@@ -517,7 +511,7 @@ details > summary {
    Phones
    ========================================================= */
 
-@media (max-width: 500px) {
+@media (max-width: 440px) {
   
   /* Padding changes */ 
   main {
@@ -535,11 +529,6 @@ details > summary {
   footer {
     padding: 10px 0px;
     font-size: 1rem;
-  }
-
-  /* Header changes */
-  a {
-    /*font-size: 20px;*/
   }
 
   hr {
@@ -562,11 +551,11 @@ details > summary {
 
   /* Carousel */
   .slideshow-container {
-    max-width: 82%;
+    max-width: 90%;
   }
 
-  .prev,
-  .next {
+  /* Arrow buttons */
+  .prev, .next {
     width: 32px;
     height: 32px;
   }
@@ -596,13 +585,5 @@ details > summary {
   .dot {
     width: 12px;
     height: 12px;
-  }
-
-  details, details[open] {
-    padding: 12px;
-  }
-  /* Details */
-  details > summary {
-    font-size: 1.125rem;
   }
 }

@@ -388,16 +388,12 @@ input[type="radio"]:checked {
   position: absolute;
 }
 
-details {
-  width: 620px;
-}
-
 details > summary {
   cursor: pointer;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #748469;
-  width: 100%;
-  padding: 20px 20px;
+  width: fit-content;
+  padding: 10px 20px;
 }
 
 /* =========================================================

@@ -396,6 +396,10 @@ details > summary {
   padding: 10px 20px;
 }
 
+details[open] {
+  padding: 10px 20px;
+}
+
 /* =========================================================
    Responsive / Mobile-Friendly Styles
    ========================================================= */

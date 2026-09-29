@@ -401,7 +401,11 @@ details > summary {
 }
 
 /* =========================================================
-   Tablets (Landscape Mode)
+   Mega Screens (Landscape Mode)
+   ========================================================= */
+
+/* =========================================================
+   Small Laptops & Tablets (Landscape Mode)
    ========================================================= */
 
 /* Size limits - Phones (500px) < Tablets (900px) < Laptops/Desktops (4000px) */
@@ -427,7 +431,7 @@ details > summary {
 
 
 /* =========================================================
-   Tablets (Portrait Mode)
+   Tablets (Portrait Mode) & Phones (Landscape Mode)
    ========================================================= */
 
 @media (max-width: 880px) {
@@ -512,14 +516,14 @@ details > summary {
 
 
 /* =========================================================
-   Phones
+   Phone (Portrait)
    ========================================================= */
 
 @media (max-width: 440px) {
   
   /* Padding changes */ 
   main {
-    padding: 20px 15px;
+    padding: 0;
   }
 
   section {

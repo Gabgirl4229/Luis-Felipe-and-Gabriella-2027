@@ -438,6 +438,11 @@ details > summary {
     width: 50%;
   }
 
+    /* Image grid changes */
+  #gallery .third, #outfits .half, #wedding-party .half, #wedding-party .third, #wedding-party .quarter, #wedding-party .sixth {
+    grid-column: span 12;
+  }
+
   /* ---------------------------------------------------------
      Carousel
      --------------------------------------------------------- */
@@ -536,11 +541,6 @@ details > summary {
   hr {
     border-top: 3px solid #bbb;
     margin: 4% 0;
-  }
-
-  /* Image grid changes */
-  #gallery .third, #outfits .half, #wedding-party .half, #wedding-party .third, #wedding-party .quarter, #wedding-party .sixth {
-    grid-column: span 12;
   }
 
   .rsvp-btn {

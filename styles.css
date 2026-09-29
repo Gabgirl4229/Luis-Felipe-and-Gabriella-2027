@@ -107,15 +107,13 @@ section {
 }
 
 /* For when I want buffer space */
-.transparent {
+.transparent, .invisible {
   background: transparent;
   box-shadow: none;
+  margin: 0 3%;
 }
 
 .invisible {
-    margin: 0 3%;
-    background: transparent;
-    box-shadow: none;
     visibility: hidden;
 }
 

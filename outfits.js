@@ -30,6 +30,7 @@ function showSlides(n, num) {
 }
 
 function togglePreference() {
+  let styles = document.GetElementsByClassName("outfits");
   const toggleValue = document.querySelector('input[name="first-switch"]:checked')?.value;
   if (toggleValue == "masc") {
     containers[0].style.display = "none";

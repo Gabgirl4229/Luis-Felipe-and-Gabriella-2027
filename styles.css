@@ -323,6 +323,12 @@ img {
   to {opacity: 1}
 }
 
+.switch {
+  width: 24rem;
+  position: relative;
+  
+}
+
 /* Hide the default radio button */
 input[type="radio"] {
     appearance: none;

@@ -323,10 +323,54 @@ img {
   to {opacity: 1}
 }
 
+/* Radio Switch */
 .switch {
+  margin: 4rem auto;
   width: 24rem;
   position: relative;
-  
+}
+
+.switch input {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.switch input:checked {
+  z-index: 1;
+}
+
+.switch input:checked + label {
+  opacity: 1;
+  cursor: default;
+}
+
+.switch input:not(:checked) + label:hover {
+  opacity: 0.5;
+}
+
+.switch label {
+  color: #fff;
+  opacity: 0.33;
+  transition: opacity 0.25s ease;
+  cursor: pointer;
+}
+
+.switch .toggle-outside {
+  height: 100%;
+  border-radius: 2rem;
+  padding: 0.25rem;
+  overflow: hidden;
+  transition: 0.25s ease all;
+}
+
+.switch .toggle-inside {
+  border-radius: 5rem;
+  background: #4a4a4a;
+  position: absolute;
+  transition: 0.25s ease all;
 }
 
 /* Hide the default radio button */

@@ -32,7 +32,8 @@ function showSlides(n, num) {
 function togglePreference() {
   const toggleValue = document.querySelector('input[name="first-switch"]:checked')?.value;
   if (toggleValue == "masc") {
-    // change the container's divider class from invisible to transparent
+    containers[0].style.display = "none";
+    containers[1].style.display = "none";
   } else if (toggleValue == "fem") {
     // do the same but for the female one
   }

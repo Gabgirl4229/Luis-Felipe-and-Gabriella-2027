@@ -30,5 +30,10 @@ function showSlides(n, num) {
 }
 
 function togglePreference() {
-
+  const toggleValue = document.querySelector('input[name="attendance"]:checked')?.value;
+  if (toggleValue == "Masculine") {
+    // change the container's divider class from invisible to transparent
+  } else if (toggleValue == "Feminine") {
+    // do the same but for the female one
+  }
 }

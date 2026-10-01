@@ -333,9 +333,13 @@ img {
 
 /* Radio Switch */
 .switch {
-  margin: 4rem auto;
-  width: 24rem;
   position: relative;
+
+  /* Horizontal specific */
+  width: 32rem;
+  height: 3rem;
+  margin: 0 auto;
+  font-size: 0;
 }
 
 .switch input {
@@ -344,6 +348,12 @@ img {
   z-index: 2;
   opacity: 0;
   cursor: pointer;
+
+  /* Horizontal specific */
+  height: 3rem;
+  width: 6rem;
+  left: 6rem;
+  margin: 0;
 }
 
 .switch input:checked {
@@ -360,43 +370,12 @@ img {
 }
 
 .switch label {
-  color: #748469;
+  color: #8ea58c;
   opacity: 0.33;
   transition: opacity 0.25s ease;
   cursor: pointer;
-}
 
-.switch .toggle-outside {
-  height: 100%;
-  border-radius: 2rem;
-  padding: 0.25rem;
-  overflow: hidden;
-  transition: 0.25s ease all;
-}
-
-.switch .toggle-inside {
-  border-radius: 5rem;
-  background: #748469;
-  position: absolute;
-  transition: 0.25s ease all;
-}
-
-.switch--horizontal {
-  width: 32rem;
-  height: 3rem;
-  margin: 0 auto;
-  font-size: 0;
-  margin-bottom: 1rem;
-}
-
-.switch--horizontal input {
-  height: 3rem;
-  width: 6rem;
-  left: 6rem;
-  margin: 0;
-}
-
-.switch--horizontal label {
+  /* Horizontal specific */
   font-size: 1.5rem;
   line-height: 3rem;
   display: inline-block;
@@ -406,27 +385,43 @@ img {
   text-align: center;
 }
 
-.switch--horizontal label:last-of-type {
+/* Horizontal specific */
+.switch label:last-of-type {
   margin-left: 6rem;
 }
 
-.switch--horizontal .toggle-outside {
+.switch .toggle-outside {
+  height: 100%;
+  border-radius: 2rem;
+  padding: 0.25rem;
+  overflow: hidden;
+  transition: 0.25s ease all;
+
+  /* Horizontal specific */
   background: #f4f7fb;
   position: absolute;
   width: 6rem;
   left: 13rem;
 }
 
-.switch--horizontal .toggle-inside {
+.switch .toggle-inside {
+  border-radius: 5rem;
+  background: #748469;
+  position: absolute;
+  transition: 0.25s ease all;
+
+  /* Horizontal specific */
   height: 2.5rem;
   width: 2.5rem;
 }
 
-.switch--horizontal input:checked ~ .toggle-outside .toggle-inside {
+/* Horizontal specific */
+.switch input:checked ~ .toggle-outside .toggle-inside {
   left: 0.25rem;
 }
 
-.switch--horizontal input ~ input:checked ~ .toggle-outside .toggle-inside {
+/* Horizontal specific */
+.switch input ~ input:checked ~ .toggle-outside .toggle-inside {
   left: 3.25rem;
 }
 

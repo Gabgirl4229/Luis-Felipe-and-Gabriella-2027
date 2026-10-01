@@ -431,10 +431,9 @@ img {
 }
 
 input[name="first-switch"] {
-    appearance: none;
-    -webkit-appearance: none;
     width: 6rem;
     height: 3rem;
+    left: 13rem;
 }
 
 /* Hide the default radio button */

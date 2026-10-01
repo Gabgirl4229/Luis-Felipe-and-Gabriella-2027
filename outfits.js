@@ -28,3 +28,7 @@ function showSlides(n, num) {
   slides[slideIndexes[num]-1].style.display = "block";
   dots[slideIndexes[num]-1].className += " dots-active";
 }
+
+function togglePreference() {
+
+}

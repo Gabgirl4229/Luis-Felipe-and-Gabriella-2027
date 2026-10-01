@@ -382,7 +382,7 @@ img {
 }
 
 .switch--horizontal {
-  width: 18rem;
+  width: 32rem;
   height: 3rem;
   margin: 0 auto;
   font-size: 0;
@@ -400,7 +400,7 @@ img {
   font-size: 1.5rem;
   line-height: 3rem;
   display: inline-block;
-  width: 6rem;
+  width: 13rem;
   height: 100%;
   margin: 0;
   text-align: center;
@@ -414,7 +414,7 @@ img {
   background: #f4f7fb;
   position: absolute;
   width: 6rem;
-  left: 6rem;
+  left: 13rem;
 }
 
 .switch--horizontal .toggle-inside {
@@ -428,6 +428,13 @@ img {
 
 .switch--horizontal input ~ input:checked ~ .toggle-outside .toggle-inside {
   left: 3.25rem;
+}
+
+input[name="first-switch"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 6rem;
+    height: 3rem;
 }
 
 /* Hide the default radio button */

@@ -226,6 +226,14 @@ img {
   vertical-align: middle;
 }
 
+/* For elements that go "on top of" images */
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* Setups for specific pages */
 #gallery {
   margin: 2% 0;

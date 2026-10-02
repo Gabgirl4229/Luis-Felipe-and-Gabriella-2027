@@ -30,12 +30,12 @@ function showSlides(n, num) {
 }
 
 function togglePreference() {
-  let styles = document.GetElementsByClassName("outfits");
   const toggleValue = document.querySelector('input[name="first-switch"]:checked')?.value;
   if (toggleValue == "masc") {
-    containers[0].style.display = "none";
-    containers[1].style.display = "none";
+    document.getElementById("femStyles").classList.add("hidden");
+    document.getElementById("mascStyles").classList.remove("hidden");
   } else if (toggleValue == "fem") {
-    // do the same but for the female one
+    document.getElementById("mascStyles").classList.add("hidden");
+    document.getElementById("femStyles").classList.remove("hidden");
   }
 }

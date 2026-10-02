@@ -223,8 +223,6 @@ img {
 
 .col img {
   margin: 4px 0;
-  max-height: 150%;
-  width: 100%;
   vertical-align: middle;
 }
 
@@ -550,6 +548,10 @@ details > summary {
     /* Image grid changes */
   #gallery .third, #outfits .half, #wedding-party .half, #wedding-party .third, #wedding-party .quarter, #wedding-party .sixth {
     grid-column: span 12;
+  }
+
+  .col img {
+    width: 100%;
   }
 
   /* ---------------------------------------------------------

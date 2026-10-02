@@ -213,6 +213,10 @@ footer {
   grid-column: span 2;
 }
 
+.twelfth {
+  grid-column: span 1;
+}
+
 img {
   max-height: 100%;
   max-width: 100%;

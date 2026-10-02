@@ -369,7 +369,7 @@ img {
 }
 
 .switch label {
-  color: #8ea58c;
+  color: #748469;
   opacity: 0.33;
   transition: opacity 0.25s ease;
   cursor: pointer;
@@ -397,7 +397,7 @@ img {
   transition: 0.25s ease all;
 
   /* Horizontal specific */
-  background: #f4f7fb;
+  background: #8ea58c;
   position: absolute;
   width: 6rem;
   left: 13rem;
@@ -761,7 +761,7 @@ details > summary {
   }
   
   .switch input ~ input:checked ~ .toggle-outside .toggle-inside {
-    left: 1.125rem;
+    left: 1.625rem;
   }
   
   input[type="radio"][name="first-switch"] {

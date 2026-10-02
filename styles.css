@@ -368,10 +368,6 @@ img {
   cursor: default;
 }
 
-.switch input:not(:checked) + label {
-  color: #8ea58c;
-}
-
 .switch label {
   color: #8ea58c;
   opacity: 0.33;

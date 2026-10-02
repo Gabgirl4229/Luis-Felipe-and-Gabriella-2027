@@ -698,11 +698,10 @@ details > summary {
 
   /* Switch */
   .switch {
-    margin: 2rem auto;
-    width: 12rem;
+    margin: 1.5rem auto;
     position: relative;
 
-    width: 8rem;
+    width: 15rem;
     height: 1.5rem;
     margin: 0 auto;
     font-size: 0;
@@ -719,7 +718,7 @@ details > summary {
     background: #f4f7fb;
     position: absolute;
     width: 3rem;
-    left: 13rem;
+    left: 6rem;
   }
   
   .switch .toggle-inside {
@@ -735,7 +734,7 @@ details > summary {
   .switch input {
     height: 1.5rem;
     width: 3rem;
-    left: 3rem;
+    left: 6rem;
     margin: 0;
   }
   
@@ -743,7 +742,7 @@ details > summary {
     font-size: 1.25rem;
     line-height: 1.5rem;
     display: inline-block;
-    width: 13rem;
+    width: 6rem;
     height: 100%;
     margin: 0;
     text-align: center;
@@ -764,6 +763,6 @@ details > summary {
   input[name="first-switch"] {
       width: 3rem;
       height: 1.5rem;
-      left: 13rem;
+      left: 6rem;
   }
 }

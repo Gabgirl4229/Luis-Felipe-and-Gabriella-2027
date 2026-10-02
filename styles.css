@@ -662,6 +662,15 @@ details > summary {
     width: 70%;
   }
 
+  /*Alternate display of wedding party grid for larger phones*/
+  .party > .col .half {
+    grid-column: span 12;
+  }
+
+  .party > .col .quarter {
+    display: none;
+  }
+
   /* Carousel */
   .slideshow-container {
     max-width: 90%;

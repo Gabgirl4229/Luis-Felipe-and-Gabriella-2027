@@ -226,6 +226,10 @@ img {
   vertical-align: middle;
 }
 
+.col p {
+  padding: 0 1%;
+}
+
 /* For elements that go "on top of" images */
 .overlay-content {
   position: absolute;

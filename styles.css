@@ -424,7 +424,7 @@ img {
   left: 3.25rem;
 }
 
-input[name="first-switch"] {
+input[type="radio"][name="first-switch"] {
     width: 6rem;
     height: 3rem;
     left: 13rem;

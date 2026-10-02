@@ -370,7 +370,7 @@ img {
 
 .switch label {
   color: #748469;
-  opacity: 0.33;
+  opacity: 0.55;
   transition: opacity 0.25s ease;
   cursor: pointer;
 
@@ -397,7 +397,7 @@ img {
   transition: 0.25s ease all;
 
   /* Horizontal specific */
-  background: #8ea58c;
+  background: #f4f7fb;
   position: absolute;
   width: 6rem;
   left: 13rem;

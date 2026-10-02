@@ -705,7 +705,7 @@ details > summary {
     margin: 1.5rem auto;
     position: relative;
 
-    width: 15rem;
+    width: 21rem;
     height: 1.5rem;
     margin: 0 auto;
     font-size: 0;
@@ -722,7 +722,7 @@ details > summary {
     background: #f4f7fb;
     position: absolute;
     width: 3rem;
-    left: 6rem;
+    left: 9rem;
   }
   
   .switch .toggle-inside {
@@ -738,7 +738,7 @@ details > summary {
   .switch input {
     height: 1.5rem;
     width: 3rem;
-    left: 8rem;
+    left: 9rem;
     margin: 0;
   }
   
@@ -746,7 +746,7 @@ details > summary {
     font-size: 1.25rem;
     line-height: 1.5rem;
     display: inline-block;
-    width: 8rem;
+    width: 9rem;
     height: 100%;
     margin: 0;
     text-align: center;
@@ -764,9 +764,9 @@ details > summary {
     left: 2.125rem;
   }
   
-  input[name="first-switch"] {
-      width: 3rem;
-      height: 1.5rem;
-      left: 8rem;
+  input[type="radio"][name="first-switch"] {
+    width: 3rem;
+    height: 1.5rem;
+    left: 9rem;
   }
 }

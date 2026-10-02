@@ -364,8 +364,8 @@ img {
   cursor: default;
 }
 
-.switch input:not(:checked) + label:hover {
-  opacity: 0.5;
+.switch input:not(:checked) + label {
+  color: #8ea58c;
 }
 
 .switch label {
@@ -761,7 +761,7 @@ details > summary {
   }
   
   .switch input ~ input:checked ~ .toggle-outside .toggle-inside {
-    left: 2.125rem;
+    left: 3.125rem;
   }
   
   input[type="radio"][name="first-switch"] {

@@ -761,7 +761,7 @@ details > summary {
   }
   
   .switch input ~ input:checked ~ .toggle-outside .toggle-inside {
-    left: 3.125rem;
+    left: 1.125rem;
   }
   
   input[type="radio"][name="first-switch"] {

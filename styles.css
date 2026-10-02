@@ -223,6 +223,8 @@ img {
 
 .col img {
   margin: 4px 0;
+  max-height: 150%;
+  width: 100%;
   vertical-align: middle;
 }
 

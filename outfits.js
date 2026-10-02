@@ -30,7 +30,7 @@ function showSlides(n, num) {
 }
 
 function togglePreference() {
-  const toggleValue = document.querySelector('input[type="radio][name="first-switch"]:checked')?.value;
+  const toggleValue = document.querySelector('input[type="radio"][name="first-switch"]:checked')?.value;
   if (toggleValue == "masc") {
     document.getElementById("femStyles").classList.add("hidden");
     document.getElementById("mascStyles").classList.remove("hidden");

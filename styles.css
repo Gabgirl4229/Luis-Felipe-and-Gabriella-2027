@@ -231,7 +231,7 @@ img {
 }
 
 .col p {
-  padding: 0 1%;
+  padding: 0 2%;
 }
 
 /* For elements that go "on top of" images */
@@ -667,11 +667,11 @@ details > summary {
   }
 
   /*Alternate display of wedding party grid for larger phones*/
-  .party > .col .half {
+  .party > .col .two-thirds {
     grid-column: span 12;
   }
 
-  .party > .col .quarter {
+  .party > .col .sixth {
     display: none;
   }
 

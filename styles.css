@@ -754,11 +754,15 @@ details > summary {
   }
 
     /*Alternate display of wedding party grid on smaller phones*/
-  #party > .col .two-thirds {
+  #party {
+    height: auto;
+  }
+  
+  #party .two-thirds {
     grid-column: span 12;
   }
 
-  #party > .col .sixth {
+  #party .sixth {
     display: none;
   }
 }

@@ -534,7 +534,7 @@ details > summary {
 
   /* Carousel */
   .slideshow-container {
-    max-width: 80%;
+    max-width: 75%;
   }
 }
 
@@ -564,7 +564,7 @@ details > summary {
 
   /* Carousel */
   .slideshow-container {
-    max-width: 85%;
+    max-width: 80%;
     padding: 0;
   }
 
@@ -677,7 +677,7 @@ details > summary {
 
   /* Carousel */
   .slideshow-container {
-    max-width: 90%;
+    max-width: 85%;
   }
 
   /* Arrow buttons */

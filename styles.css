@@ -434,6 +434,11 @@ input[type="radio"][name="first-switch"] {
     left: 13rem;
 }
 
+/* Add natural indent to bullets */
+ul {
+  margin-left: 2%;
+}
+
 /* Hide the default radio button */
 input[type="radio"] {
     appearance: none;

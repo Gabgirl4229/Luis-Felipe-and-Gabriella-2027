@@ -117,10 +117,6 @@ section {
     visibility: hidden;
 }
 
-.mobile {
-  margin: 5%;
-}
-
 /* Line dividers */
 hr {
   border-top: 4px solid #bbb;
@@ -633,10 +629,6 @@ details > summary {
 @media (max-width: 440px) {
   
   /* Padding changes */ 
-  main {
-    padding: 0;
-  }
-
   section {
     padding: 18px;
   }

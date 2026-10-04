@@ -153,6 +153,9 @@ footer {
 .fancy {
   font-family: Quattrocento, Luxurious Script, Pinyon Script, Great Vibes, EB Garamond, Garamond; /* Header fonts */
 }
+.bold {
+  font-weight: bold;
+}
 
 /* RSVP button for homepage */
 .rsvp-btn {

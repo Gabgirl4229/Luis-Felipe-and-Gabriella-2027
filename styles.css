@@ -457,6 +457,12 @@ li > span {
   color: black;
 }
 
+/* Style text fields for RSVP */
+input[type="text"] {
+  font-size: 1rem;
+  margin-right: 1%;
+}
+
 /* Style the checked state */
 input[type="radio"]:checked {
     background-color: #748469;
@@ -747,6 +753,18 @@ details > summary {
     width: 3rem;
     height: 1.5rem;
     left: 9rem;
+  }
+
+  /* Bullet indentation */
+  ul {
+    margin-left: 3%;
+  }
+
+  /* Text field input */
+  input[type="text"] {
+    font-size: 1rem;
+    margin-right: 1%;
+    width: 60%;
   }
 
   /*Alternate display of wedding party grid on smaller phones*/

@@ -115,7 +115,7 @@ async function validateGuest() {
     document.getElementById("displayGuestNameConfirmed").textContent = data.guestName;
 
     // Resets orientation for mobile
-    if($('body').hasClass('.mobile') {
+    if($('body').hasClass('.mobile')) {
       // ???
       alert("YIPPEE");
     }

@@ -123,6 +123,15 @@ hr {
   margin: 2% 0;
 }
 
+.vl {
+  border-left: 6px solid #a7c1e1;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+
 /* Footer of the homepage */
 footer {
   background: #e8edf4;

@@ -749,7 +749,7 @@ details > summary {
     left: 1.625rem;
   }
   
-  input[type="radio"][name="first-switch"] {
+  input[type="radio"][name="switch"] {
     width: 3rem;
     height: 1.5rem;
     left: 9rem;

@@ -434,10 +434,15 @@ input[type="radio"][name="first-switch"] {
     left: 13rem;
 }
 
-/* Add natural indent to bullets */
+/* Add natural indent and color change ability to bullets in RSVP */
 ul {
-  margin-left: 2%;
+  margin-left: 3%;
 }
+
+li > span {
+  color: black;
+}
+
 
 /* Hide the default radio button */
 input[type="radio"] {

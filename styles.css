@@ -630,6 +630,10 @@ details > summary {
   details > summary {
     font-size: 1.125rem;
   }
+
+  #party, #party .row {
+    height: auto;
+  }
 }
 
 
@@ -753,11 +757,7 @@ details > summary {
     left: 9rem;
   }
 
-    /*Alternate display of wedding party grid on smaller phones*/
-  #party, #party .row {
-    height: auto;
-  }
-  
+  /*Alternate display of wedding party grid on smaller phones*/
   #party .two-thirds {
     grid-column: span 12;
   }

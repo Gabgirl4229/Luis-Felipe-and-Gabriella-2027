@@ -430,8 +430,15 @@ img {
 
 /* Erases default radio to allow customization */
 input[type="radio"] {
-    appearance: none;
-    -webkit-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+
+  /* Select customization */
+  width: 20px;
+  height: 20px;
+  border: 2px solid #748469;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 /* Switch customization */
@@ -448,16 +455,6 @@ ul {
 
 li > span {
   color: black;
-}
-
-
-/* Select customization */
-input[type="radio"][name="select"] {
-    width: 20px;
-    height: 20px;
-    border: 2px solid #748469;
-    border-radius: 50%;
-    cursor: pointer;
 }
 
 /* Style the checked state */
@@ -493,7 +490,7 @@ input[type="radio"]:checked {
 }
 
 /* Margin for circles and labels */
-input[type="radio"][name="select"], .toggle-radio-group label {
+input[type="radio"], .toggle-radio-group label {
   margin: 0.5rem;
 }
 

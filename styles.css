@@ -808,10 +808,10 @@ details > summary {
   }
 
   /* Text field input */
-  input[type="text"] {
+  input[type="text"], textarea {
     font-size: 1rem;
     margin-right: 1%;
-    width: 60%;
+    width: 75%;
   }
 
   /*Alternate display of wedding party grid on smaller phones*/

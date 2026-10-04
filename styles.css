@@ -652,12 +652,16 @@ details > summary {
   }
 
   /* Arrow buttons */
+  .prev, .next {
+    width: 10%
+  }
+  
   .prev {
-    left: -10%;
+    left: -13%;
   }
 
   .next {
-    right: -10%;
+    right: -13%;
   }
 
   /* Dots */

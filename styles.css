@@ -559,17 +559,12 @@ details > summary {
   }
 
   /* Carousal arrow buttons */
-  .prev,
   .next {
-    width: 5%;
-  }
-
-  .next {
-    right: -1%;
+    right: -10%;
   }
 
   .prev {
-    left: -1%;
+    left: -10%;
   }
 
   .arrow {
@@ -644,7 +639,7 @@ details > summary {
   }
 
   .rsvp-btn {
-    font-size: 3.75rem;
+    font-size: 3.5rem;
   }
 
   .speaker-btn {
@@ -657,16 +652,12 @@ details > summary {
   }
 
   /* Arrow buttons */
-  .prev, .next {
-    width: 3%;
-  }
-
   .prev {
-    left: -5%;
+    left: -10%;
   }
 
   .next {
-    right: -5%;
+    right: -10%;
   }
 
   /* Dots */

@@ -428,7 +428,14 @@ img {
   left: 3.25rem;
 }
 
-input[type="radio"][name="first-switch"] {
+/* Erases default radio to allow customization */
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+/* Switch customization */
+input[type="radio"][name="switch"] {
     width: 6rem;
     height: 3rem;
     left: 13rem;
@@ -436,7 +443,7 @@ input[type="radio"][name="first-switch"] {
 
 /* Add natural indent and color change ability to bullets in RSVP */
 ul {
-  margin-left: 3%;
+  margin-left: 2%;
 }
 
 li > span {
@@ -444,15 +451,12 @@ li > span {
 }
 
 
-/* Hide the default radio button */
-input[type="radio"] {
-    appearance: none;
-    -webkit-appearance: none;
+/* Select customization */
+input[type="radio"][name="select"] {
     width: 20px;
     height: 20px;
     border: 2px solid #748469;
     border-radius: 50%;
-    outline: none;
     cursor: pointer;
 }
 
@@ -463,6 +467,7 @@ input[type="radio"]:checked {
     box-shadow: inset 0 0 0 4px #fff;
 }
 
+/*
 .radio-group {
     display: flex;
     gap: 20px;
@@ -470,27 +475,38 @@ input[type="radio"]:checked {
     background: #f8f9fa;
     border-radius: 8px;
 }
+*/
 
-.radio-option {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
+/* Container for options */
 .toggle-radio-group {
     background: #eee;
-    padding: 5px;
+    margin: 0.75rem;
+    padding: 0 0.75rem;
     border-radius: 25px;
     display: inline-flex;
 }
 
-.toggle-radio-group label {
-    padding: 8px 16px;
-    border-radius: 20px;
-    transition: all 0.3s ease;
+/* Put circles in the middle */
+.radio-option {
+    display: flex;
+    align-items: center;
 }
 
-.toggle-radio-group input[type="radio"]:checked + label {
+/* Margin for circles and labels */
+input[type="radio"][name="select"], .toggle-radio-group label {
+  margin: 0.5rem;
+}
+
+
+/* Add animation to label */
+.toggle-radio-group label {
+  padding: 0.5rem 0.75rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Make the label look differen when selected */
+.toggle-radio-group input[type="radio"][name="select"]:checked + label {
   background: #748469;
   color: white;
 }

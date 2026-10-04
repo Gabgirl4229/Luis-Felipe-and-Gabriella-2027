@@ -540,7 +540,7 @@ input[type="radio"]:checked {
 .toggle-radio-group {
     background: #eee;
     margin: 0.75rem 0;
-    padding: 0 0.75rem;
+    padding: 0.5rem 0.75rem;
     border-radius: 25px;
     display: inline-flex;
 }
@@ -678,7 +678,7 @@ details > summary {
 
   .toggle-radio-group span {
     font-size: 1.125rem;
-    margin-top: 0.5rem;
+    margin: 0.5rem 0;
     display: inline-block;
   }
 

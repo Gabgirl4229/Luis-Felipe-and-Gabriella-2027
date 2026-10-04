@@ -278,11 +278,13 @@ img {
   left: -9%;
 }
 
+/*
 .arrow {
   height: 15px;
   width: auto;
   margin-left: 20px;
 }
+*/
 
 /* Navigation dots */
 .dot-container {
@@ -557,7 +559,7 @@ details > summary {
     padding: 0;
   }
 
-  /* Carousal arrow buttons */
+  /* Carousel arrow buttons */
   .prev, .next {
     width: 10%
   }
@@ -570,10 +572,12 @@ details > summary {
     left: -12%;
   }
 
+  /*
   .arrow {
     height: 12px;
     margin-left: 10px;
   }
+  */
 
 
   /* ---------------------------------------------------------

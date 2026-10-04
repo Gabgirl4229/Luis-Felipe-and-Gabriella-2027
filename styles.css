@@ -248,8 +248,7 @@ img {
 }
 
 .slideshow-container {
-  max-width: 70%;
-  /*padding: 0 4px;*/
+  max-width: 50%;
   position: relative;
   margin: auto;
 }
@@ -559,12 +558,16 @@ details > summary {
   }
 
   /* Carousal arrow buttons */
+  .prev, .next {
+    width: 10%
+  }
+  
   .next {
-    right: -10%;
+    right: -12%;
   }
 
   .prev {
-    left: -10%;
+    left: -12%;
   }
 
   .arrow {
@@ -652,10 +655,6 @@ details > summary {
   }
 
   /* Arrow buttons */
-  .prev, .next {
-    width: 10%
-  }
-  
   .prev {
     left: -13%;
   }

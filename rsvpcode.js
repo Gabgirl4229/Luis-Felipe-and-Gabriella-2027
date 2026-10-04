@@ -113,6 +113,13 @@ async function validateGuest() {
     document.getElementById("verifyIdentity").classList.add("hidden");
     document.getElementById("validateFailure").classList.add("hidden");
     document.getElementById("displayGuestNameConfirmed").textContent = data.guestName;
+
+    // Resets orientation for mobile
+    if($('body').hasClass('.mobile') {
+      // ???
+      alert("YIPPEE");
+    }
+    
   } else {
     document.getElementById("validateFailure").classList.remove("hidden");
   }

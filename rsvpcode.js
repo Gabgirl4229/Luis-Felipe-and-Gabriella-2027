@@ -115,9 +115,10 @@ async function validateGuest() {
     document.getElementById("displayGuestNameConfirmed").textContent = data.guestName;
 
     // Resets orientation for mobile
-    if($('body').hasClass('.mobile')) {
-      // ???
-      alert("YIPPEE");
+    if(document.body.classList.contains("mobile")) {
+      document.querySelector("#rsvp").scrollIntoView({
+        behavior: "smooth"
+      });
     }
     
   } else {

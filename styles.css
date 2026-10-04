@@ -754,7 +754,7 @@ details > summary {
   }
 
     /*Alternate display of wedding party grid on smaller phones*/
-  #party {
+  #party, #party .row {
     height: auto;
   }
   

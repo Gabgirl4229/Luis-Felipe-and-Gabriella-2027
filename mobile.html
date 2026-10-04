@@ -43,478 +43,475 @@
     </div>
   </header>
   <main>
-    <img id="home" src="images/homepage.PNG">
+    <img id="home" src="images/homepage.PNG" style="margin: -5%;">
     <a href="https://gabgirl4229.github.io/Luis-Felipe-and-Gabriella-2027/rsvp" class="rsvp-btn">RSVP</a>
     <br>
 
-    <div class="mobile">
-      <div class="row">
-        <div class="col sixth">
-        </div>
-        <div class="col two-thirds">
-          <button id="audioToggle" class="speaker-btn" aria-label="Play audio">
-            <img id="speakerIcon" src="images/ui/speaker_off.PNG" alt="Audio muted">
-          </button>
-          <audio id="song" src="audio/english_song.mp3" type="audio/mpeg"></audio>
-        </div>
-        <div class="col sixth">
-        </div>
+    <div class="row">
+      <div class="col sixth">
       </div>
-      <br>
-      <h4 class="mid">Click the speaker icon to play one of our favorite songs!</h3>
-      <br>
-
-      <section class="transparent">
-        <br><br><br><br><image src="images/ui/divider2.png"><br><br>
-      </section>
-      <section id="schedule" class="invisible"></section>
-      <h1 class="mid">Schedule</h1>
-      <br>
-      
-      <section class="transparent">
-        <br><br><br><br><image src="images/ui/divider2.png"><br><br>
-      </section>
-      <section id="location" class="invisible"></section>
-      <h1 class="mid">Location</h1>
-      <br>
-      <p>Soiré Estate</p>
-      <p>5710 Happy Tails Ln</p>
-      <p>Lutz, FL 33558</p>
-      <br>
-      <p>[parking instructions]</p>
-      <br>
-      <div class="google-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3518.8898557116113!2d-82.55050082552705!3d28.11938690719983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2bfe83100792f%3A0xe12bc41225531594!2sSoireEstate%20Weddings%20and%20Events%20Venue%20at%20SB%20Nursery%20and%20Gardens!5e0!3m2!1sen!2sus!4v1775240147234!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="col two-thirds">
+        <button id="audioToggle" class="speaker-btn" aria-label="Play audio">
+          <img id="speakerIcon" src="images/ui/speaker_off.PNG" alt="Audio muted">
+        </button>
+        <audio id="song" src="audio/english_song.mp3" type="audio/mpeg"></audio>
       </div>
-      
-      <section class="transparent">
-        <br><br><br><br><image src="images/ui/divider2.png"><br><br>
-      </section>
-      <section id="attire" class="invisible"></section>
-      <h1 class="mid">Attire</h1>
-      <br>
-      <p>The dress code for our wedding will be garden formal. This means wearing a suit and tie for men and a floor-length gown for ladies. The wedding will be in Central Florida during Spring, so it will get hot out! Feel free to wear thin, flowy layers so you can be comfortable both indoors and outdoors.</p>
-      <p>Have a look at some ideas below for guidelines on the range of outfits you can express yourself with!</p>
-
-      <p>Guests with tattoos do not need to worry about covering them up.</p>
-      <br>
-      <div class="switch switch--horizontal">
-        <input id="radio-a" name="first-switch" type="radio" checked="checked" value="masc" onclick="togglePreference()"/>
-        <label for="radio-a">Masculine Styles</label>
-        <input id="radio-b" name="first-switch" type="radio" value="fem" onclick="togglePreference()"/>
-        <label for="radio-b">Feminine Styles</label><span class="toggle-outside"><span class="toggle-inside"></span></span>
+      <div class="col sixth">
       </div>
-      <br>
-      <div id="mascStyles">
-        <div class="slideshow-container">
-          <a class="prev" onclick="plusSlides(-1, 0)">
-            <img src="images/ui/button_left.png">
-          </a>
-          <div class="mySlides fade">
-            <img src="images/test_image_portrait.png" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/test_image_portrait.png" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/test_image_portrait.png" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/test_image_portrait.png" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/test_image_portrait.png" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/test_image_portrait.png" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/test_image_portrait.png" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/test_image_portrait.png" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/test_image_portrait.png" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/test_image_portrait.png" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/test_image_portrait.png" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/test_image_portrait.png" style="width:100%">
-          </div>
-          <a class="next" onclick="plusSlides(1, 0)">
-            <img src="images/ui/button_right.png">
-          </a>
-        </div>
-        <br>
-        <div class="dot-container">
-          <span class="dot-label">Casual</span>
-          <div class="dots">
-            <span class="dot" onclick="currentSlide(1,0)"></span>
-            <span class="dot" onclick="currentSlide(2,0)"></span>
-            <span class="dot" onclick="currentSlide(3,0)"></span>
-            <span class="dot" onclick="currentSlide(4,0)"></span>
-            <span class="dot" onclick="currentSlide(5,0)"></span>
-            <span class="dot" onclick="currentSlide(6,0)"></span>
-            <span class="dot" onclick="currentSlide(7,0)"></span>
-            <span class="dot" onclick="currentSlide(8,0)"></span>
-            <span class="dot" onclick="currentSlide(9,0)"></span>
-            <span class="dot" onclick="currentSlide(10,0)"></span>
-            <span class="dot" onclick="currentSlide(11,0)"></span>
-            <span class="dot" onclick="currentSlide(12,0)"></span>
-          </div>
-          <span class="dot-label">Formal</span>
-        </div>
-        <br>
-      </div>
-      <div id="femStyles" class="hidden">
-        <div class="slideshow-container">
-          <a class="prev" onclick="plusSlides(-1, 1)">
-            <img src="images/ui/button_left.png">
-          </a>
-          <div class="mySlides fade">
-            <img src="images/test_image_portrait.png" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/test_image_portrait.png" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/test_image_portrait.png" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/test_image_portrait.png" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/test_image_portrait.png" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/test_image_portrait.png" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/test_image_portrait.png" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/test_image_portrait.png" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/test_image_portrait.png" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/test_image_portrait.png" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/test_image_portrait.png" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/test_image_portrait.png" style="width:100%">
-          </div>
-          <a class="next" onclick="plusSlides(1, 1)">
-            <img src="images/ui/button_right.png">
-          </a>
-        </div>
-        <br>
-        <div class="dot-container">
-          <span class="dot-label">Casual</span>
-          <div class="dots">
-            <span class="dot" onclick="currentSlide(1,1)"></span>
-            <span class="dot" onclick="currentSlide(2,1)"></span>
-            <span class="dot" onclick="currentSlide(3,1)"></span>
-            <span class="dot" onclick="currentSlide(4,1)"></span>
-            <span class="dot" onclick="currentSlide(5,1)"></span>
-            <span class="dot" onclick="currentSlide(6,1)"></span>
-            <span class="dot" onclick="currentSlide(7,1)"></span>
-            <span class="dot" onclick="currentSlide(8,1)"></span>
-            <span class="dot" onclick="currentSlide(9,1)"></span>
-            <span class="dot" onclick="currentSlide(10,1)"></span>
-            <span class="dot" onclick="currentSlide(11,1)"></span>
-            <span class="dot" onclick="currentSlide(12,1)"></span>
-          </div>
-          <span class="dot-label">Formal</span>
-        </div>
-        <br>
-      </div>
-
-      <section class="transparent">
-        <br><br><br><br><image src="images/ui/divider2.png"><br><br>
-      </section>
-      <section id="gifts" class="invisible"></section>
-      <h1 class="mid">Gifts</h1>
-      <br>
-      <p>Your presence is the best gift we could ask for. If you'd like to bless us any further, feel free to do so monetarily! Although we will not be having a registry, any cash is greatly appreciated as we are planning to save up for a house soon. Money gifts will gladly be accepted in physical envelopes or via Zelle using the QR code below.</p>
-      <br>
-      <div class="row">
-        <div class="col sixth">
-        </div>
-        <div class="col two-thirds">
-          <img src="images/zelle.jpeg">
-        </div>
-        <div class="col sixth">
-        </div>
-      </div>
-
-      <section class="transparent">
-        <br><br><br><br><image src="images/ui/divider2.png"><br><br>
-      </section>
-      <section id="rsvp" class="invisible"></section>
-      <h1 class="mid">RSVP</h1>
-      <br>
-
-      <section class="transparent">
-        <br><br><br><br><image src="images/ui/divider2.png"><br><br>
-      </section>
-      <section id="events" class="invisible"></section>
-      <h1 class="mid">Events</h1>
-      <br>
-      <p>Check out upcoming events related to the wedding here!</p>
-      <br>
-      <details>
-        <summary>Wedding Shower</summary>
-        <br>
-        <p>We're still getting the details sorted out. Come back later to see if there are any updates!</p>
-      </details>
-      <details>
-        <summary>Bachelorette Party</summary>
-        <br>
-        <p>We're still getting the details sorted out. Come back later to see if there are any updates!</p>
-        <br>
-      </details>
-      <details>
-        <summary>Rehearsal Dinner</summary>
-        <br>
-        <p>We're still getting the details sorted out. Come back later to see if there are any updates!</p>
-      </details>
-      <details>
-        <summary>After Wedding Brunch</summary>
-        <br>
-        <p>We're still getting the details sorted out. Come back later to see if there are any updates!</p>
-      </details>
-      
-      <section class="transparent">
-        <br><br><br><br><image src="images/ui/divider2.png"><br><br>
-      </section>
-      <section id="wedding-party" class="invisible"></section>
-      <h1 class="mid">Wedding Party</h1>
-      <br>
-      <div id="party" class="row">
-        <div class="col sixth">
-        </div>
-        <div class="col two-thirds">
-          <div class="row">
-            <div class="col half">
-              <h3>Maid of Honor</h3>
-              <h3>Daniella Rodriguez</h3>
-              <br>
-              <p>"Daniella is my sister and my ride-or-die. She's headstrong, confident, and knows how to get what she wants." -Gaby</p>
-            </div>
-            <div class="col half">
-              <img src="images/people/daniella.jpeg">
-            </div>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="col half">
-              <img src="images/test_image_portrait.png">
-            </div>
-            <div class="col half">
-              <h3>Bridesmaid</h3>
-              <h3>Emily Matute</h3>
-              <br>
-              <p>"Emily has been my friend since middle school, so she's been through a lot with me. She inspires me to dream big." -Gaby</p>
-            </div>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="col half">
-              <h3>Bridesmaid</h3>
-              <h3>Keren Rivera</h3>
-              <br>
-              <p>"Keren and I are high school friends whose shared interests created a spark of energy. She has such positivity and enthusiasm." -Gaby</p>
-            </div>
-            <div class="col half">
-              <img src="images/test_image_portrait.png">
-            </div>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="col half">
-              <img src="images/test_image_portrait.png">
-            </div>
-            <div class="col half">
-              <h3>Bridesmaid</h3>
-              <h3>Julia Frare</h3>
-              <br>
-              <p>"Julia is my sister-in-law and the newest addition to our family. I admire her hardworking nature as she grinds her way to a PhD." -Gaby</p>
-            </div>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="col half">
-              <h3>Jr. Bridesmaid</h3>
-              <h3>Valeria Rodriguez</h3>
-              <br>
-              <p>"Valeria is my 8-year-old niece. She's brave in ways that I am not (especially with bugs) and has prior experience with weddings." -Gaby</p>
-            </div>
-            <div class="col half">
-              <img src="images/test_image_portrait.png">
-            </div>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="col half">
-              <img src="images/test_image_portrait.png">
-            </div>
-            <div class="col half">
-              <h3>Best Man</h3>
-              <h3>Luis Guilherme Ramanzini</h3>
-              <br>
-              <p>[description]</p>
-            </div>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="col half">
-              <h3>Groomsman</h3>
-              <h3>Lukas Kelk</h3>
-              <br>
-              <p>[description]</p>
-            </div>
-            <div class="col half">
-              <img src="images/test_image_portrait.png">
-            </div>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="col half">
-              <img src="images/test_image_portrait.png">
-            </div>
-            <div class="col half">
-              <h3>Groomsman</h3>
-              <h3>Matthew Baker</h3>
-              <br>
-              <p>[description]</p>
-            </div>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="col half">
-              <h3>Groomsman</h3>
-              <h3>Renato Silva e Silva</h3>
-              <br>
-              <p>[description]</p>
-            </div>
-            <div class="col half">
-              <img src="images/test_image_portrait.png">
-            </div>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="col half">
-              <img src="images/test_image_portrait.png">
-            </div>
-            <div class="col half">
-              <h3>Bride's Father</h3>
-              <h3>Guillermo Rodriguez</h3>
-              <br>
-              <p>"My dad is someone I'm so grateful to have in my life. He's raised me well and worked so hard to provide for our family. I love my dad!" -Gaby</p>
-            </div>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="col half">
-              <h3>Bride's Mother</h3>
-              <h3>Maria Rodriguez</h3>
-              <br>
-              <p>"My mom is the kind of person who's always prepared for anything; she's like a diamond under pressure. I love my mom!" -Gaby</p>
-            </div>
-            <div class="col half">
-              <img src="images/test_image_portrait.png">
-            </div>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="col half">
-              <img src="images/test_image_portrait.png">
-            </div>
-            <div class="col half">
-              <h3>Groom's Father</h3>
-              <h3>Guilherme Ramanzini</h3>
-              <br>
-              <p>[description]</p>
-            </div>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="col half">
-              <h3>Groom's Mother</h3>
-              <h3>Liliane Ramanzini</h3>
-              <br>
-              <p>[description]</p>
-            </div>
-            <div class="col half">
-              <img src="images/test_image_portrait.png">
-            </div>
-          </div>
-        </div>
-        <div class="col sixth">
-        </div>
-      </div>
-
-      <section class="transparent">
-        <br><br><br><br><image src="images/ui/divider2.png"><br><br>
-      </section>
-      <section id="our-story" class="invisible"></section>
-      <h1 class="mid">Our Story</h1>
-      <br>
-
-      <section class="transparent">
-        <br><br><br><br><image src="images/ui/divider2.png"><br><br>
-      </section>
-      <section id="photos" class="invisible"></section>
-      <h1 class="mid">Gallery</h1>
-      <br>
-        <div class="row" id="gallery">
-          <div class="col third">
-            <img src="images/photos/LG_wedding_castle.jpeg">
-            <img src="images/photos/steak_and_shake.jpeg">
-            <img src="images/photos/christmas_tree.jpeg">
-          </div>
-          <div class="col third">
-            <img src="images/photos/universal_duck.jpeg">
-            <img src="images/photos/brazil_lunch.jpeg">
-            <img src="images/photos/excelerate.jpeg">
-          </div>
-          <div class="col third">
-            <img src="images/photos/bok_tower.jpeg">
-            <img src="images/photos/silly_face.jpeg">
-            <img src="images/photos/nova.jpeg">
-          </div>
-          <div class="col third">
-            <img src="images/photos/boardwalk_kiss.jpeg">
-            <img src="images/photos/fords_garage.jpeg">
-            <img src="images/photos/red_hug.jpeg">
-          </div>
-          <div class="col third">
-            <img src="images/photos/li_and_gui_oro.jpeg">
-            <img src="images/photos/graduation.jpeg">
-            <img src="images/photos/polycon_carmen.jpeg">
-          </div>
-          <div class="col third">
-            <img src="images/photos/red_dip.jpeg">
-            <img src="images/photos/terrace_grille.jpeg">
-            <img src="images/photos/oppenheimer.jpeg">
-          </div>
-        </div>
-      
-      <p class="mid">Please contribute to our shared album below with any pictures you get from the wedding!</p>
-      <br>
-      <a href="https://photos.app.goo.gl/aYf1CGf2CsePjgP16" class="rsvp-btn">Add Yours</a>
-      <br>
-
     </div>
+    <br>
+    <h4 class="mid">Click the speaker icon to play one of our favorite songs!</h3>
+    <br>
+
+    <section class="transparent">
+      <br><br><br><br><image src="images/ui/divider2.png"><br><br>
+    </section>
+    <section id="schedule" class="invisible"></section>
+    <h1 class="mid">Schedule</h1>
+    <br>
+    
+    <section class="transparent">
+      <br><br><br><br><image src="images/ui/divider2.png"><br><br>
+    </section>
+    <section id="location" class="invisible"></section>
+    <h1 class="mid">Location</h1>
+    <br>
+    <p>Soiré Estate</p>
+    <p>5710 Happy Tails Ln</p>
+    <p>Lutz, FL 33558</p>
+    <br>
+    <p>[parking instructions]</p>
+    <br>
+    <div class="google-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3518.8898557116113!2d-82.55050082552705!3d28.11938690719983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2bfe83100792f%3A0xe12bc41225531594!2sSoireEstate%20Weddings%20and%20Events%20Venue%20at%20SB%20Nursery%20and%20Gardens!5e0!3m2!1sen!2sus!4v1775240147234!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+    <section class="transparent">
+      <br><br><br><br><image src="images/ui/divider2.png"><br><br>
+    </section>
+    <section id="attire" class="invisible"></section>
+    <h1 class="mid">Attire</h1>
+    <br>
+    <p>The dress code for our wedding will be garden formal. This means wearing a suit and tie for men and a floor-length gown for ladies. The wedding will be in Central Florida during Spring, so it will get hot out! Feel free to wear thin, flowy layers so you can be comfortable both indoors and outdoors.</p>
+    <p>Have a look at some ideas below for guidelines on the range of outfits you can express yourself with!</p>
+
+    <p>Guests with tattoos do not need to worry about covering them up.</p>
+    <br>
+    <div class="switch switch--horizontal">
+      <input id="radio-a" name="first-switch" type="radio" checked="checked" value="masc" onclick="togglePreference()"/>
+      <label for="radio-a">Masculine Styles</label>
+      <input id="radio-b" name="first-switch" type="radio" value="fem" onclick="togglePreference()"/>
+      <label for="radio-b">Feminine Styles</label><span class="toggle-outside"><span class="toggle-inside"></span></span>
+    </div>
+    <br>
+    <div id="mascStyles">
+      <div class="slideshow-container">
+        <a class="prev" onclick="plusSlides(-1, 0)">
+          <img src="images/ui/button_left.png">
+        </a>
+        <div class="mySlides fade">
+          <img src="images/test_image_portrait.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="images/test_image_portrait.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="images/test_image_portrait.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="images/test_image_portrait.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="images/test_image_portrait.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="images/test_image_portrait.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="images/test_image_portrait.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="images/test_image_portrait.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="images/test_image_portrait.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="images/test_image_portrait.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="images/test_image_portrait.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="images/test_image_portrait.png" style="width:100%">
+        </div>
+        <a class="next" onclick="plusSlides(1, 0)">
+          <img src="images/ui/button_right.png">
+        </a>
+      </div>
+      <br>
+      <div class="dot-container">
+        <span class="dot-label">Casual</span>
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1,0)"></span>
+          <span class="dot" onclick="currentSlide(2,0)"></span>
+          <span class="dot" onclick="currentSlide(3,0)"></span>
+          <span class="dot" onclick="currentSlide(4,0)"></span>
+          <span class="dot" onclick="currentSlide(5,0)"></span>
+          <span class="dot" onclick="currentSlide(6,0)"></span>
+          <span class="dot" onclick="currentSlide(7,0)"></span>
+          <span class="dot" onclick="currentSlide(8,0)"></span>
+          <span class="dot" onclick="currentSlide(9,0)"></span>
+          <span class="dot" onclick="currentSlide(10,0)"></span>
+          <span class="dot" onclick="currentSlide(11,0)"></span>
+          <span class="dot" onclick="currentSlide(12,0)"></span>
+        </div>
+        <span class="dot-label">Formal</span>
+      </div>
+      <br>
+    </div>
+    <div id="femStyles" class="hidden">
+      <div class="slideshow-container">
+        <a class="prev" onclick="plusSlides(-1, 1)">
+          <img src="images/ui/button_left.png">
+        </a>
+        <div class="mySlides fade">
+          <img src="images/test_image_portrait.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="images/test_image_portrait.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="images/test_image_portrait.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="images/test_image_portrait.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="images/test_image_portrait.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="images/test_image_portrait.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="images/test_image_portrait.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="images/test_image_portrait.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="images/test_image_portrait.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="images/test_image_portrait.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="images/test_image_portrait.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="images/test_image_portrait.png" style="width:100%">
+        </div>
+        <a class="next" onclick="plusSlides(1, 1)">
+          <img src="images/ui/button_right.png">
+        </a>
+      </div>
+      <br>
+      <div class="dot-container">
+        <span class="dot-label">Casual</span>
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1,1)"></span>
+          <span class="dot" onclick="currentSlide(2,1)"></span>
+          <span class="dot" onclick="currentSlide(3,1)"></span>
+          <span class="dot" onclick="currentSlide(4,1)"></span>
+          <span class="dot" onclick="currentSlide(5,1)"></span>
+          <span class="dot" onclick="currentSlide(6,1)"></span>
+          <span class="dot" onclick="currentSlide(7,1)"></span>
+          <span class="dot" onclick="currentSlide(8,1)"></span>
+          <span class="dot" onclick="currentSlide(9,1)"></span>
+          <span class="dot" onclick="currentSlide(10,1)"></span>
+          <span class="dot" onclick="currentSlide(11,1)"></span>
+          <span class="dot" onclick="currentSlide(12,1)"></span>
+        </div>
+        <span class="dot-label">Formal</span>
+      </div>
+      <br>
+    </div>
+
+    <section class="transparent">
+      <br><br><br><br><image src="images/ui/divider2.png"><br><br>
+    </section>
+    <section id="gifts" class="invisible"></section>
+    <h1 class="mid">Gifts</h1>
+    <br>
+    <p>Your presence is the best gift we could ask for. If you'd like to bless us any further, feel free to do so monetarily! Although we will not be having a registry, any cash is greatly appreciated as we are planning to save up for a house soon. Money gifts will gladly be accepted in physical envelopes or via Zelle using the QR code below.</p>
+    <br>
+    <div class="row">
+      <div class="col sixth">
+      </div>
+      <div class="col two-thirds">
+        <img src="images/zelle.jpeg">
+      </div>
+      <div class="col sixth">
+      </div>
+    </div>
+
+    <section class="transparent">
+      <br><br><br><br><image src="images/ui/divider2.png"><br><br>
+    </section>
+    <section id="rsvp" class="invisible"></section>
+    <h1 class="mid">RSVP</h1>
+    <br>
+
+    <section class="transparent">
+      <br><br><br><br><image src="images/ui/divider2.png"><br><br>
+    </section>
+    <section id="events" class="invisible"></section>
+    <h1 class="mid">Events</h1>
+    <br>
+    <p>Check out upcoming events related to the wedding here!</p>
+    <br>
+    <details>
+      <summary>Wedding Shower</summary>
+      <br>
+      <p>We're still getting the details sorted out. Come back later to see if there are any updates!</p>
+    </details>
+    <details>
+      <summary>Bachelorette Party</summary>
+      <br>
+      <p>We're still getting the details sorted out. Come back later to see if there are any updates!</p>
+      <br>
+    </details>
+    <details>
+      <summary>Rehearsal Dinner</summary>
+      <br>
+      <p>We're still getting the details sorted out. Come back later to see if there are any updates!</p>
+    </details>
+    <details>
+      <summary>After Wedding Brunch</summary>
+      <br>
+      <p>We're still getting the details sorted out. Come back later to see if there are any updates!</p>
+    </details>
+    
+    <section class="transparent">
+      <br><br><br><br><image src="images/ui/divider2.png"><br><br>
+    </section>
+    <section id="wedding-party" class="invisible"></section>
+    <h1 class="mid">Wedding Party</h1>
+    <br>
+    <div id="party" class="row">
+      <div class="col sixth">
+      </div>
+      <div class="col two-thirds">
+        <div class="row">
+          <div class="col half">
+            <h3>Maid of Honor</h3>
+            <h3>Daniella Rodriguez</h3>
+            <br>
+            <p>"Daniella is my sister and my ride-or-die. She's headstrong, confident, and knows how to get what she wants." -Gaby</p>
+          </div>
+          <div class="col half">
+            <img src="images/people/daniella.jpeg">
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col half">
+            <img src="images/test_image_portrait.png">
+          </div>
+          <div class="col half">
+            <h3>Bridesmaid</h3>
+            <h3>Emily Matute</h3>
+            <br>
+            <p>"Emily has been my friend since middle school, so she's been through a lot with me. She inspires me to dream big." -Gaby</p>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col half">
+            <h3>Bridesmaid</h3>
+            <h3>Keren Rivera</h3>
+            <br>
+            <p>"Keren and I are high school friends whose shared interests created a spark of energy. She has such positivity and enthusiasm." -Gaby</p>
+          </div>
+          <div class="col half">
+            <img src="images/test_image_portrait.png">
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col half">
+            <img src="images/test_image_portrait.png">
+          </div>
+          <div class="col half">
+            <h3>Bridesmaid</h3>
+            <h3>Julia Frare</h3>
+            <br>
+            <p>"Julia is my sister-in-law and the newest addition to our family. I admire her hardworking nature as she grinds her way to a PhD." -Gaby</p>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col half">
+            <h3>Jr. Bridesmaid</h3>
+            <h3>Valeria Rodriguez</h3>
+            <br>
+            <p>"Valeria is my 8-year-old niece. She's brave in ways that I am not (especially with bugs) and has prior experience with weddings." -Gaby</p>
+          </div>
+          <div class="col half">
+            <img src="images/test_image_portrait.png">
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col half">
+            <img src="images/test_image_portrait.png">
+          </div>
+          <div class="col half">
+            <h3>Best Man</h3>
+            <h3>Luis Guilherme Ramanzini</h3>
+            <br>
+            <p>[description]</p>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col half">
+            <h3>Groomsman</h3>
+            <h3>Lukas Kelk</h3>
+            <br>
+            <p>[description]</p>
+          </div>
+          <div class="col half">
+            <img src="images/test_image_portrait.png">
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col half">
+            <img src="images/test_image_portrait.png">
+          </div>
+          <div class="col half">
+            <h3>Groomsman</h3>
+            <h3>Matthew Baker</h3>
+            <br>
+            <p>[description]</p>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col half">
+            <h3>Groomsman</h3>
+            <h3>Renato Silva e Silva</h3>
+            <br>
+            <p>[description]</p>
+          </div>
+          <div class="col half">
+            <img src="images/test_image_portrait.png">
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col half">
+            <img src="images/test_image_portrait.png">
+          </div>
+          <div class="col half">
+            <h3>Bride's Father</h3>
+            <h3>Guillermo Rodriguez</h3>
+            <br>
+            <p>"My dad is someone I'm so grateful to have in my life. He's raised me well and worked so hard to provide for our family. I love my dad!" -Gaby</p>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col half">
+            <h3>Bride's Mother</h3>
+            <h3>Maria Rodriguez</h3>
+            <br>
+            <p>"My mom is the kind of person who's always prepared for anything; she's like a diamond under pressure. I love my mom!" -Gaby</p>
+          </div>
+          <div class="col half">
+            <img src="images/test_image_portrait.png">
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col half">
+            <img src="images/test_image_portrait.png">
+          </div>
+          <div class="col half">
+            <h3>Groom's Father</h3>
+            <h3>Guilherme Ramanzini</h3>
+            <br>
+            <p>[description]</p>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col half">
+            <h3>Groom's Mother</h3>
+            <h3>Liliane Ramanzini</h3>
+            <br>
+            <p>[description]</p>
+          </div>
+          <div class="col half">
+            <img src="images/test_image_portrait.png">
+          </div>
+        </div>
+      </div>
+      <div class="col sixth">
+      </div>
+    </div>
+
+    <section class="transparent">
+      <br><br><br><br><image src="images/ui/divider2.png"><br><br>
+    </section>
+    <section id="our-story" class="invisible"></section>
+    <h1 class="mid">Our Story</h1>
+    <br>
+
+    <section class="transparent">
+      <br><br><br><br><image src="images/ui/divider2.png"><br><br>
+    </section>
+    <section id="photos" class="invisible"></section>
+    <h1 class="mid">Gallery</h1>
+    <br>
+      <div class="row" id="gallery">
+        <div class="col third">
+          <img src="images/photos/LG_wedding_castle.jpeg">
+          <img src="images/photos/steak_and_shake.jpeg">
+          <img src="images/photos/christmas_tree.jpeg">
+        </div>
+        <div class="col third">
+          <img src="images/photos/universal_duck.jpeg">
+          <img src="images/photos/brazil_lunch.jpeg">
+          <img src="images/photos/excelerate.jpeg">
+        </div>
+        <div class="col third">
+          <img src="images/photos/bok_tower.jpeg">
+          <img src="images/photos/silly_face.jpeg">
+          <img src="images/photos/nova.jpeg">
+        </div>
+        <div class="col third">
+          <img src="images/photos/boardwalk_kiss.jpeg">
+          <img src="images/photos/fords_garage.jpeg">
+          <img src="images/photos/red_hug.jpeg">
+        </div>
+        <div class="col third">
+          <img src="images/photos/li_and_gui_oro.jpeg">
+          <img src="images/photos/graduation.jpeg">
+          <img src="images/photos/polycon_carmen.jpeg">
+        </div>
+        <div class="col third">
+          <img src="images/photos/red_dip.jpeg">
+          <img src="images/photos/terrace_grille.jpeg">
+          <img src="images/photos/oppenheimer.jpeg">
+        </div>
+      </div>
+    
+    <p class="mid">Please contribute to our shared album below with any pictures you get from the wedding!</p>
+    <br>
+    <a href="https://photos.app.goo.gl/aYf1CGf2CsePjgP16" class="rsvp-btn">Add Yours</a>
+    <br>
     
   </main>
   <footer>

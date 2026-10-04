@@ -478,7 +478,7 @@ input[type="radio"]:checked {
 /* Container for options */
 .toggle-radio-group {
     background: #eee;
-    margin: 0.75rem;
+    margin: 0.75rem 0;
     padding: 0 0.75rem;
     border-radius: 25px;
     display: inline-flex;

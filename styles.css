@@ -126,7 +126,7 @@ hr {
 /* Schedule timeline */
 .vl {
   border-left: 4px solid #a7c1e1;
-  height: 50%;
+  height: 100%;
   margin-left: 50%;
 }
 
@@ -135,10 +135,8 @@ hr {
   position: absolute;
   width: 1.5rem;
   height: 1.5rem;
-  line-height: 1.5rem;
   border-radius: 100%;
-  color: #fff;
-  box-shadow: 0 0 0 3px #fff;
+  box-shadow: 0 0 0 2px #fff;
   left: 50%;
   transform: translate(-43%, -100%);
 }
@@ -254,7 +252,7 @@ img {
   vertical-align: middle;
 }
 
-.col p {
+#party .col p {
   padding: 0 2%;
 }
 
@@ -305,14 +303,6 @@ img {
 .prev {
   left: -9%;
 }
-
-/*
-.arrow {
-  height: 15px;
-  width: auto;
-  margin-left: 20px;
-}
-*/
 
 /* Navigation dots */
 .dot-container {

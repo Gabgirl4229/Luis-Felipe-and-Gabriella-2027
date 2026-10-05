@@ -132,14 +132,15 @@ hr {
 
 .circle {
   background: #84a1c4;
-  position: relative;
-  width: 1.5em;
-  height: 1.5em;
-  line-height: 1.5em;
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
   border-radius: 100%;
   color: #fff;
-  text-align: center;
   box-shadow: 0 0 0 3px #fff;
+  left: 50%;
+  transform: translate(-43%, -100%;
 }
 
 /* Footer of the homepage */

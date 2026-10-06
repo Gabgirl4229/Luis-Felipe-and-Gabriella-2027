@@ -127,18 +127,16 @@ hr {
 .vl {
   border-left: 4px solid #a7c1e1;
   height: 100%;
-  margin-left: 50%;
+  margin-left: calc(50% - 2px);
 }
 
 .circle {
   background: #84a1c4;
-  position: absolute;
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 100%;
   box-shadow: 0 0 0 2px #fff;
-  left: 50%;
-  transform: translate(-43%, -100%);
+  margin-left: 50%;
 }
 
 /* Footer of the homepage */

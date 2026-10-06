@@ -197,7 +197,6 @@ button {
 /* Grid system for images */
 .row {
   display: grid;
-  height: 100%;
   grid-template-columns: repeat(12, 1fr);
 }
 

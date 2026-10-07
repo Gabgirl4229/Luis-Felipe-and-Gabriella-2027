@@ -252,6 +252,10 @@ img {
   padding: 0 2%;
 }
 
+.fullscreen {
+  height: calc(100dvh - 70px);
+}
+
 /* For elements that go "on top of" images */
 .overlay-content {
   position: absolute;

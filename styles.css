@@ -264,6 +264,11 @@ img {
   height: calc(100dvh - 70px);
 }
 
+#home-responsive > .fragment {
+  grid-column: span 5;
+}
+
+
 #homepage-img {
   margin: 0;
   max-height: 80dvh;

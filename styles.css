@@ -566,7 +566,7 @@ details > summary {
 
   /* Padding changes */
   section {
-    margin-bottom: 4%;
+    /*margin-bottom: 4%;*/
   }
 
   /* Carousel */
@@ -608,6 +608,16 @@ details > summary {
 
   #home-responsive .twelfth {
     display: none;
+  }
+
+  #schedule-responsive {
+    margin-right: 6%;
+    margin-bottom: 3%;
+  }
+
+  #location-responsive {
+    margin-left: 6%;
+    margin-top: 3%;
   }
 
   .col img {

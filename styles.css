@@ -255,17 +255,26 @@ img {
   vertical-align: middle;
 }
 
+#party .col p {
+  padding: 0 2%;
+}
+
+/* Desktop/Tablet responsive items */
+.fullscreen {
+  height: calc(100dvh - 70px);
+}
+
 #homepage-img {
   margin: 0;
   max-height: 80dvh;
 }
 
-#party .col p {
-  padding: 0 2%;
+#schedule-responsive {
+  margin-right: 3%;
 }
 
-.fullscreen {
-  height: calc(100dvh - 70px);
+#location-responsive {
+  margin-left: 3%;
 }
 
 /* For elements that go "on top of" images */

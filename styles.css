@@ -265,6 +265,7 @@ img {
 }
 
 #home-responsive > .fragment {
+  padding: 0;
   grid-column: span 5;
 }
 
@@ -626,7 +627,7 @@ details > summary {
   #wedding-party .third, 
   #wedding-party .quarter, 
   #wedding-party .sixth, 
-  #home-responsive .half {
+  #home-responsive .fragment {
     grid-column: span 12;
   }
 

@@ -255,6 +255,11 @@ img {
   vertical-align: middle;
 }
 
+#homepage-img {
+  margin: 0;
+  max-height: 80dvh;
+}
+
 #party .col p {
   padding: 0 2%;
 }
@@ -582,9 +587,23 @@ details > summary {
     width: 50%;
   }
 
-    /* Image grid changes */
-  #gallery .third, #outfits .half, #wedding-party .half, #wedding-party .third, #wedding-party .quarter, #wedding-party .sixth {
+  #homepage-img {
+    max-height: none;
+  }
+
+  /* Image grid changes */
+  #gallery .third, 
+  #outfits .half, 
+  #wedding-party .half, 
+  #wedding-party .third, 
+  #wedding-party .quarter, 
+  #wedding-party .sixth, 
+  #home-responsive .half {
     grid-column: span 12;
+  }
+
+  #home-responsive .twelfth {
+    display: none;
   }
 
   .col img {

@@ -615,7 +615,7 @@ details > summary {
 @media (max-width: 880px) {
 
   .speaker-btn {
-    width: 50%;
+    width: 30%;
   }
 
   .fullscreen {
@@ -640,6 +640,10 @@ details > summary {
 
   #home-responsive .twelfth {
     display: none;
+  }
+
+  #home-responsive p {
+    padding: 0 3%;
   }
 
   #schedule-responsive {

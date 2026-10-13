@@ -14,7 +14,7 @@
 
 /* General webpage look */
 body {
-  background: #f1f3f6; /* background page color */
+  background: #f4f4f6; /* background page color */
   overflow-y: auto; /* allows for scrolling down instead of text wrapping sideways */
   /* Page width and height */
   width: 100%;

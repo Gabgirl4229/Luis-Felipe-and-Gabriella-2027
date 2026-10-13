@@ -662,8 +662,8 @@ details > summary {
   }
 
   #gifts-responsive > .overlay-portrait {
-    top: 20%;
-    transform: translate(0%, -20%);
+    /*top: 0%;
+    transform: translate(0%, 0%);*/
   }
 
   .col img {

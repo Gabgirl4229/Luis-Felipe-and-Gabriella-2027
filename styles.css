@@ -277,6 +277,16 @@ img {
   margin-left: 3%;
 }
 
+#gifts-responsive > img .landscape {
+  max-height: 90dvh;
+  width: 100%;
+  object-fit: cover;
+}
+
+#gifts-responsive > img .portrait {
+  display: none;
+}
+
 /* For elements that go "on top of" images */
 .overlay-content {
   position: absolute;
@@ -627,6 +637,10 @@ details > summary {
   #location-responsive {
     margin-left: 6%;
     margin-top: 3%;
+  }
+
+  #gifts-responsive > img .landscape {
+    display: none;
   }
 
   .col img {

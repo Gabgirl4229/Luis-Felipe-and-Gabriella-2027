@@ -587,6 +587,10 @@ details > summary {
     width: 50%;
   }
 
+  .fullscreen {
+    height: auto;
+  }
+
   #homepage-img {
     max-height: none;
   }

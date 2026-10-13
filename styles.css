@@ -291,7 +291,6 @@ img {
 }
 
 #gifts-responsive > .overlay-landscape {
-  display: inline;
   top: 50%;
   transform: translate(0%, -48%);
 }
@@ -303,6 +302,8 @@ img {
 /* For elements that go "on top of" images */
 .overlay-content {
   position: absolute;
+  display: inline;
+  left: 0;
 }
 
 /* Setups for specific pages */
@@ -661,9 +662,7 @@ details > summary {
   }
 
   #gifts-responsive > .overlay-portrait {
-    display: inline;
     top: 20%;
-    left: 0%;
     transform: translate(0%, -20%);
   }
 

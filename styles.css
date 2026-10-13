@@ -645,7 +645,7 @@ details > summary {
     margin-top: 3%;
   }
 
-  #gifts-responsive > img .landscape {
+  #gifts-responsive > .landscape {
     display: none;
   }
 

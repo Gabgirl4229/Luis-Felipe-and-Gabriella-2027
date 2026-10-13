@@ -631,8 +631,8 @@ details > summary {
   #wedding-party .third, 
   #wedding-party .quarter, 
   #wedding-party .sixth, 
-  #home-responsive .fragment
-  #details .half{
+  #home-responsive .fragment,
+  #details .half {
     grid-column: span 12;
   }
 

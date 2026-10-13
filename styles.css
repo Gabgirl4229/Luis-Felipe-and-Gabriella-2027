@@ -290,6 +290,11 @@ img {
   object-fit: cover;
 }
 
+#gifts-responsive > .overlay-landscape {
+  top: 50%;
+  transform: translate(0%, -48%);
+}
+
 #gifts-responsive > .portrait {
   display: none;
 }
@@ -297,8 +302,6 @@ img {
 /* For elements that go "on top of" images */
 .overlay-content {
   position: absolute;
-  top: 50%;
-  transform: translate(0%, -48%);
 }
 
 /* Setups for specific pages */
@@ -656,8 +659,9 @@ details > summary {
     width: 100%;
   }
 
-  #gifts-responsive > .overlay-content {
-
+  #gifts-responsive > .overlay-landscape {
+    top: 20%;
+    transform: translate(0%, -20%);
   }
 
   .col img {

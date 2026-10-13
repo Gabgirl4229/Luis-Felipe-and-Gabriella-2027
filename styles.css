@@ -277,10 +277,12 @@ img {
 
 #schedule-responsive {
   margin-right: 3%;
+  height: stretch;
 }
 
 #location-responsive {
   margin-left: 3%;
+  height: stretch;
 }
 
 #gifts-responsive > .landscape {

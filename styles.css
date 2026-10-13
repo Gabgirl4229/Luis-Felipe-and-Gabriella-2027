@@ -291,6 +291,7 @@ img {
 }
 
 #gifts-responsive > .overlay-landscape {
+  display: inline;
   top: 50%;
   transform: translate(0%, -48%);
 }
@@ -660,7 +661,9 @@ details > summary {
   }
 
   #gifts-responsive > .overlay-portrait {
+    display: inline;
     top: 20%;
+    left: 0%;
     transform: translate(0%, -20%);
   }
 

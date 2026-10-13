@@ -295,7 +295,7 @@ img {
   transform: translate(0%, -48%);
 }
 
-#gifts-responsive > .portrait {
+#gifts-responsive > .portrait, #gifts-responsive > .overlay-portrait {
   display: none;
 }
 
@@ -650,7 +650,7 @@ details > summary {
     margin-top: 3%;
   }
 
-  #gifts-responsive > .landscape {
+  #gifts-responsive > .landscape, #gifts-responsive .overlay-landscape {
     display: none;
   }
 
@@ -659,7 +659,7 @@ details > summary {
     width: 100%;
   }
 
-  #gifts-responsive > .overlay-landscape {
+  #gifts-responsive > .overlay-portrait {
     top: 20%;
     transform: translate(0%, -20%);
   }

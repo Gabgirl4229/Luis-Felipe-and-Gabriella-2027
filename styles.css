@@ -14,7 +14,7 @@
 
 /* General webpage look */
 body {
-  background: #f4f4f6; /* background page color */
+  background: #e8e9ef; /* background page color */
   overflow-y: auto; /* allows for scrolling down instead of text wrapping sideways */
   /* Page width and height */
   width: 100%;
@@ -116,13 +116,6 @@ section {
     visibility: hidden;
 }
 
-/* Gradient */
-.gradient {
-  width: 100%;
-  height: 180px;
-  background-image: linear-gradient(to bottom, #ffffff, #f1f3f6);
-}
-
 /* Line dividers */
 hr {
   border-top: 4px solid #bbb;
@@ -147,7 +140,7 @@ hr {
 
 /* Footer of the homepage */
 footer {
-  background: #e8edf4;
+  background: #c4c3d0;
   padding: 15px 0px;
   font-size: 1.5rem;
   grid-column: 1;
@@ -455,7 +448,7 @@ img {
   transition: 0.25s ease all;
 
   /* Horizontal specific */
-  background: #f1f3f6;
+  background: #;
   position: absolute;
   width: 4rem;
   left: 11rem;

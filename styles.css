@@ -284,6 +284,7 @@ img {
 }
 
 #gifts-responsive > .landscape {
+  display: inline;
   max-height: 90dvh;
   width: 100%;
   object-fit: cover;
@@ -648,6 +649,15 @@ details > summary {
 
   #gifts-responsive > .landscape {
     display: none;
+  }
+
+  #gifts-responsive > .portrait {
+    display: inline;
+    width: 100%;
+  }
+
+  #gifts-responsive > .overlay-content {
+
   }
 
   .col img {

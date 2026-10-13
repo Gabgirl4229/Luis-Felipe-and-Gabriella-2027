@@ -352,8 +352,8 @@ img {
   position: relative;
 
   /* Horizontal specific */
-  width: 32rem;
-  height: 3rem;
+  width: 26rem;
+  height: 2rem;
   margin: 0 auto;
   font-size: 0;
 }
@@ -366,9 +366,9 @@ img {
   cursor: pointer;
 
   /* Horizontal specific */
-  height: 3rem;
-  width: 6rem;
-  left: 6rem;
+  height: 2rem;
+  width: 4rem;
+  left: 4rem;
   margin: 0;
 }
 
@@ -388,10 +388,10 @@ img {
   cursor: pointer;
 
   /* Horizontal specific */
-  font-size: 1.5rem;
-  line-height: 3rem;
+  font-size: 1.25rem;
+  line-height: 2rem;
   display: inline-block;
-  width: 13rem;
+  width: 11rem;
   height: 100%;
   margin: 0;
   text-align: center;
@@ -399,7 +399,7 @@ img {
 
 /* Horizontal specific */
 .switch label:last-of-type {
-  margin-left: 6rem;
+  margin-left: 4rem;
 }
 
 .switch .toggle-outside {
@@ -412,8 +412,8 @@ img {
   /* Horizontal specific */
   background: #f4f7fb;
   position: absolute;
-  width: 6rem;
-  left: 13rem;
+  width: 4rem;
+  left: 11rem;
 }
 
 .switch .toggle-inside {
@@ -423,18 +423,19 @@ img {
   transition: 0.25s ease all;
 
   /* Horizontal specific */
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 1.7rem;
+  width: 1.7rem;
 }
 
 /* Horizontal specific */
 .switch input:checked ~ .toggle-outside .toggle-inside {
-  left: 0.25rem;
+  left: 0.15rem;
+  bottom: 0.15rem;
 }
 
 /* Horizontal specific */
 .switch input ~ input:checked ~ .toggle-outside .toggle-inside {
-  left: 3.25rem;
+  left: 2.15rem;
 }
 
 /* Erases default radio to allow customization */

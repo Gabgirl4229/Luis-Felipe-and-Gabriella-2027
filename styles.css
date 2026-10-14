@@ -276,6 +276,10 @@ img {
   max-height: 80dvh;
 }
 
+#home-responsive p {
+  padding: 0 3%;
+}
+
 #schedule-responsive {
   margin-right: 3%;
   height: stretch;
@@ -625,10 +629,6 @@ details > summary {
   #attire-responsive .third, 
   #attire-responsive .two-thirds {
     grid-column: span 12;
-  }
-
-  #home-responsive p {
-    padding: 0 3%;
   }
 
   #home-responsive .sixth {

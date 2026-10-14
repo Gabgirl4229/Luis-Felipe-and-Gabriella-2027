@@ -679,6 +679,10 @@ details > summary {
     display: inline;
   }
 
+  #wedding-party .invisible {
+    display: none;
+  }
+
   /* Carousel */
   .slideshow-container {
     max-width: 80%;

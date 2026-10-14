@@ -589,30 +589,12 @@ details > summary {
    Mega Screens (Landscape Mode)
    ========================================================= */
 
-/* =========================================================
-   Small Laptops & Tablets (Landscape Mode)
-   ========================================================= */
-
-@media (max-width: 1080px) {
-
-  /* Padding changes */
-  section {
-    /*margin-bottom: 4%;*/
-  }
-
-  /* Carousel */
-  .slideshow-container {
-    max-width: 75%;
-  }
-
-}
-
 
 /* =========================================================
    Tablets (Portrait Mode) & Phones (Landscape Mode)
    ========================================================= */
 
-@media (max-width: 880px) {
+@media (max-width: 1080px) {
 
   .rsvp-btn {
     font-size: 3.5rem;

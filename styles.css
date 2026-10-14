@@ -288,7 +288,7 @@ img {
 #gifts-responsive > .overlay-landscape {
   display: inline;
   top: 50%;
-  transform: translate(0%, -48%);
+  transform: translate(0%, -50%);
 }
 
 #gifts-responsive > .portrait, #gifts-responsive > .overlay-portrait {
@@ -546,7 +546,7 @@ input[type="radio"]:checked {
   transition: all 0.3s ease;
 }
 
-/* Make the label look differen when selected */
+/* Make the label look different when selected */
 .toggle-radio-group input[type="radio"]:checked + label {
   background: #748469;
   color: white;
@@ -660,8 +660,6 @@ details > summary {
 
   #gifts-responsive > .overlay-portrait {
     display: inline;
-    /*top: 0%;
-    transform: translate(0%, 0%);*/
   }
 
   .col img {

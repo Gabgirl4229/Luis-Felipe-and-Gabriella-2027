@@ -434,6 +434,7 @@ img {
 
 .switch label {
   color: #8ea58c;
+  opacity: 0.80;
   transition: opacity 0.25s ease;
   cursor: pointer;
 

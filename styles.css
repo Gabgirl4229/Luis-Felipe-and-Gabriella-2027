@@ -421,16 +421,16 @@ img {
 .switch input:checked + label {
   opacity: 1;
   cursor: default;
+  color: #748469;
 }
 
 .switch label {
-  color: #748469;
-  opacity: 0.55;
+  color: #8ea58c;
   transition: opacity 0.25s ease;
   cursor: pointer;
 
   /* Horizontal specific */
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   line-height: 2rem;
   display: inline-block;
   width: 11rem;
@@ -450,6 +450,7 @@ img {
   padding: 0.25rem;
   overflow: hidden;
   transition: 0.25s ease all;
+  background: #e8e9ef;
 
   /* Horizontal specific */
   position: absolute;
@@ -494,9 +495,9 @@ input[type="radio"] {
 
 /* Switch customization */
 input[type="radio"][name="switch"] {
-    width: 6rem;
-    height: 3rem;
-    left: 13rem;
+    width: 4rem;
+    height: 2rem;
+    left: 11rem;
 }
 
 /* Add natural indent and color change ability to bullets in RSVP */

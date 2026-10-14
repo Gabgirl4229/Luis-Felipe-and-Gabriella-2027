@@ -235,6 +235,10 @@ button {
   grid-column: span 1;
 }
 
+.fragment {
+  grid-column: span 5;
+}
+
 img {
   max-height: 100%;
   max-width: 100%;
@@ -263,7 +267,6 @@ img {
 
 #home-responsive > .fragment {
   padding: 0;
-  grid-column: span 5;
 }
 
 

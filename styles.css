@@ -584,10 +584,7 @@ details > summary {
    Small Laptops & Tablets (Landscape Mode)
    ========================================================= */
 
-/* Size limits - Phones (500px) < Tablets (900px) < Laptops/Desktops (4000px) */
-/* Phones will have mobile mode no matter what, laptops will have computer mode no matter what, tablets will change based on portrait/landscape mode */
-
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
 
   /* Padding changes */
   section {

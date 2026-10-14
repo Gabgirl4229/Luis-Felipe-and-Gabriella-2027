@@ -256,8 +256,13 @@ img {
   width: 100%;
 }
 
+#wedding-party .col p,
 #party .col p {
   padding: 0 2%;
+}
+
+#wedding-party img {
+  aspect-ratio: 4/5;
 }
 
 /* Desktop/Tablet responsive items */

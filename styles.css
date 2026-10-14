@@ -274,7 +274,6 @@ img {
   padding: 0;
 }
 
-
 #homepage-img {
   margin: 0;
   max-height: 80dvh;
@@ -642,14 +641,11 @@ details > summary {
   #wedding-party .quarter, 
   #wedding-party .sixth, 
   #home-responsive .fragment,
+  #home-responsive .twelfth,
   #details .half,
   #attire-responsive .third, 
   #attire-responsive .two-thirds {
     grid-column: span 12;
-  }
-
-  #home-responsive .twelfth {
-    display: none;
   }
 
   #home-responsive p {

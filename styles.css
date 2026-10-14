@@ -9,7 +9,7 @@
 
 /* To fix the "header covering content when scrolling" issue on mobile */
 [id] {
-  scroll-margin-top: 70px;
+  scroll-margin-top: 100px;
 }
 
 /* General webpage look */

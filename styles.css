@@ -609,6 +609,10 @@ details > summary {
 
 @media (max-width: 880px) {
 
+  .rsvp-btn {
+    font-size: 3.5rem;
+  }
+  
   .speaker-btn {
     width: 30%;
   }
@@ -737,10 +741,6 @@ details > summary {
   hr {
     border-top: 3px solid #bbb;
     margin: 4% 0;
-  }
-
-  .rsvp-btn {
-    font-size: 3.5rem;
   }
 
   .speaker-btn {

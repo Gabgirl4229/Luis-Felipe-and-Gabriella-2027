@@ -248,6 +248,10 @@ img {
   vertical-align: middle;
 }
 
+#gallery .col img {
+  width: 100%;
+}
+
 #party .col p {
   padding: 0 2%;
 }
@@ -660,10 +664,6 @@ details > summary {
 
   #gifts-responsive > .overlay-portrait {
     display: inline;
-  }
-
-  .col img {
-    width: 100%;
   }
 
   /* Carousel */

@@ -631,6 +631,10 @@ details > summary {
     padding: 0 3%;
   }
 
+  #home-responsive .sixth {
+    display: none;
+  }
+
   #schedule-responsive {
     margin-right: 6%;
     margin-bottom: 3%;

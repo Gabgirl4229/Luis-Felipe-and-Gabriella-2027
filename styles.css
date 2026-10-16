@@ -362,7 +362,7 @@ img {
 
 .dots {
   display: flex;
-  gap: 1rem; /* space between dots */
+  gap: 0.875rem; /* space between dots */
 }
 
 .dot {

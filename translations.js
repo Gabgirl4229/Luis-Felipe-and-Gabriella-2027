@@ -21,7 +21,25 @@ const translations = {
     19: "We Dine and Dance!",
     20: "6:00PM - 10:00PM",
     21: "More drinks, good food and dancing will all take place in the reception room to celebrate us becoming newly-weds!",
-    22: ""
+    22: "Venue",
+    23: "", // Parking instructions
+    24: "", // Hotel instructions
+    25: "",
+    26: "",
+    27: "",
+    28: "",
+    29: "",
+    30: "",
+    31: "",
+    32: "",
+    33: "",
+    34: "",
+    35: "",
+    36: "",
+    37: "",
+    38: "",
+    39: "",
+    40: ""
   },
 
   es: {
@@ -46,8 +64,25 @@ const translations = {
     19: "¡Cenamos y Bailamos!",
     20: "6:00PM - 10:00PM",
     21: "¡Habrá más bebidas, buena comida y baile en el salón de recepciones para celebrar que nos hemos convertido en recién casados!",
-    22: "",
-    23: ""
+    22: "Lugar de la Boda",
+    23: "",
+    24: "",
+    25: "",
+    26: "",
+    27: "",
+    28: "",
+    29: "",
+    30: "",
+    31: "",
+    32: "",
+    33: "",
+    34: "",
+    35: "",
+    36: "",
+    37: "",
+    38: "",
+    39: "",
+    40: ""
   },
 
   pt: {
@@ -72,6 +107,24 @@ const translations = {
     19: "Jantamos e dançamos.",
     20: "18:00 - 22:00",
     21: "Haverá mais bebidas, boa comida e dança no salão de festas para celebrar o fato de termos nos tornado recém-casados!",
-    22: ""
+    22: "Local para o Casamento",
+    23: "",
+    24: "",
+    25: "",
+    26: "",
+    27: "",
+    28: "",
+    29: "",
+    30: "",
+    31: "",
+    32: "",
+    33: "",
+    34: "",
+    35: "",
+    36: "",
+    37: "",
+    38: "",
+    39: "",
+    40: ""
   }
 }

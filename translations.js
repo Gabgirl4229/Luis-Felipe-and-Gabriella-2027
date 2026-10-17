@@ -15,12 +15,13 @@ const translations = {
     13: "We Do!",
     14: "4:00PM Sharp",
     15: "The ceremony will be held on the garden lawn. Please arrive at 3:30PM to find your seat and get comfortable.",
-    16: "",
-    17: "",
-    18: "",
-    19: "",
-    20: "",
-    21: ""
+    16: "We Drink!",
+    17: "5:00PM",
+    18: "Drinks and music following the ceremony to begin the festivities.",
+    19: "We Dine and Dance!",
+    20: "6:00PM - 10:00PM",
+    21: "More drinks, good food and dancing will all take place in the reception room to celebrate us becoming newly-weds!",
+    22: ""
   },
 
   es: {
@@ -37,14 +38,16 @@ const translations = {
     11: "Estamos muy emocionados de que vengas a celebrar con nosotros. Aqui encontrarás la información más reciente sobre la boda, incluyendo detalles sobre el lugar de celebración, el hotel, el código de vestimenta, información sobre regalos, y mucho más. Te invitamos a leer nuestra historia y a echar un vistazo a nuestra galería de fotos. ¡Esperamos verte pronto! Por favor confirma tu asistencia más abajo.",
     12: "¡Haz clic en el icono del altavoz para reproducir una de nuestras canciones favoritas!",
     13: "¡Nos Aceptamos!",
-    14: "La ceremonia tendrá lugar en el césped del jardín. Por favor, lleguen a las 3:30PM para buscar su asiento y ponerse cómodos.",
-    15: "",
-    16: "",
-    17: "",
-    18: "",
-    19: "",
-    20: "",
-    21: ""
+    14: "4:00PM En Punto",
+    15: "La ceremonia tendrá lugar en el césped del jardín. Por favor, lleguen a las 3:30PM para buscar su asiento y ponerse cómodos.",
+    16: "¡Bebemos!",
+    17: "5:00PM",
+    18: "Tras la ceremonia, habrá bebidas y música para dar comienzo a la celebración.",
+    19: "¡Cenamos y Bailamos!",
+    20: "6:00PM - 10:00PM",
+    21: "¡Habrá más bebidas, buena comida y baile en el salón de recepciones para celebrar que nos hemos convertido en recién casados!",
+    22: "",
+    23: ""
   },
 
   pt: {
@@ -63,11 +66,12 @@ const translations = {
     13: "Aceitamos!",
     14: "16:00 Em Ponto",
     15: "A cerimônia será realizada no gramado do jardim. Por favor, cheguem às 15:30 para encontrar seu lugar e se acomodar.",
-    16: "",
-    17: "",
-    18: "",
-    19: "",
-    20: "",
-    21: ""
+    16: "Bebemos",
+    17: "17:00",
+    18: "Após a cerimônia, haverá bebidas e música para dar início à celebração.",
+    19: "Jantamos e dançamos.",
+    20: "18:00 - 22:00",
+    21: "Haverá mais bebidas, boa comida e dança no salão de festas para celebrar o fato de termos nos tornado recém-casados!",
+    22: ""
   }
 }

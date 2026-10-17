@@ -263,8 +263,15 @@ function renderGroupRSVP() {
 
     const attendance = guest.attending || "";
 
+    // Create the container for the toggle radio buttons.
+    const radioGroup = document.createElement("div");
+    radioGroup.className = "toggle-radio-group";
+    
     addRadio("attendance", "Y", "Yes", attendance === "Y");
     addRadio("attendance", "N", "No", attendance === "N");
+    
+    // Append the complete group to the content.
+    content.appendChild(radioGroup);
 
     // DINING
     addHeading("Dining");

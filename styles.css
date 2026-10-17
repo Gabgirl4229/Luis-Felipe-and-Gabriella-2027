@@ -621,20 +621,11 @@ details > summary {
 }
 
 .guest-details-content .checkbox-option {
-  margin: 0.65rem 0;
-}
-
-.guest-details-content .checkbox-option input[type="text"] {
-  max-width: 100%;
-  box-sizing: border-box;
+  margin-bottom: 0.375rem;
 }
 
 .guest-details-content textarea {
-  display: block;
   width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-  margin-top: 0.5rem;
 }
 
 #collectResponses {

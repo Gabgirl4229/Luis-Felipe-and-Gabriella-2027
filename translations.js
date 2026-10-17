@@ -12,9 +12,15 @@ const translations = {
     10: "Welcome to our wedding website!",
     11: "We are so excited for you to come celebrate with us. Here you can find the most up-to-date information about the wedding. This includes venue and hotel information, dress code, gifting, and more! Feel free to read about how we met and take a look at our photo gallery. We hope to see you soon! RSVP below to let us know you'll be there.",
     12: "Click the speaker icon to play one of our favorite songs!",
-    13: "",
-    14: "",
-    15: ""
+    13: "We Do!",
+    14: "4:00PM Sharp",
+    15: "The ceremony will be held on the garden lawn. Please arrive at 3:30PM to find your seat and get comfortable.",
+    16: "",
+    17: "",
+    18: "",
+    19: "",
+    20: "",
+    21: ""
   },
 
   es: {
@@ -30,7 +36,15 @@ const translations = {
     10: "¡Bienvenidos a nuestra pagina web de bodas!",
     11: "Estamos muy emocionados de que vengas a celebrar con nosotros. Aqui encontrarás la información más reciente sobre la boda, incluyendo detalles sobre el lugar de celebración, el hotel, el código de vestimenta, información sobre regalos, y mucho más. Te invitamos a leer nuestra historia y a echar un vistazo a nuestra galería de fotos. ¡Esperamos verte pronto! Por favor confirma tu asistencia más abajo.",
     12: "¡Haz clic en el icono del altavoz para reproducir una de nuestras canciones favoritas!",
-    13: ""
+    13: "¡Nos Aceptamos!",
+    14: "La ceremonia tendrá lugar en el césped del jardín. Por favor, lleguen a las 3:30PM para buscar su asiento y ponerse cómodos.",
+    15: "",
+    16: "",
+    17: "",
+    18: "",
+    19: "",
+    20: "",
+    21: ""
   },
 
   pt: {
@@ -46,6 +60,14 @@ const translations = {
     10: "Bem-vindos ao nosso site de casamento!",
     11: "Ficaremos muito felizes com a sua presença em nossa celebração! Aqui você encontrará todas as informações atualizadas sobre o casamento, incluindo detalhes sobre o local do evento e o hotel, o traje, informações sobre presentes e muito mais. Convidamos você a conhecer a nossa história e a dar uma olhada na nossa galeria de fotos. Esperamos vê-lo em breve! Por favor, confirme sua presença logo abaixo.",
     12: "Clique no ícone do alto-falante para reproduzir uma de nossas músicas favoritas",
-    13: ""
+    13: "Aceitamos!",
+    14: "16:00 Em Ponto",
+    15: "A cerimônia será realizada no gramado do jardim. Por favor, cheguem às 15:30 para encontrar seu lugar e se acomodar.",
+    16: "",
+    17: "",
+    18: "",
+    19: "",
+    20: "",
+    21: ""
   }
 }

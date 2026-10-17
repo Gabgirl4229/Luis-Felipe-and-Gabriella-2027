@@ -574,14 +574,16 @@ async function collectResponses() {
     );
     return;
   }
-
+  
+  if (["en", "es", "pt"].includes(preferredLanguage)) {
+    setLanguage(preferredLanguage);
+  }
+  
   alert(
     `RSVPs submitted successfully! Guests: ${data.updatedCount}`
   );
 
-  //if (["en", "es", "pt"].includes(preferredLanguage)) {
-    //setLanguage(preferredLanguage);
-  //}
+  
 }
 
 // Start the correct functions when the corresponding buttons are clicked

@@ -545,7 +545,6 @@ input[type="radio"]:checked {
   margin: 0.5rem;
 }
 
-
 /* Add animation to label */
 .toggle-radio-group label {
   padding: 0.5rem 0.75rem;
@@ -582,6 +581,83 @@ details > summary {
   color: #748469;
   width: fit-content;
 }
+
+/* Group RSVP style */
+
+#groupRSVP {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.guest-details {
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.guest-details summary {
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: #244b68;
+  background: #f2f6f9;
+  list-style-position: inside;
+}
+
+.guest-details summary:hover {
+  background: #e7eff5;
+}
+
+.guest-details[open] summary {
+  border-bottom: 1px solid #cbd5e1;
+}
+
+.guest-details-content {
+  padding: 1.25rem;
+}
+
+.guest-details-content h3 {
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.guest-details-content h3:first-child {
+  margin-top: 0;
+}
+
+.guest-details-content p {
+  margin-bottom: 0.75rem;
+}
+
+.guest-details-content .checkbox-option {
+  margin: 0.65rem 0;
+}
+
+.guest-details-content .checkbox-option input[type="text"] {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.guest-details-content textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-top: 0.5rem;
+}
+
+#collectResponses {
+  margin-top: 1rem;
+}
+
+#collectResponses:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
 
 /* =========================================================
    Mega Screens (Landscape Mode)

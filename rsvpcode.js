@@ -544,6 +544,13 @@ async function collectResponses() {
     });
   }
 
+  // Find the verified guest's language selection.
+  const verifiedGuestResponse = responses.find(
+    response => String(response.guestId) === String(currentGuest.id)
+  );
+
+  const selectedLanguage = verifiedGuestResponse?.preferredLanguage;
+
   // Ensure every loaded guest has a response.
   if (
     responses.length !== currentGroup.length ||
@@ -575,8 +582,8 @@ async function collectResponses() {
     return;
   }
   
-  if (["en", "es", "pt"].includes(preferredLanguage)) {
-    setLanguage(preferredLanguage);
+  if (["en", "es", "pt"].includes(selectedLanguage)) {
+    setLanguage(selectedLanguage);
   }
   
   alert(

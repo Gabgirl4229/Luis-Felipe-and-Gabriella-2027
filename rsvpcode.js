@@ -390,83 +390,122 @@ function renderGroupRSVP() {
   });
 }
 
-async function collectResponses() {  
-  if (!currentGuest || !currentGuest.phone) {
-    console.error("Guest has not been verified.");
+
+async function collectResponses() {
+  if (!currentGuest?.phone) {
+    alert("Please verify your identity first.");
     return;
   }
-  
-  const attendanceValue = document.querySelector('input[name="attendance"]:checked')?.value;
-  if (!attendanceValue) {
-    alert("Please select whether you will be attending.");
+
+  if (!currentGroup.length) {
+    alert("No guests were loaded. Please try again.");
     return;
   }
-  const attending = attendanceValue === "yes" ? "Y" : "N";
 
-  const selectedLanguage = document.querySelector('input[name="language"]:checked')?.value || null;
+  const responses = [];
 
-  let foodRestrictions = Array.from(
-    document.querySelectorAll('input[type="checkbox"]:checked')
-  ).map(cb => cb.value);
+  // Collect answers separately for each guest.
+  for (const details of document.querySelectorAll("#groupRSVP details")) {
+    const guestId = details.dataset.guestId;
 
-  const allergyChecked = document.getElementById("restriction8").checked;
-  const allergyText = document.getElementById("allergy").value;
+    const attendance = details.querySelector(
+      'input[data-field="attendance"]:checked'
+    )?.value;
 
-  if (allergyChecked && allergyText) {
-    foodRestrictions = foodRestrictions.filter(r => r !== "Allergy");
-    foodRestrictions.push(`Allergy: ${allergyText}`);
+    if (!attendance) {
+      alert("Please select attendance for every guest.");
+      details.open = true;
+      details.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+      });
+      return;
+    }
+
+    const preferredLanguage =
+      details.querySelector(
+        'input[data-field="language"]:checked'
+      )?.value || null;
+
+    let foodRestrictions = Array.from(
+      details.querySelectorAll(
+        'input[data-field="restriction"]:checked'
+      )
+    ).map(input => input.value);
+
+    // Add allergy details if provided.
+    const allergyChecked = foodRestrictions.includes("Allergy");
+    const allergyText =
+      details.querySelector('input[data-field="allergy"]')
+        ?.value.trim() || "";
+
+    if (allergyChecked && allergyText) {
+      foodRestrictions = foodRestrictions.filter(
+        value => value !== "Allergy"
+      );
+      foodRestrictions.push(`Allergy: ${allergyText}`);
+    }
+
+    // Add other restriction details if provided.
+    const otherChecked = foodRestrictions.includes("Other");
+    const otherText =
+      details.querySelector('input[data-field="otherRestriction"]')
+        ?.value.trim() || "";
+
+    if (otherChecked && otherText) {
+      foodRestrictions = foodRestrictions.filter(
+        value => value !== "Other"
+      );
+      foodRestrictions.push(`Other: ${otherText}`);
+    }
+
+    const message =
+      details.querySelector('textarea[data-field="comment"]')
+        ?.value.trim() || "";
+
+    responses.push({
+      guestId: guestId,
+      attending: attendance,
+      preferredLanguage: preferredLanguage,
+      foodRestrictions: foodRestrictions,
+      messages: message ? [message] : []
+    });
   }
 
-  const otherChecked = document.getElementById("restriction9").checked;
-  const otherText = document.getElementById("otherRestriction").value;
-
-  if (otherChecked && otherText) {
-    foodRestrictions = foodRestrictions.filter(r => r !== "Other");
-    foodRestrictions.push(`Other: ${otherText}`);
+  // Ensure every loaded guest has a response.
+  if (
+    responses.length !== currentGroup.length ||
+    responses.some(response => !response.guestId)
+  ) {
+    alert("We could not collect every guest's answers. Please reload the form.");
+    return;
   }
 
-  const message = document.getElementById("comment").value.trim();
-  const messages = message ? [message] : [];
-
-  console.log({
-  phoneNumber: currentGuest.phone,
-  attending: attending,
-  preferredLanguage: selectedLanguage,
-  foodRestrictions: foodRestrictions,
-  messages: message
-  });
-
-  // Update Supabase with guest responses
+  // Submit the entire group to Supabase.
   const { data, error } =
     await supabaseClient.functions.invoke(
       "wedding-rsvp",
       {
         body: {
-          action: "submit",
+          action: "submitGroup",
           guestId: currentGuest.id,
           phone: currentGuest.phone,
-          attending: attending,
-          preferredLanguage: selectedLanguage,
-          foodRestrictions: foodRestrictions,
-          messages: messages
+          responses: responses
         }
       }
     );
 
-   if (error) {
-    console.log("RSVP response data:", data);
-    console.log("RSVP response error:", error);
-    console.error("Error saving RSVP:", error);
-    alert("There was a problem submitting your RSVP. Please try again.");
+  if (error || !data?.success) {
+    console.error("Group RSVP submission failed:", error, data);
+    alert(
+      "There was a problem submitting your RSVPs. Please try again."
+    );
     return;
   }
 
-  if (!data.success) {
-    alert("There was a problem submitting your RSVP. Please try again.");
-    return;
-  }
-  
-  alert("RSVP submitted successfully!");
+  alert(
+    `RSVPs submitted successfully for ${data.updatedCount} guests!`
+  );
 }
 
 // Start the correct functions when the corresponding buttons are clicked

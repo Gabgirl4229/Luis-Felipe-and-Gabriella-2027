@@ -600,6 +600,7 @@ details > summary {
   color: #84a1c4;
   background: #f2f6f9;
   border-radius: 12px;
+  width: 100%;
 }
 
 .guest-details-content {

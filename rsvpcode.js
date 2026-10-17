@@ -298,6 +298,22 @@ function renderGroupRSVP() {
     // Append the complete group to the content.
     content.appendChild(radioGroup);
 
+    // LANGUAGE
+    addHeading("Language");
+    addParagraph("What is your preferred language?");
+
+    const language = guest.preferredLanguage || "";
+
+    // Create a container for the language toggle buttons.
+    const languageGroup = document.createElement("div");
+    languageGroup.className = "toggle-radio-group";
+
+    addLanguageRadio("english", "English");
+    addLanguageRadio("spanish", "Spanish");
+    addLanguageRadio("portuguese", "Portuguese");
+    
+    content.appendChild(languageGroup);
+    
     // DINING
     addHeading("Dining");
     addParagraph("Do you have any food restrictions?");
@@ -351,7 +367,6 @@ function renderGroupRSVP() {
     const allergyInput = document.createElement("input");
     allergyInput.type = "text";
     allergyInput.dataset.field = "allergy";
-    allergyInput.placeholder = "Please describe the allergy";
     allergyInput.value = allergyText;
 
     allergyWrapper.appendChild(allergyInput);
@@ -377,36 +392,15 @@ function renderGroupRSVP() {
     const otherInput = document.createElement("input");
     otherInput.type = "text";
     otherInput.dataset.field = "otherRestriction";
-    otherInput.placeholder = "Please specify";
     otherInput.value = otherText;
 
     otherWrapper.appendChild(otherInput);
     content.appendChild(otherWrapper);
 
-    // LANGUAGE
-    addHeading("Language");
-    addParagraph("What is your preferred language?");
-
-    const language = guest.preferredLanguage || "";
-
-    // Create a container for the language toggle buttons.
-    const languageGroup = document.createElement("div");
-    languageGroup.className = "toggle-radio-group";
-
-    addLanguageRadio("english", "English");
-    addLanguageRadio("spanish", "Spanish");
-    addLanguageRadio("portuguese", "Portuguese");
-    
-    content.appendChild(languageGroup);
-
     // MESSAGES
     addHeading("Messages");
-    addParagraph(
-      "Share any questions, heartfelt sentiments, or messages with us."
-    );
-
-    const messageLabel = document.createElement("label");
-    messageLabel.textContent = "Your message: ";
+    addParagraph("Do you have anything you'd like to share with us?");
+    addParagraph("Please use this field to ask any questions, express heartfelt sentiments, or send a message to us!");
 
     const messageInput = document.createElement("textarea");
     messageInput.dataset.field = "comment";

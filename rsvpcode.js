@@ -152,12 +152,19 @@ async function loadGuestGroup() {
 
   currentGroup = data.members;
 
+  console.log("Guests loaded:", currentGroup);
+  console.log("Starting RSVP rendering...");
+
   if (currentGroup.length === 0) {
     alert("No guests were found for this invitation.");
     return;
   }
 
   renderGroupRSVP();
+  console.log(
+    "RSVP rendering finished. HTML:",
+    document.getElementById("groupRSVP").innerHTML
+  );
 }
 
 

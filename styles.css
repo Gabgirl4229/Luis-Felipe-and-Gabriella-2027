@@ -630,6 +630,7 @@ details > summary {
 
 .guest-details-content textarea {
   width: 100%;
+  padding: 10px;
 }
 
 #collectResponses {

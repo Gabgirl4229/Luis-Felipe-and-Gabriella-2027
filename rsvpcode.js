@@ -335,8 +335,8 @@ function renderGroupRSVP() {
       ["Gluten-Free", t("59")],
       ["Dairy-Free", t("60")],
       ["Nut-Free", t("61")],
-      ["Kosher", t("62")],
-      ["Halal", t("63")]
+      ["Kosher", "Kosher"],
+      ["Halal", "Halal"]
     ];
 
     restrictionOptions.forEach(([value, labelText]) => {
@@ -371,7 +371,7 @@ function renderGroupRSVP() {
     allergyCheckbox.checked = Boolean(existingAllergy);
 
     allergyLabel.appendChild(allergyCheckbox);
-    allergyLabel.appendChild(document.createTextNode(t("64")));
+    allergyLabel.appendChild(document.createTextNode(t("62")));
 
     allergyWrapper.appendChild(allergyLabel);
 
@@ -396,7 +396,7 @@ function renderGroupRSVP() {
     otherCheckbox.checked = Boolean(existingOther);
 
     otherLabel.appendChild(otherCheckbox);
-    otherLabel.appendChild(document.createTextNode(t("65")));
+    otherLabel.appendChild(document.createTextNode(t("63")));
 
     otherWrapper.appendChild(otherLabel);
 
@@ -409,15 +409,15 @@ function renderGroupRSVP() {
     content.appendChild(otherWrapper);
 
     // MESSAGES
-    addHeading(t("66"));
-    addParagraph(t("67"));
-    addParagraph(t("68"));
+    addHeading(t("64"));
+    addParagraph(t("65"));
+    addParagraph(t("66"));
 
     const messageInput = document.createElement("textarea");
     messageInput.dataset.field = "comment";
     messageInput.rows = 4;
     messageInput.maxLength = 1000;
-    messageInput.placeholder = t("69");
+    messageInput.placeholder = t("67");
     messageInput.value = messages.join("\n");
 
     content.appendChild(messageInput);
@@ -438,12 +438,12 @@ function renderGroupRSVP() {
 
 async function collectResponses() {
   if (!currentGuest?.phone) {
-    alert(t("70"));
+    alert(t("68"));
     return;
   }
 
   if (!currentGroup.length) {
-    alert(t("71"));
+    alert(t("69"));
     return;
   }
 
@@ -474,15 +474,15 @@ async function collectResponses() {
     const requiredQuestions = [
       {
         selector: 'input[data-field="attendance"]:checked',
-        message: t("72")
+        message: t("70")
       },
       {
         selector: 'input[data-field="hotel"]:checked',
-        message: t("73")
+        message: t("71")
       },
       {
         selector: 'input[data-field="language"]:checked',
-        message: t("74")
+        message: t("72")
       }
     ];
 
@@ -563,7 +563,7 @@ async function collectResponses() {
     responses.length !== currentGroup.length ||
     responses.some(response => !response.guestId)
   ) {
-    alert(t("75"));
+    alert(t("73"));
     return;
   }
 
@@ -583,7 +583,7 @@ async function collectResponses() {
 
   if (error || !data?.success) {
     console.error("Group RSVP submission failed:", error, data);
-    alert(t("76"));
+    alert(t("74"));
     return;
   }
   
@@ -591,7 +591,7 @@ async function collectResponses() {
     setLanguage(selectedLanguage);
   }
   
-  alert(t("77") `${data.updatedCount}`);
+  alert(t("75") `${data.updatedCount}`);
 }
 
 // Start the correct functions when the corresponding buttons are clicked

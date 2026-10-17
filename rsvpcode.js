@@ -315,7 +315,7 @@ function renderGroupRSVP() {
         ["Y", "Yes"],
         ["N", "No"]
       ],
-      guest.hotelAccommodation || ""
+      guest.hotel || ""
     );
     
     // DINING

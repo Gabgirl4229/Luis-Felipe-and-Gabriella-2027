@@ -570,13 +570,13 @@ async function collectResponses() {
   if (error || !data?.success) {
     console.error("Group RSVP submission failed:", error, data);
     alert(
-      "There was a problem submitting your RSVPs. Please try again."
+      "There was a problem submitting your RSVP. Please try again."
     );
     return;
   }
 
   alert(
-    `RSVPs submitted successfully for ${data.updatedCount} guests!`
+    `RSVPs submitted successfully! Guests: ${data.updatedCount}!`
   );
 }
 

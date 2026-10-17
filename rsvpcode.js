@@ -216,20 +216,23 @@ function renderGroupRSVP() {
     function addRadio(groupName, value, labelText, checked) {
       const wrapper = document.createElement("div");
       wrapper.className = "radio-option";
-
+    
       const input = document.createElement("input");
       input.type = "radio";
+      input.id = `${groupName}-${guest.id}-${value}`;
       input.name = `${groupName}-${guest.id}`;
       input.value = value;
       input.checked = checked;
       input.dataset.field = groupName;
-
+    
       const label = document.createElement("label");
-      label.appendChild(input);
-      label.appendChild(document.createTextNode(` ${labelText}`));
-
+      label.htmlFor = input.id;
+      label.textContent = labelText;
+    
+      wrapper.appendChild(input);
       wrapper.appendChild(label);
-      content.appendChild(wrapper);
+    
+      radioGroup.appendChild(wrapper);
     }
 
     // Existing database values.

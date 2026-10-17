@@ -576,7 +576,7 @@ async function collectResponses() {
   }
 
   alert(
-    `RSVPs submitted successfully! Guests: ${data.updatedCount}!`
+    `RSVPs submitted successfully! Guests: ${data.updatedCount}`
   );
 }
 

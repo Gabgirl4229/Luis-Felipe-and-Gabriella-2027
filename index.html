@@ -287,54 +287,54 @@
       <h1>RSVP</h1>
       <br>
       <div id="verifyIdentity">
-        <p>Please enter your full name (as shown on your invitation):</p>
+        <p data-i18n="25">Please enter your full name (as shown on your invitation):</p>
         <br>
         <div class="rsvp-identity">
-          <label for="fname">First Name: </label>
+          <label for="fname" data-i18n="26">First Name: </label>
           <input type="text" id="fname" name="fname" required>
         </div>
         <div class="rsvp-identity">
-          <label for="lname">Last Name: </label>
+          <label for="lname" data-i18n="27">Last Name: </label>
           <input type="text" id="lname" name="lname" required>
         </div>
-        <button id="guestSearch">Search</button>
+        <button id="guestSearch" data-i18n="28">Search</button>
         <br><br><br>
         <div id ="searchSuccess" class="hidden">
-          <h2 class="blue">Success!</h2>
+          <h2 class="blue" data-i18n="29">Success!</h2>
           <br>
-          <p id="displayGuestName">We found your invitation under the name of </p>
-          <p id="displayPhoneNumber">Please confirm your identity by entering the digits of your phone number ending in </p>
+          <p id="displayGuestName" data-i18n="30">We found your invitation under the name of </p>
+          <p id="displayPhoneNumber" data-i18n="31">Please confirm your identity by entering the digits of your phone number ending in </p>
           <br>
-          <label for="phone">Phone Number: </label>
+          <label for="phone" data-i18n="32">Phone Number: </label>
           <input type="text" id="phone" name="phone" required>
-          <button id="validateGuest">Confirm</button>
+          <button id="validateGuest" data-i18n="33">Confirm</button>
         </div>
         <div id ="searchFailure" class="hidden">
-          <h2 class="blue">Oops!</h2>
+          <h2 class="blue" data-i18n="34">Oops!</h2>
           <br>
-          <p>There was a problem finding your invitation. Please try again.</p>
-          <p>Make sure your name is capitalized and matches your invitation. </p>
+          <p data-i18n="35">There was a problem finding your invitation. Please try again.</p>
+          <p data-i18n="36">Make sure your name is capitalized and matches your invitation.</p>
         </div>
         <br><br><br>
         <div id="validateFailure" class="hidden">
-          <h2 class="blue">Oops!</h2>
+          <h2 class="blue" data-i18n="34">Oops!</h2>
           <br>
-          <p>There was a problem validating your identity. Please try again.</p>
+          <p data-i18n="37">There was a problem validating your identity. Please try again.</p>
           <br>
           <ul class="green">
-            <li><span>Enter the phone number that received your invitation</span></li>
-            <li><span>Use numbers only; no parentheses or dashes</span></li>
-            <li><span>Do not include any numbers that are part of a country code (like +1 or +55)</span></li>
+            <li><span data-i18n="38">Enter the phone number that received your invitation</span></li>
+            <li><span data-i18n="39">Use numbers only; no parentheses or dashes</span></li>
+            <li><span data-i18n="40">Do not include any numbers that are part of a country code (like +1 or +55)</span></li>
           </ul>
         </div>
       </div>
       <div id="answerQuestions" class="hidden">
-        <p>Please fill out the following form for each person listed below.</p>
-        <p>Note: All RSVP responses must be submitted before Friday, January 15th.</p>
+        <p data-i18n="41">Please fill out the following form for each person listed below.</p>
+        <p data-i18n="42">Note: All RSVP responses must be submitted before Friday, January 15th.</p>
         <br>
         <div id="groupRSVP"></div>
         <br>
-        <button id="collectResponses" type="button">Submit</button>
+        <button id="collectResponses" type="button" data-i18n="43">Submit</button>
       </div>
     </section>
 

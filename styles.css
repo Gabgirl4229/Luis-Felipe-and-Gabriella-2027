@@ -290,6 +290,10 @@ img {
   height: stretch;
 }
 
+.rsvp-identity {
+  display: contents;
+}
+
 #gifts-responsive > .landscape {
   display: inline;
   max-height: 90dvh;
@@ -697,6 +701,11 @@ details > summary {
     margin-top: 3%;
   }
 
+  .rsvp-identity {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
   #gifts-responsive > .landscape, #gifts-responsive .overlay-landscape {
     display: none;
   }

@@ -24,22 +24,25 @@ const translations = {
     22: "Venue",
     23: "", // Parking instructions
     24: "", // Hotel instructions
-    25: "",
-    26: "",
-    27: "",
-    28: "",
-    29: "",
-    30: "",
-    31: "",
-    32: "",
-    33: "",
-    34: "",
-    35: "",
-    36: "",
-    37: "",
-    38: "",
-    39: "",
-    40: ""
+    25: "Please enter your full name (as shown on your invitation):",
+    26: "First Name: ",
+    27: "Last Name: ",
+    28: "Search",
+    29: "Success!",
+    30: "We found your invitation under the name of ",
+    31: "Please confirm your identity by entering the digits of your phone number ending in ",
+    32: "Phone Number: ",
+    33: "Confirm",
+    34: "Oops!",
+    35: "There was a problem finding your invitation. Please try again",
+    36: "Make sure your name is capitalized and matches your invitation.",
+    37: "There was a problem validating your identity. Please try again.",
+    38: "Enter the phone number that received your invitation",
+    39: "Use numbers only; no parentheses or dashes",
+    40: "Do not include any numbers that are part of a country code (like +1 or +55)",
+    41: "Please fill out the following form for each person listed below.",
+    42: "Note: All RSVP responses must be submitted before Friday, January 15th.",
+    43: ""
   },
 
   es: {
@@ -82,7 +85,10 @@ const translations = {
     37: "",
     38: "",
     39: "",
-    40: ""
+    40: "",
+    41: "",
+    42: "",
+    43: ""
   },
 
   pt: {
@@ -125,6 +131,9 @@ const translations = {
     37: "",
     38: "",
     39: "",
-    40: ""
+    40: "",
+    41: "",
+    42: "",
+    43: ""
   }
 }

@@ -526,7 +526,7 @@ input[type="radio"]:checked {
 
 /* Container for options */
 .toggle-radio-group {
-    background: #eee;
+    background: #f2f6f4;
     margin: 0.75rem 0;
     padding: 0.5rem 0.75rem;
     border-radius: 25px;
@@ -583,7 +583,6 @@ details > summary {
 }
 
 /* Group RSVP style */
-
 #groupRSVP {
   display: flex;
   flex-direction: column;
@@ -591,27 +590,16 @@ details > summary {
 }
 
 .guest-details {
-  border: 1px solid #cbd5e1;
-  border-radius: 10px;
-  overflow: hidden;
-  background: #fff;
+  border: 2px solid #84a1c4;
+  border-radius: 12px;
 }
 
 .guest-details summary {
-  padding: 1rem 1.25rem;
-  cursor: pointer;
+  padding: 1rem;
   font-weight: bold;
-  color: #244b68;
+  color: #84a1c4;
   background: #f2f6f9;
-  list-style-position: inside;
-}
-
-.guest-details summary:hover {
-  background: #e7eff5;
-}
-
-.guest-details[open] summary {
-  border-bottom: 1px solid #cbd5e1;
+  border-radius: 12px;
 }
 
 .guest-details-content {

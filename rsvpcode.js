@@ -235,6 +235,28 @@ function renderGroupRSVP() {
       radioGroup.appendChild(wrapper);
     }
 
+    // Helper to create a language radio option.
+    function addLanguageRadio(value, labelText) {
+      const wrapper = document.createElement("div");
+      wrapper.className = "radio-option";
+    
+      const input = document.createElement("input");
+      input.type = "radio";
+      input.id = `language-${guest.id}-${value}`;
+      input.name = `language-${guest.id}`;
+      input.value = value;
+      input.checked = language === value;
+      input.dataset.field = "language";
+    
+      const label = document.createElement("label");
+      label.htmlFor = input.id;
+      label.textContent = labelText;
+    
+      wrapper.appendChild(input);
+      wrapper.appendChild(label);
+      languageGroup.appendChild(wrapper);
+    }
+
     // Existing database values.
     const restrictions = Array.isArray(guest.foodRestrictions)
       ? guest.foodRestrictions
@@ -367,14 +389,15 @@ function renderGroupRSVP() {
 
     const language = guest.preferredLanguage || "";
 
-    addRadio("language", "english", "English", language === "english");
-    addRadio("language", "spanish", "Spanish", language === "spanish");
-    addRadio(
-      "language",
-      "portuguese",
-      "Portuguese",
-      language === "portuguese"
-    );
+    // Create a container for the language toggle buttons.
+    const languageGroup = document.createElement("div");
+    languageGroup.className = "toggle-radio-group";
+
+    addLanguageRadio("english", "English");
+    addLanguageRadio("spanish", "Spanish");
+    addLanguageRadio("portuguese", "Portuguese");
+    
+    content.appendChild(languageGroup);
 
     // MESSAGES
     addHeading("Messages");

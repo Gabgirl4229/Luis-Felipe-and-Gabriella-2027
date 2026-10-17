@@ -297,9 +297,9 @@ function renderGroupRSVP() {
     addRadioGroup(
       "language",
       [
-        ["english", "English"],
-        ["spanish", "Spanish"],
-        ["portuguese", "Portuguese"]
+        ["en", "English"],
+        ["es", "Spanish"],
+        ["pt", "Portuguese"]
       ],
       guest.preferredLanguage || ""
     );
@@ -573,6 +573,10 @@ async function collectResponses() {
       "There was a problem submitting your RSVP. Please try again."
     );
     return;
+  }
+
+  if (["en", "es", "pt"].includes(preferredLanguage)) {
+    setLanguage(preferredLanguage);
   }
 
   alert(

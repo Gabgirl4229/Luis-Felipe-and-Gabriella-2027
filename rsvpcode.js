@@ -13,6 +13,14 @@ function tryMe() {
   alert("YIPPEE");
 }
 
+// Translate text.
+function t(key) {
+  language = localStorage.getItem("site-language");
+  return translations[language]?.[key]
+      ?? translations.en[key]
+      ?? key;
+}
+
 async function searchGuest() {
   // Collect input of first and last name
   const fname = document.getElementById("fname").value.trim();
@@ -250,14 +258,6 @@ function renderGroupRSVP() {
       });
     
       content.appendChild(group);
-    }
-
-    // Helper: translate text.
-    function t(key) {
-      language = localStorage.getItem("site-language");
-      return translations[language]?.[key]
-          ?? translations.en[key]
-          ?? key;
     }
 
     // Existing database values.

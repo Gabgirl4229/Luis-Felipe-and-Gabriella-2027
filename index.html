@@ -25,9 +25,9 @@
       <a href="https://gabgirl4229.github.io/Luis-Felipe-and-Gabriella-2027/mobile">Home</a>
       <a href="#schedule-responsive" onclick="closeMenu()">Schedule</a>
       <a href="#location-responsive" onclick="closeMenu()">Location</a>
+      <a href="#rsvp" onclick="closeMenu()">RSVP</a>
       <a href="#gifts-responsive" onclick="closeMenu()">Gifts</a>      
       <a href="#attire-responsive" onclick="closeMenu()">Attire</a>
-      <a href="https://gabgirl4229.github.io/Luis-Felipe-and-Gabriella-2027/rsvp">RSVP</a>
       <a href="#wedding-party" onclick="closeMenu()">Wedding Party</a>
       <a href="https://gabgirl4229.github.io/Luis-Felipe-and-Gabriella-2027/our-story">Our Story</a>
       <a href="#gallery-responsive" onclick="closeMenu()">Gallery</a>
@@ -270,6 +270,57 @@
           </div>
         </section>
       </div>
+    </div>
+
+    <div id="rsvp">
+      <h1>RSVP</h1>
+      <br>
+      <section id="verifyIdentity" class="transparent">
+        <p>Please enter your full name (as shown on your invitation):</p>
+        <br>
+        <label for="fname">First Name: </label>
+        <br>
+        <input type="text" id="fname" name="fname" required>
+        <br><br>
+        <label for="lname">Last Name: </label>
+        <br>
+        <input type="text" id="lname" name="lname" required>
+        <br><br>
+        <button id="guestSearch">Search</button>
+        <section class="invisible"></section>
+        <div id ="searchSuccess" class="hidden">
+          <h2 class="blue">Success!</h2>
+          <p id="displayGuestName">We found your invitation under the name of </p>
+          <p id="displayPhoneNumber">Please confirm your identity by entering the digits of your phone number ending in </p>
+          <br>
+          <label for="phone">Phone Number: </label><br>
+          <input type="text" id="phone" name="phone" required><br><br>
+          <button id="validateGuest">Confirm</button>
+        </div>
+        <div id ="searchFailure" class="hidden">
+          <h2 class="blue">Oops!</h2>
+          <p>There was a problem finding your invitation. </p>
+          <p>Please try again. Make sure your name is capitalized and matches your invitation. </p>
+        </div>
+        <section class="invisible"></section>
+        <div id="validateFailure" class="hidden">
+          <h2 class="blue">Oops!</h2>
+          <p>There was a problem validating your identity. Please try again.</p>
+          <br>
+          <ul class="green">
+            <li><span>Enter the phone number that received your invitation</span></li>
+            <li><span>Use numbers only; no parentheses or dashes</span></li>
+            <li><span>Do not include any numbers that are part of a country code (like +1 or +55)</span></li>
+          </ul>
+        </div>
+      </section>
+      <section id="answerQuestions" class="hidden transparent">
+        <p>Please fill out the following form for each person listed below.</p>
+        <br>
+        <div id="groupRSVP"></div>
+        <br>
+        <button id="collectResponses" type="button">Submit</button>
+      </section>
     </div>
 
     <div id="gifts-responsive" style="position: relative;">

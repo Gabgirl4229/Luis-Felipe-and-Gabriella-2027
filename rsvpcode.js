@@ -170,9 +170,13 @@ async function loadGuestGroup() {
 
 function renderGroupRSVP() {
   const container = document.getElementById("groupRSVP");
+  console.log("Render started. Container:", container);
+  
   container.replaceChildren();
 
   currentGroup.forEach((guest, index) => {
+    console.log("Rendering guest:", guest);
+    
     const details = document.createElement("details");
     details.className = "guest-details";
     details.dataset.guestId = String(guest.id);
@@ -410,6 +414,17 @@ function renderGroupRSVP() {
     messageInput.value = messages.join("\n");
 
     content.appendChild(messageInput);
+
+    // Add the completed guest section to the page.
+    details.appendChild(content);
+    container.appendChild(details);
+
+    console.log(
+      "Guest appended:",
+      guest.id,
+      "HTML length:",
+      container.innerHTML.length
+    );
   });
 }
 

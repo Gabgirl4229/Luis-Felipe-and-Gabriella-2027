@@ -307,7 +307,7 @@ function renderGroupRSVP() {
     // TRAVEL
     addHeading("Travel");
     addParagraph("Do you plan on booking a hotel for the wedding?");
-    addParagraph("Note: all bookings using our hotel block must be completed before Friday, February 12th.");
+    addParagraph("Note: All bookings using our hotel block must be completed before Friday, February 12th.");
     
     addRadioGroup(
       "hotel",

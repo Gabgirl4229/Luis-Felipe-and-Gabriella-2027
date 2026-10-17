@@ -254,6 +254,7 @@ function renderGroupRSVP() {
 
     // Helper: translate text.
     function t(key) {
+      language = localStorage.getItem("site-language");
       return translations[language]?.[key]
           ?? translations.en[key]
           ?? key;

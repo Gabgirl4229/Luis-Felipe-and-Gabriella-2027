@@ -212,49 +212,33 @@ function renderGroupRSVP() {
       return input;
     }
 
-    // Helper: create a radio option.
-    function addRadio(groupName, value, labelText, checked) {
-      const wrapper = document.createElement("div");
-      wrapper.className = "radio-option";
+    // Helper: create radio options.
+    function addRadioGroup(field, options, selectedValue) {
+      const group = document.createElement("div");
+      group.className = "toggle-radio-group";
     
-      const input = document.createElement("input");
-      input.type = "radio";
-      input.id = `${groupName}-${guest.id}-${value}`;
-      input.name = `${groupName}-${guest.id}`;
-      input.value = value;
-      input.checked = checked;
-      input.dataset.field = groupName;
+      options.forEach(([value, labelText]) => {
+        const wrapper = document.createElement("div");
+        wrapper.className = "radio-option";
     
-      const label = document.createElement("label");
-      label.htmlFor = input.id;
-      label.textContent = labelText;
+        const input = document.createElement("input");
+        input.type = "radio";
+        input.id = `${field}-${guest.id}-${value}`;
+        input.name = `${field}-${guest.id}`;
+        input.value = value;
+        input.checked = selectedValue === value;
+        input.dataset.field = field;
     
-      wrapper.appendChild(input);
-      wrapper.appendChild(label);
+        const label = document.createElement("label");
+        label.htmlFor = input.id;
+        label.textContent = labelText;
     
-      radioGroup.appendChild(wrapper);
-    }
-
-    // Helper to create a language radio option.
-    function addLanguageRadio(value, labelText) {
-      const wrapper = document.createElement("div");
-      wrapper.className = "radio-option";
+        wrapper.appendChild(input);
+        wrapper.appendChild(label);
+        group.appendChild(wrapper);
+      });
     
-      const input = document.createElement("input");
-      input.type = "radio";
-      input.id = `language-${guest.id}-${value}`;
-      input.name = `language-${guest.id}`;
-      input.value = value;
-      input.checked = language === value;
-      input.dataset.field = "language";
-    
-      const label = document.createElement("label");
-      label.htmlFor = input.id;
-      label.textContent = labelText;
-    
-      wrapper.appendChild(input);
-      wrapper.appendChild(label);
-      languageGroup.appendChild(wrapper);
+      content.appendChild(group);
     }
 
     // Existing database values.
@@ -286,33 +270,42 @@ function renderGroupRSVP() {
     addHeading("Attendance");
     addParagraph("Will you be attending our wedding?");
 
-    const attendance = guest.attending || "";
-
-    // Create the container for the toggle radio buttons.
-    const radioGroup = document.createElement("div");
-    radioGroup.className = "toggle-radio-group";
-    
-    addRadio("attendance", "Y", "Yes", attendance === "Y");
-    addRadio("attendance", "N", "No", attendance === "N");
-    
-    // Append the complete group to the content.
-    content.appendChild(radioGroup);
+    addRadioGroup(
+      "attendance",
+      [
+        ["Y", "Yes"],
+        ["N", "No"]
+      ],
+      guest.attending || ""
+    );
 
     // LANGUAGE
     addHeading("Language");
     addParagraph("What is your preferred language?");
 
-    const language = guest.preferredLanguage || "";
+    addRadioGroup(
+      "language",
+      [
+        ["english", "English"],
+        ["spanish", "Spanish"],
+        ["portuguese", "Portuguese"]
+      ],
+      guest.preferredLanguage || ""
+    );
 
-    // Create a container for the language toggle buttons.
-    const languageGroup = document.createElement("div");
-    languageGroup.className = "toggle-radio-group";
-
-    addLanguageRadio("english", "English");
-    addLanguageRadio("spanish", "Spanish");
-    addLanguageRadio("portuguese", "Portuguese");
+    // TRAVEL
+    addHeading("Travel");
+    addParagraph("Do you plan on booking a hotel for the wedding?");
+    addParagraph("Note: all bookings using our hotel block must be completed before Friday, February 12th.");
     
-    content.appendChild(languageGroup);
+    addRadioGroup(
+      "hotel",
+      [
+        ["Y", "Yes"],
+        ["N", "No"]
+      ],
+      guest.hotelAccommodation || ""
+    );
     
     // DINING
     addHeading("Dining");
@@ -409,11 +402,7 @@ function renderGroupRSVP() {
     messageInput.placeholder = "Type your message here...";
     messageInput.value = messages.join("\n");
 
-    messageLabel.appendChild(messageInput);
-    content.appendChild(messageLabel);
-
-    details.appendChild(content);
-    container.appendChild(details);
+    content.appendChild(messageInput);
   });
 }
 
@@ -429,25 +418,58 @@ async function collectResponses() {
     return;
   }
 
+  function requireAnswer(details, selector, message) {
+    const answer = details.querySelector(selector);
+
+    if (!answer) {
+      alert(message);
+      details.open = true;
+      details.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+      });
+      return false;
+    }
+
+    return true;
+  }
+  
   const responses = [];
 
   // Collect answers separately for each guest.
   for (const details of document.querySelectorAll("#groupRSVP details")) {
     const guestId = details.dataset.guestId;
 
+    
+    // Validate required questions before collecting responses.
+    const requiredQuestions = [
+      {
+        selector: 'input[data-field="attendance"]:checked',
+        message: "Please select attendance for every guest."
+      },
+      {
+        selector: 'input[data-field="hotel"]:checked',
+        message: "Please answer the hotel accommodation question for every guest."
+      },
+      {
+        selector: 'input[data-field="language"]:checked',
+        message: "Please select a preferred language for every guest."
+      }
+    ];
+
+    for (const question of requiredQuestions) {
+      if (!requireAnswer(details, question.selector, question.message)) {
+        return;
+      }
+    }
+
     const attendance = details.querySelector(
       'input[data-field="attendance"]:checked'
     )?.value;
 
-    if (!attendance) {
-      alert("Please select attendance for every guest.");
-      details.open = true;
-      details.scrollIntoView({
-        behavior: "smooth",
-        block: "center"
-      });
-      return;
-    }
+    const hotel = details.querySelector(
+      'input[data-field="hotel"]:checked'
+    )?.value;
 
     const preferredLanguage =
       details.querySelector(
@@ -493,6 +515,7 @@ async function collectResponses() {
     responses.push({
       guestId: guestId,
       attending: attendance,
+      hotel: hotel,
       preferredLanguage: preferredLanguage,
       foodRestrictions: foodRestrictions,
       messages: message ? [message] : []

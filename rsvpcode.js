@@ -579,9 +579,9 @@ async function collectResponses() {
     `RSVPs submitted successfully! Guests: ${data.updatedCount}`
   );
 
-  if (["en", "es", "pt"].includes(preferredLanguage)) {
-    setLanguage(preferredLanguage);
-  }
+  //if (["en", "es", "pt"].includes(preferredLanguage)) {
+    //setLanguage(preferredLanguage);
+  //}
 }
 
 // Start the correct functions when the corresponding buttons are clicked

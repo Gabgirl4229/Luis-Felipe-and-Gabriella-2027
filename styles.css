@@ -770,7 +770,7 @@ details > summary {
    Phone (Portrait)
    ========================================================= */
 
-@media (max-width: 440px) {
+@media (max-width: 480px) {
   
   /* Padding changes */ 
   section {

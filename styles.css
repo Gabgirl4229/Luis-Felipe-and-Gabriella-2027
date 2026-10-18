@@ -399,9 +399,7 @@ img {
   position: relative;
   display: flex;
   align-items: center;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
+  justify-content: center;
   font-size: 0;
 }
 
@@ -409,7 +407,6 @@ img {
   position: absolute;
   z-index: 2;
   opacity: 0;
-  cursor: pointer;
 }
 
 .switch input:checked {
@@ -418,7 +415,6 @@ img {
 
 .switch input:checked + label {
   opacity: 1;
-  cursor: default;
   color: #748469;
 }
 
@@ -426,34 +422,21 @@ img {
   color: #8ea58c;
   opacity: 0.80;
   transition: opacity 0.25s ease;
-  cursor: pointer;
-
-  /* Horizontal specific */
+  cursor: default;
   font-size: 1.375rem;
-  display: inline-block;
-  width: calc((100% - 4rem)/2);;
-  height: 100%;
-  margin: 0;
+  margin: 0 2.5rem;
   text-align: center;
 }
 
-/* Horizontal specific */
-.switch label:last-of-type {
-  margin-left: 4rem;
-}
-
 .switch .toggle-outside {
+  position: absolute;
+  width: 4rem;
   height: 2rem;
   border-radius: 2rem;
   padding: 0.25rem;
   overflow: hidden;
   transition: 0.25s ease all;
   background: #e8e9ef;
-
-  /* Horizontal specific */
-  position: absolute;
-  width: 4rem;
-  left: calc((100% - 4rem)/2);;
 }
 
 .switch .toggle-inside {
@@ -463,19 +446,19 @@ img {
   transition: 0.25s ease all;
 
   /* Horizontal specific */
-  height: 1.7rem;
-  width: 1.7rem;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 /* Horizontal specific */
 .switch input:checked ~ .toggle-outside .toggle-inside {
-  left: 0.15rem;
-  bottom: 0.15rem;
+  left: 0.25rem;
+  bottom: 0.25rem;
 }
 
 /* Horizontal specific */
 .switch input ~ input:checked ~ .toggle-outside .toggle-inside {
-  left: 2.15rem;
+  left: 2.25rem;
 }
 
 /* Erases default radio to allow customization */
@@ -821,40 +804,23 @@ details > summary {
     width: 1rem;
     height: 1rem;
   }
-
-  /* Switch */
-  .switch {
-    width: 21rem;
-    height: 1.5rem;
-  }
-
-  .switch input {
-    height: 1.5rem;
-    width: 3rem;
-    left: 9rem;
-  }
   
   .switch label {
     font-size: 1rem;
-    line-height: 1.5rem;
-    width: 9rem;
+    /* margin: 0 ??rem; */
   }
 
   .switch .toggle-outside {
     border-radius: 1rem;
     padding: 0.125rem;
+    height: 1.5rem;
     width: 3rem;
-    left: 9rem;
   }
   
   .switch .toggle-inside {
     border-radius: 2.5rem;
     height: 1.25rem;
     width: 1.25rem;
-  }
-  
-  .switch label:last-of-type {
-    margin-left: 3rem;
   }
   
   .switch input:checked ~ .toggle-outside .toggle-inside {
@@ -868,7 +834,6 @@ details > summary {
   input[type="radio"][name="switch"] {
     width: 3rem;
     height: 1.5rem;
-    left: 9rem;
   }
 
   /* Bullet indentation */

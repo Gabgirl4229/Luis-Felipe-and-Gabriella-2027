@@ -23,18 +23,18 @@ function setLanguage(language) {
   // Update images and audio
   switch (language) {
     case "en":
-      document.getElementById("homepage-img").src = "images/ui/homepage-en.PNG";
-      document.getElementById("home").src = "images/ui/homepage-en.PNG";
+      document.getElementById("homepage-img")?.setAttribute("src", "images/ui/homepage-en.PNG");
+      document.getElementById("home")?.setAttribute("src", "images/ui/homepage-en.PNG");
       document.getElementById("song").src = "audio/english_song.mp3";
       break;
     case "es":
-      document.getElementById("homepage-img").src = "images/ui/homepage-es.PNG";
-      document.getElementById("home").src = "images/ui/homepage-es.PNG";
+      document.getElementById("homepage-img")?.setAttribute("src", "images/ui/homepage-es.PNG");
+      document.getElementById("home")?.setAttribute("src", "images/ui/homepage-es.PNG");
       document.getElementById("song").src = "audio/spanish_song.mp3";
       break;
     case "pt":
-      document.getElementById("homepage-img").src = "images/ui/homepage-pt.PNG";
-      document.getElementById("home").src = "images/ui/homepage-pt.PNG";
+      document.getElementById("homepage-img")?.setAttribute("src", "images/ui/homepage-pt.PNG");
+      document.getElementById("home")?.setAttribute("src", "images/ui/homepage-pt.PNG");
       document.getElementById("song").src = "audio/portuguese_song.mp3";
       break;
   }

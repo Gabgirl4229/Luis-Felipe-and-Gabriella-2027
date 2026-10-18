@@ -339,7 +339,7 @@ const translations = {
     95: "\"A Emily é minha amiga desde o ensino médio, por isso compartilhamos muitas vivências. Ela me motiva a ter grandes sonhos e a trabalhar duro.\"",
     96: "\"Keren e eu somos amigos desde o ensino médio, e nossos interesses em comum acenderam uma faísca de energia. Ela tem muita positividade e entusiasmo.\"",
     97: "\"Julia é minha cunhada e a mais nova integrante da nossa família. Admiro sua dedicação ao trabalho, enquanto ela se empenha intensamente na busca pelo doutorado.\"",
-    98: "Dama de Honra (jovem)",
+    98: "Madrinha (Jovem)",
     99: "\"Valeria é minha sobrinha de 8 anos. Ela é corajosa de maneiras que eu não sou (especialmente com bichos) e tem experiência prévia em casamentos.\"",
     100: "Padrinho",
     101: "\"\"",

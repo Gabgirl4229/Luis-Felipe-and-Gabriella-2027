@@ -478,7 +478,6 @@ input[type="radio"] {
 input[type="radio"][name="switch"] {
     width: 4rem;
     height: 2rem;
-    margin: 0;
 }
 
 /* Add natural indent and color change ability to bullets in RSVP */

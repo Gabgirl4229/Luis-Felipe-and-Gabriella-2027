@@ -588,7 +588,7 @@ async function collectResponses() {
     return;
   }
   
-  alert(t("75") + ${data.updatedCount});
+  alert(t("75") + "\n" + `${data.updatedCount}`);
 
   if (["en", "es", "pt"].includes(selectedLanguage)) {
     setLanguage(selectedLanguage);

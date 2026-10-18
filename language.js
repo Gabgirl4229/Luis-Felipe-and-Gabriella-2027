@@ -24,14 +24,17 @@ function setLanguage(language) {
   switch (language) {
     case "en":
       document.getElementByID("homepage-img").src = "images/ui/homepage-en.PNG";
+      document.getElementByID("home").src = "images/ui/homepage-en.PNG";
       document.getElementByID("song").src = "audio/english_song.mp3";
       break;
     case "es":
       document.getElementByID("homepage-img").src = "images/ui/homepage-es.PNG";
+      document.getElementByID("home").src = "images/ui/homepage-es.PNG";
       document.getElementByID("song").src = "audio/spanish_song.mp3";
       break;
     case "pt":
       document.getElementByID("homepage-img").src = "images/ui/homepage-pt.PNG";
+      document.getElementByID("home").src = "images/ui/homepage-pt.PNG";
       document.getElementByID("song").src = "audio/portuguese_song.mp3";
       break;
   }

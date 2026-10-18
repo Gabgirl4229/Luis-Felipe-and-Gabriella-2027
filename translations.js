@@ -215,7 +215,7 @@ const translations = {
     94: "Dama de Honor",
     95: "\"Emily es amiga mía desde la escuela secundaria, así que compartimos muchísimas vivencias. Me motiva a tener grandes sueños y a trabajar duro.\"",
     96: "\"Keren y yo somos amigos de la secundaria cuyos intereses compartidos encendieron una chispa de energía. Ella tiene muchísima positividad y entusiasmo.\"",
-    97: "\"Julia is my sister-in-law and the newest addition to our family. I admire her hardworking nature as she grinds her way to a PhD.\"",
+    97: "\"Julia es mi cuñada y el miembro más nuevo de la familia. Admiro su ética de trabajo mientras se esfuerza por conseguir su doctorado.\"",
     98: "Dama de Honor Joven",
     99: "\"Valeria es mi sobrina de 8 años. Es valiente de formas en que yo no lo soy (especialmente con los bichos) y tiene experiencia previa en bodas.\"",
     100: "Acompañante del Novio",

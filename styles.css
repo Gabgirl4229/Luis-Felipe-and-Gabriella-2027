@@ -437,6 +437,7 @@ img {
   overflow: hidden;
   transition: 0.25s ease all;
   background: #e8e9ef;
+  transform: translate(4px, 0);
 }
 
 .switch .toggle-inside {
@@ -476,8 +477,9 @@ input[type="radio"] {
 
 /* Switch customization */
 input[type="radio"][name="switch"] {
-    width: 4rem;
-    height: 2rem;
+  width: 4rem;
+  height: 2rem;
+  transform: translate(4px, 0);
 }
 
 /* Add natural indent and color change ability to bullets in RSVP */

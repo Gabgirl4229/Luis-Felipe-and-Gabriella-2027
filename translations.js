@@ -113,7 +113,7 @@ const translations = {
     111: "",
     112: "Please contribute to our shared album below with any pictures you get from the wedding!",
     113: "Add Yours",
-    114: "",
+    114: "We can't wait to see you! ❤️ Lots of love, Luis & Gaby",
     115: ""
     
   },
@@ -232,7 +232,7 @@ const translations = {
     111: "",
     112: "¡Por favor, contribuye a nuestro álbum compartido con cualquier foto que hayas tomado en la boda!",
     113: "Añade las Tuyas",
-    114: "",
+    114: "¡Estamos deseando verte! ❤️ Con mucho cariño, Luis y Gaby",
     115: "",
     116: "",
     117: "",
@@ -355,7 +355,7 @@ const translations = {
     111: "",
     112: "Por favor, contribua para o nosso álbum compartilhado com qualquer foto que você tenha tirado no casamento!",
     113: "Adicione as Suas",
-    114: "",
+    114: "Estamos ansiosos para te ver! ❤️ Com muito carinho, Luis e Gaby",
     115: "",
     116: "",
     117: "",

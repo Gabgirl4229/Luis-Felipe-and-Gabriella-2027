@@ -67,10 +67,8 @@ async function searchGuest() {
   console.log("Guest found:", data);
   console.log("currentGuest:", currentGuest);
 
-  document.getElementById("displayGuestName").textContent =
-    `We found your invitation under the name of ${data.guestName}.`;
-  document.getElementById("displayPhoneNumber").textContent =
-    `Please confirm your identity by entering the digits of your phone number ending in ${data.phoneLast4}:`;
+  document.getElementById("displayGuestName").textContent = t("30") + `${data.guestName}.`;
+  document.getElementById("displayPhoneNumber").textContent = t("31") + `${data.phoneLast4}:`;
 
   document.getElementById("searchFailure").classList.add("hidden");
   document.getElementById("validateFailure").classList.add("hidden");

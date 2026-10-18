@@ -10,7 +10,7 @@ function setLanguage(language) {
   // Update the document language
   document.documentElement.lang = language;
 
-  // Update translated elements
+  // Update translated text
   document.querySelectorAll("[data-i18n]").forEach(element => {
     const key = element.dataset.i18n;
     const text = translations[language][key];
@@ -19,6 +19,22 @@ function setLanguage(language) {
       element.textContent = text;
     }
   });
+
+  // Update images and audio
+  switch (language) {
+    case "en":
+      document.getElementByID("homepage-img").src = "images/ui/homepage-en.PNG";
+      document.getElementByID("song").src = "audio/english_song.mp3";
+      break;
+    case "es":
+      document.getElementByID("homepage-img").src = "images/ui/homepage-es.PNG";
+      document.getElementByID("song").src = "audio/spanish_song.mp3";
+      break;
+    case "pt":
+      document.getElementByID("homepage-img").src = "images/ui/homepage-pt.PNG";
+      document.getElementByID("song").src = "audio/portuguese_song.mp3";
+      break;
+  }
 }
 
 function getLanguage() {

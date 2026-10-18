@@ -399,7 +399,7 @@ img {
   position: relative;
 
   /* Horizontal specific */
-  width: 26rem;
+  width: 30rem;
   height: 2rem;
   margin: 0 auto;
   font-size: 0;
@@ -439,7 +439,7 @@ img {
   font-size: 1.375rem;
   line-height: 2rem;
   display: inline-block;
-  width: 11rem;
+  width: 12rem;
   height: 100%;
   margin: 0;
   text-align: center;
@@ -461,7 +461,7 @@ img {
   /* Horizontal specific */
   position: absolute;
   width: 4rem;
-  left: 11rem;
+  left: 12rem;
 }
 
 .switch .toggle-inside {
@@ -503,7 +503,7 @@ input[type="radio"] {
 input[type="radio"][name="switch"] {
     width: 4rem;
     height: 2rem;
-    left: 11rem;
+    left: 12rem;
 }
 
 /* Add natural indent and color change ability to bullets in RSVP */

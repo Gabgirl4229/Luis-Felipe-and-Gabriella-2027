@@ -87,9 +87,10 @@ const translations = {
     85: "After Wedding Brunch",
     86: "", // After Wedding Brunch info
     87: "Your presence is the best gift we could ask for. If you'd like to bless us any further, feel free to do so monetarily! Although we will not be having a registry, any cash is greatly appreciated as we are planning to save up for a house soon. Money gifts will gladly be accepted in physical envelopes or via Zelle using the QR code below.",
-    88: "",
-    89: "",
-    90: ""
+    88: "We'd love to see our family and friends dress up with us! The dress code for our wedding is garden formal.",
+    89: "Gentlemen, we kindly ask that you wear a suit with a tie or a dress shirt with trousers.",
+    90: "",
+    
   },
 
   es: {

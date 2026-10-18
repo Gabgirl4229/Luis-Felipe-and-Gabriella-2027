@@ -76,10 +76,20 @@ const translations = {
     74: "There was a problem submitting your RSVP. Please try again.",
     75: "RSVPs submitted successfully! Guests: ",
     76: "Submit",
-    77: "",
-    78: "",
-    79: "",
-    80: ""
+    77: "Check out upcoming events related to the wedding here!",
+    78: "We're still getting the details sorted out. Come back later to see if there are any updates!",
+    79: "Wedding Shower",
+    80: "", // Wedding Shower info
+    81: "Bachelorette Party",
+    82: "", // Bachelorette Party info
+    83: "Rehearsal Dinner",
+    84: "", // Rehearsal Dinner info
+    85: "After Wedding Brunch",
+    86: "", // After Wedding Brunch info
+    87: "Your presence is the best gift we could ask for. If you'd like to bless us any further, feel free to do so monetarily! Although we will not be having a registry, any cash is greatly appreciated as we are planning to save up for a house soon. Money gifts will gladly be accepted in physical envelopes or via Zelle using the QR code below.",
+    88: "",
+    89: "",
+    90: ""
   },
 
   es: {
@@ -159,10 +169,20 @@ const translations = {
     74: "Hubo un error al enviar tu RSVP. Inténtalo de nuevo.",
     75: "¡RSVP enviados con éxito! Invitados: ",
     76: "Enviar",
-    77: "",
-    78: "",
-    79: "",
-    80: ""
+    77: "¡Entérate de los próximos eventos de la boda aquí!",
+    78: "Aún estamos organizando los detalles. ¡Regresa más tarde para ver si hay actualizaciones!",
+    79: "Fiesta Prenupcial",
+    80: "",
+    81: "Despedida de Soltera",
+    82: "",
+    83: "Cena de Ensayo",
+    84: "",
+    85: "Brunch a la Mañana Siguiente",
+    86: "",
+    87: "Su presencia es el mejor regalo que podríamos pedir. Si deseas bendecirnos más, ¡no dude en hacerlo monetariamente! Aunque no tendremos un registro, se agradece mucho cualquier dinero en efectivo ya que estamos planeando ahorrar para una casa pronto. Los regalos en dinero se aceptarán con gusto en sobres físicos o a través de Zelle utilizando el código QR a continuación.",
+    88: "",
+    89: "",
+    90: ""
   },
 
   pt: {
@@ -242,9 +262,22 @@ const translations = {
     74: "Houve um erro ao enviar sua confirmação de presença. Tente novamente.",
     75: "RSVPs enviados com sucesso! Convidados: ",
     76: "Enviar",
-    77: "",
-    78: "",
-    79: "",
-    80: ""
+    77: "Fique por dentro dos próximos eventos do casamento aqui!",
+    78: "Ainda estamos organizando os detalhes. Volte mais tarde para ver se há atualizações!",
+    79: "Festa Pré-Casamento",
+    80: "",
+    81: "Despedida de Solteira",
+    82: "",
+    83: "Jantar de Ensaio",
+    84: "",
+    85: "Brunch na Manhã Seguinte",
+    86: "",
+    87: "A presença de vocês é o melhor presente que poderíamos pedir. Se desejarem nos abençoar ainda mais, fiquem à vontade para contribuir financeiramente! Embora não tenhamos uma lista de presentes, ficaremos muito gratos com qualquer contribuição em dinheiro, já que estamos planejando economizar para comprar uma casa em breve. Presentes em dinheiro serão muito bem-vindos, seja em envelopes físicos ou via Zelle, utilizando o código QR abaixo.",
+    88: "",
+    89: "",
+    90: "",
+    91: "",
+    92: "",
+    93: ""
   }
 }

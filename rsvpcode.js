@@ -588,11 +588,12 @@ async function collectResponses() {
     return;
   }
   
-  alert(t("75") + "\n" + `${data.updatedCount}`);
+  alert(t("75") + `${data.updatedCount}`);
 
   if (["en", "es", "pt"].includes(selectedLanguage)) {
     setLanguage(selectedLanguage);
   }
+  renderGroupRSVP();
 }
 
 // Start the correct functions when the corresponding buttons are clicked

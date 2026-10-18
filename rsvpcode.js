@@ -591,6 +591,7 @@ async function collectResponses() {
   if (["en", "es", "pt"].includes(selectedLanguage)) {
     setLanguage(selectedLanguage);
   }
+  
   loadGuestGroup();
   renderGroupRSVP();
 }

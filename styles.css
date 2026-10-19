@@ -627,6 +627,7 @@ details > summary {
   transition: background-color 0.2s ease, color 0.2s ease;
 
   font-size: 1.25rem;
+  font-color: black;
 }
 
 .prev-btn {

@@ -29,55 +29,61 @@
     </div>
   </header>
   <main>
-    <section>
-      <div class="row ">
-        <div class="col half"> <!-- Page 1 Title & Prologue -->
+    <section style="position: relative;">
+      <img src="images/ui/storybook.png">
+      <div class="overlay-content">
+        <div class="row">
+          <div class="col half"> <!-- Page 1 Title & Prologue -->
+          </div>
+          <div class="col half"> <!-- Page 2 Table of Contents (wiith clickable links) -->
+          </div>
         </div>
-        <div class="col half"> <!-- Page 2 Table of Contents (wiith clickable links) -->
+        <div class="row invisible">
+          <div class="col half"> <!-- Page 3 Chapter 1: ??? -->
+          </div>
+          <div class="col half"> <!-- Page 4 ??? -->
+          </div>
         </div>
-      </div>
-      <div class="row invisible">
-        <div class="col half"> <!-- Page 3 Chapter 1: ??? -->
-        </div>
-        <div class="col half"> <!-- Page 4 ??? -->
-        </div>
-      </div>
-      <div class="row">
-        <div class="col full">
-          <a class="prev-btn" onclick="turnPage('previous')">Previous</a>
-          <a class="nxt-btn" onclick="turnPage('next')">Next</a>
+        <div class="row">
+          <div class="col full">
+            <a class="prev-btn" onclick="turnPage('previous')">Previous</a>
+            <a class="nxt-btn" onclick="turnPage('next')">Next</a>
+          </div>
         </div>
       </div>
     </section>
-    <section>
-      <div class="row">
-        <div class="sixth">
+    <section style="position: relative;">
+      <img src="images/ui/notebook.png">
+      <div class="overlay-content">
+        <div class="row">
+          <div class="sixth">
+          </div>
+          <div class="col two-thirds"> <!-- Page 1 Title & Prologue --> 
+          </div>
+          <div class="sixth">
+          </div>
         </div>
-        <div class="col two-thirds"> <!-- Page 1 Title & Prologue --> 
+        <div class="row hidden">
+          <div class="sixth">
+          </div>
+          <div class="col two-thirds"> <!-- Page 2 Table of Contents --> 
+          </div>
+          <div class="sixth">
+          </div>
         </div>
-        <div class="sixth">
+        <div class="row hidden">
+          <div class="sixth">
+          </div>
+          <div class="col two-thirds"> <!-- Page 3 Chapter 1: ??? --> 
+          </div>
+          <div class="sixth">
+          </div>
         </div>
-      </div>
-      <div class="row hidden">
-        <div class="sixth">
-        </div>
-        <div class="col two-thirds"> <!-- Page 2 Table of Contents --> 
-        </div>
-        <div class="sixth">
-        </div>
-      </div>
-      <div class="row hidden">
-        <div class="sixth">
-        </div>
-        <div class="col two-thirds"> <!-- Page 3 Chapter 1: ??? --> 
-        </div>
-        <div class="sixth">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col full">
-          <a class="prev-btn" onclick="turnPage('previous')">Previous</a>
-          <a class="nxt-btn" onclick="turnPage('next')">Next</a>
+        <div class="row">
+          <div class="col full">
+            <a class="prev-btn" onclick="turnPage('previous')">Previous</a>
+            <a class="nxt-btn" onclick="turnPage('next')">Next</a>
+          </div>
         </div>
       </div>
     </section>

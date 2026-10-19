@@ -312,7 +312,7 @@ img {
   transform: translate(0, -50%);
 }
 
-#gifts-responsive > .portrait, #gifts-responsive > .overlay-portrait {
+#gifts-responsive > .overlay-portrait, #our-story .overlay-portrait, .portrait {
   display: none;
 }
 
@@ -320,14 +320,7 @@ img {
   left: 50%;
   top: 68%;
   transform: translate(-49%, 0);
-  width: 80%;
-}
-
-#our-story .overlay-portrait {
-  left: 50%;
-  top: 88%;
-  transform: translate(-46%, 0);
-  width: 45%;
+  width: 64%;
 }
 
 
@@ -718,7 +711,7 @@ details > summary {
     margin-bottom: 0.5rem;
   }
   
-  #gifts-responsive > .landscape, #gifts-responsive .overlay-landscape {
+  #gifts-responsive .overlay-landscape, #our-story .overlay-landscape, .landscape {
     display: none;
   }
 
@@ -730,6 +723,13 @@ details > summary {
   #gifts-responsive > .overlay-portrait {
     display: inline;
   }
+
+  #our-story .overlay-portrait {
+  left: 50%;
+  top: 88%;
+  transform: translate(-46%, 0);
+  width: 45%;
+}
 
   #wedding-party .invisible {
     display: none;

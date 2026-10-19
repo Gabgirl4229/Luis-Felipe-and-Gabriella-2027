@@ -630,12 +630,14 @@ details > summary {
   font-color: black;
 }
 
-.prev-btn {
-  
+.prev-btn::before {
+  content: "\25C4";
+  font-weight: bold;
 }
 
-.nxt-btn {
-
+.nxt-btn::after {
+  content: "\25BA";
+  font-weight: bold;
 }
 
 

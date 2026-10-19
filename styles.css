@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Spectral, Baskerville, Lora, Monserrat, Roboto Serif, Open Sans, sans-serif, Avant Garde; /* Paragraph Fonts */
+  font-family: Spectral, Baskerville, Lora, Monserrat, Roboto Serif, Open Sans, sans-serif, Avant Garde, Georgia; /* Paragraph Fonts */
 }
 
 /* To fix the "header covering content when scrolling" issue on mobile */

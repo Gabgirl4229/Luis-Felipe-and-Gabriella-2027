@@ -309,11 +309,25 @@ img {
 #gifts-responsive > .overlay-landscape {
   left: 0;
   top: 50%;
-  transform: translate(0%, -50%);
+  transform: translate(0, -50%);
 }
 
 #gifts-responsive > .portrait, #gifts-responsive > .overlay-portrait {
   display: none;
+}
+
+#our-story .overlay-landscape {
+  left: 50%;
+  top: 68%;
+  transform: translate(-49%, 0);
+  width: 80%;
+}
+
+#our-story .overlay-portrait {
+  left: 50%;
+  top: 88%;
+  transform: translate(-46%, 0);
+  width: 45%;
 }
 
 

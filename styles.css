@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Spectral, Baskerville, Lora, Monserrat, Roboto Serif, Open Sans, sans-serif, Avant Garde, Georgia; /* Paragraph Fonts */
+  font-family: Palatino, Didot, Georgia, Times New Roman, Droid Serif; /* Paragraph Fonts */
 }
 
 /* To fix the "header covering content when scrolling" issue on mobile */
@@ -157,7 +157,7 @@ footer {
   color: #748469;
 }
 .fancy {
-  font-family: Quattrocento, Luxurious Script, Pinyon Script, Great Vibes, EB Garamond, Garamond; /* Header fonts */
+  font-family: Zaph Chancery, Apple Chancery, Monotype Corsiva, Garamond; /* Header fonts */
 }
 .bold {
   font-weight: bold;

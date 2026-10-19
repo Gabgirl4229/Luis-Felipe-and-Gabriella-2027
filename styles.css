@@ -300,7 +300,14 @@ img {
   object-fit: cover;
 }
 
-.overlay-landscape {
+/* For elements that go "on top of" images */
+.overlay-content {
+  position: absolute;
+  display: inline;
+}
+
+#gifts-responsive > .overlay-landscape {
+  left: 0;
   top: 50%;
   transform: translate(0%, -50%);
 }
@@ -309,12 +316,6 @@ img {
   display: none;
 }
 
-/* For elements that go "on top of" images */
-.overlay-content {
-  position: absolute;
-  display: inline;
-  left: 0;
-}
 
 /* Setups for specific pages */
 #gallery {

@@ -725,11 +725,12 @@ details > summary {
   }
 
   #our-story .overlay-portrait {
-  left: 50%;
-  top: 88%;
-  transform: translate(-46%, 0);
-  width: 45%;
-}
+    display: inline.
+    left: 50%;
+    top: 88%;
+    transform: translate(-46%, 0);
+    width: 45%;
+  }
 
   #wedding-party .invisible {
     display: none;

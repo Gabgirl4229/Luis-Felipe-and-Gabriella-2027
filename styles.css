@@ -306,14 +306,14 @@ img {
   display: inline;
 }
 
+#gifts-responsive > .overlay-portrait, #our-story .overlay-portrait, .portrait {
+  display: none;
+}
+
 #gifts-responsive > .overlay-landscape {
   left: 0;
   top: 50%;
   transform: translate(0, -50%);
-}
-
-#gifts-responsive > .overlay-portrait, #our-story .overlay-portrait, .portrait {
-  display: none;
 }
 
 #our-story .overlay-landscape {
@@ -711,7 +711,7 @@ details > summary {
     margin-bottom: 0.5rem;
   }
   
-  #gifts-responsive .overlay-landscape, #our-story .overlay-landscape, .landscape {
+  #gifts-responsive > .overlay-landscape, #our-story .overlay-landscape, .landscape {
     display: none;
   }
 
@@ -725,7 +725,7 @@ details > summary {
   }
 
   #our-story .overlay-portrait {
-    display: inline.
+    display: inline;
     left: 50%;
     top: 88%;
     transform: translate(-46%, 0);

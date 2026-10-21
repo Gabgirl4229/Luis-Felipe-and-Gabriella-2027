@@ -294,12 +294,6 @@ img {
   display: contents;
 }
 
-#gifts-responsive > .landscape {
-  max-height: 90dvh;
-  width: 100%;
-  object-fit: cover;
-}
-
 /* For elements that go "on top of" images */
 .overlay-content {
   position: absolute;
@@ -308,6 +302,12 @@ img {
 
 #gifts-responsive > .overlay-portrait, #our-story .overlay-portrait, .portrait {
   display: none;
+}
+
+#gifts-responsive > .landscape {
+  max-height: 90dvh;
+  width: 100%;
+  object-fit: cover;
 }
 
 #gifts-responsive > .overlay-landscape {

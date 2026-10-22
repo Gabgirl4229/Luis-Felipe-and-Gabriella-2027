@@ -1,3 +1,5 @@
+let pageIndexes = [1, 1];
+
 turnPage(direction) {
   switch (direction) {
     case "next":

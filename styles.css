@@ -903,4 +903,18 @@ details > summary {
   #party .sixth {
     display: none;
   }
+
+  /* Story Buttons */
+  .prev-btn, .nxt-btn {
+    font-size: 1rem;
+    top: 87%;
+  }
+  
+  .prev-btn {
+    left: 15%;
+  }
+  
+  .nxt-btn {
+    left: 75%;
+  }
 }

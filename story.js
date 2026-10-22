@@ -17,11 +17,11 @@ function loadPages() {
 function turnPage(direction) {
   switch (direction) {
     case "next":
-      alert("turn to next page");
+      alert("turn to page: " + );
       pageIndex++;
       break;
     case "previous":
-      alert("turn to previous page");
+      alert("turn to page: " + );
       pageIndex--;
       break;
   }

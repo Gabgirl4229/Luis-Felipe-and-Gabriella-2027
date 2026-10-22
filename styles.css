@@ -302,7 +302,7 @@ img {
   top: 0;
 }
 
-.portrait, .overlay-portrait, {
+.portrait, .overlay-portrait {
   display: none;
 }
 

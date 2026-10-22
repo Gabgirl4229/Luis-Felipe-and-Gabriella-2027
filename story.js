@@ -10,7 +10,9 @@ function t(key) {
 
 // Make the pages appear and disappear
 function loadPages(startPage) {
-  
+  document.getElementById("page-left")?.setAttribute("class", "owo");
+  document.getElementById("page-right")?.setAttribute("class", "owo");
+  document.getElementById("page-center")?.setAttribute("class", "owo");
 }
 
 // Turn the page

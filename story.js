@@ -9,7 +9,7 @@ function t(key) {
 }
 
 // Make the pages appear and disappear
-function loadPages() {
+function loadPages(startPage) {
   
 }
 
@@ -17,12 +17,19 @@ function loadPages() {
 function turnPage(direction) {
   switch (direction) {
     case "next":
-      alert("turn to page: " + );
       pageIndex++;
+      if (pageIndex > 10) {
+        pageIndex = 10;
+      }
+      alert("turn to page: " + pageIndex);
       break;
     case "previous":
-      alert("turn to page: " + );
       pageIndex--;
+      if (pageIndex < 1) {
+        pageIndex = 1;
+      }
+      alert("turn to page: " + pageIndex);
+      
       break;
   }
   loadPages(pageIndex);

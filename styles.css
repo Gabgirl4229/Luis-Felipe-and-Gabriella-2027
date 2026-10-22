@@ -630,9 +630,20 @@ details > summary {
   margin: 0 auto;
   cursor: pointer;
   transition: background-color 0.2s ease, color 0.2s ease;
+  
+  position: absolute;
+  top: 69%;
 
   font-size: 1.25rem;
   color: black;
+}
+
+.prev-btn {
+  left: 10%;
+}
+
+.nxt-btn {
+  left: 85%;
 }
 
 .prev-btn::before {

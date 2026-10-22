@@ -318,9 +318,7 @@ img {
 
 #our-story .overlay-landscape {
   left: 50%;
-  top: 65%;
   transform: translate(-50%, 0);
-  width: 64%;
 }
 
 
@@ -715,7 +713,7 @@ details > summary {
     display: none;
   }
 
-  #gifts-responsive > .portrait {
+  #gifts-responsive > .portrait, #our-story .portrait {
     display: inline;
     width: 100%;
   }
@@ -727,9 +725,7 @@ details > summary {
   #our-story .overlay-portrait {
     display: inline;
     left: 50%;
-    top: 88%;
     transform: translate(-46%, 0);
-    width: 45%;
   }
 
   #wedding-party .invisible {

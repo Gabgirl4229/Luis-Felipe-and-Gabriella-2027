@@ -1,6 +1,6 @@
 let pageIndexes = [1, 1];
 
-turnPage(direction) {
+function turnPage(direction) {
   switch (direction) {
     case "next":
       alert("turn to next page");

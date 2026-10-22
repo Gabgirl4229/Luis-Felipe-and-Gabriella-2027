@@ -10,11 +10,9 @@ function t(key) {
 
 // Make the pages appear and disappear
 function loadPages(startPage) {
-  document.getElementById("page-left")?.classList.add("active");
-  document.getElementById("page-right")?.setAttribute("class", "owo");
-  document.getElementById("page-center")?.setAttribute("class", "owo");
-
-  const container = document.getElementById("groupRSVP");
+  const container1 = document.getElementById("page-left");
+  const container2 = document.getElementById("page-right");
+  const container3 = document.getElementById("page-center");
 }
 
 // Turn the page

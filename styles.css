@@ -792,6 +792,18 @@ details > summary {
   #party, #party .row {
     height: auto;
   }
+
+  .prev-btn, .nxt-btn {
+    top: 89%;
+  }
+  
+  .prev-btn {
+    left: 15%;
+  }
+  
+  .nxt-btn {
+    left: 80%;
+  }
 }
 
 

@@ -11,12 +11,10 @@ function t(key) {
 // Make the pages appear and disappear
 function loadPages(startPage) {
   const container1 = document.getElementById("page-center");
-  if (!mobile) {
+  if (!(document.getElementById("body").hasClass("mobile"))) {
     const container2 = document.getElementById("page-left");
     const container3 = document.getElementById("page-right");
   }
-  
-  
 }
 
 // Turn the page

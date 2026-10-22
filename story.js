@@ -8,15 +8,22 @@ function t(key) {
       ?? key;
 }
 
+// Make the pages appear and disappear
+function loadPages() {
+  
+}
+
 // Turn the page
 function turnPage(direction) {
   switch (direction) {
     case "next":
       alert("turn to next page");
-      pageIndex--;
+      pageIndex++;
       break;
     case "previous":
       alert("turn to previous page");
+      pageIndex--;
       break;
   }
+  loadPages(pageIndex);
 }

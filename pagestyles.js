@@ -1,7 +1,7 @@
 const pageStyles = {
   laptop: {
     title: "margin-top: 10%; margin-left: 8%;",
-    image1: "",
+    image1: "padding: 0 15% 0 20%;",
     subtitle1: "",
     subtitle2: "",
     subtitle3: "",

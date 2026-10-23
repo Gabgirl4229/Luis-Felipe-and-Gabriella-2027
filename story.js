@@ -29,8 +29,8 @@ function createPage(container, page) {
       // Once Upon a Time
       const title = document.createElement("h1");
       title.className = "fancy";
-      element.textContent = t("115");
-      element.style = pagestyles[getDevice()][title];
+      title.textContent = t("115");
+      title.style = pagestyles[getDevice()][title];
       container.appendChild(title);
       // Flower Divider
       const image1 = document.createElement("img");

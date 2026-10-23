@@ -21,8 +21,9 @@ function getDevice() {
   return deviceType;
 }
 
-function stylePage(element) {
-  return pagestyles[getDevice()][element];
+function stylePage(element, num) {
+  element.style = pagestyles[getDevice()][element];
+  element.textContent = t(num);
 }
 
 function createPage(container, page) {
@@ -33,8 +34,7 @@ function createPage(container, page) {
       // Once Upon a Time
       const title = document.createElement("h1");
       title.className = "fancy";
-      title.style = "margin-top: 10%; margin-left: 8%;";
-      title.textContent = t("115");
+      stylePage(title, "115");
       container.appendChild(title);
       // Flower Divider
       const image1 = document.createElement("img");

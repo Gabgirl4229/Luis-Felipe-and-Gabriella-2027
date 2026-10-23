@@ -239,10 +239,10 @@ const translations = {
     113: "Añade las Tuyas",
     114: "¡Estamos deseando verte! ❤️ Con mucho cariño, Luís y Gaby",
     115: "Había Una Vez",
-    116: "Dos almas —una de Botucatu, São Paulo, y la otra de Miami, Florida— se unieron en la Universidad Politécnica de Florida temprano un martes por la mañana.",
-    117: "",
-    118: "",
-    119: "",
+    116: "Dos almas",
+    117: "una de Botucatu, São Paulo,",
+    118: "y la otra de Miami, Florida,",
+    119: "se unieron en la Universidad Politécnica de Florida temprano un martes por la mañana.",
     120: ""
   },
 

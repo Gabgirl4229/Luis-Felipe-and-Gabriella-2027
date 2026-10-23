@@ -27,10 +27,14 @@ function createPage(container, page) {
   // Master list of pages for creation
   switch (page) {
     case 1:
-      const title = document.createElement("h2");
+      const title = document.createElement("h1");
       title.className = "fancy mid";
-      title.textContent = t("");
+      title.textContent = t("115");
       container.appendChild(title);
+      const subtitle = document.createElement("h3");
+      subtitle.className ="fancy mid";
+      subtitle.textContent = t("116");
+      container.appendChild(subtitle);
       break;
     case 2:
       break;

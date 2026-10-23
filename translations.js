@@ -115,7 +115,11 @@ const translations = {
     113: "Add Yours",
     114: "We can't wait to see you! ❤️ Lots of love, Luís & Gaby",
     115: "Once Upon a Time",
-    116: "Two souls - one from Botucatu, Sao Paulo, another from Miami, Florida - converged at Florida Polytechnic University on an early Tuesday morning."
+    116: "Two souls",
+    117: "one from Botucatu, Sao Paulo,",
+    118: "the other from Miami, Florida,",
+    119: "converged at Florida Polytechnic University on an early Tuesday morning.",
+    120: ""
     
   },
 

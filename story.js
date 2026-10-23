@@ -8,13 +8,60 @@ function t(key) {
       ?? key;
 }
 
+function createPage(page) {
+  // Helper: create a heading.
+  function addHeading(text) {
+    const heading = document.createElement("h3");
+    heading.className = "green";
+    heading.textContent = text;
+    content.appendChild(heading);
+  }
+
+  // Helper: create a paragraph.
+  function addParagraph(text) {
+    const paragraph = document.createElement("p");
+    paragraph.textContent = text;
+    content.appendChild(paragraph);
+  }
+
+  // Master list of pages for creation
+  switch (page) {
+    case 1:
+      break;
+    case 2:
+      break;
+    case 3:
+      break;
+    case 4:
+      break;
+    case 5:
+      break;
+    case 6:
+      break;
+    case 7:
+      break;
+    case 8:
+      break;
+    case 9:
+      break;
+    case 10:
+      break;
+  }
+
+}
+
 // Make the pages appear and disappear
 function loadPages(startPage) {
+  // Find the empty pages
   const container1 = document.getElementById("page-center");
   if (!(document.getElementById("body").hasClass("mobile"))) {
     const container2 = document.getElementById("page-left");
     const container3 = document.getElementById("page-right");
   }
+
+  
+
+
 }
 
 // Turn the page

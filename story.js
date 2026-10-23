@@ -20,21 +20,11 @@ function getDevice() {
   }
 }
 
-function createPage(container, page) {
-  // Helper: create a heading.
-  function addHeading(text) {
-    const heading = document.createElement("h3");
-    heading.className = "green";
-    heading.textContent = text;
-    content.appendChild(heading);
-  }
+function stylePage(page) {
 
-  // Helper: create a paragraph.
-  function addParagraph(text) {
-    const paragraph = document.createElement("p");
-    paragraph.textContent = text;
-    content.appendChild(paragraph);
-  }
+}
+
+function createPage(container, page) {
 
   // Master list of pages for creation
   switch (page) {

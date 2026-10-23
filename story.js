@@ -27,14 +27,36 @@ function createPage(container, page) {
   // Master list of pages for creation
   switch (page) {
     case 1:
+      // Once Upon a Time
       const title = document.createElement("h1");
-      title.className = "fancy mid";
+      title.className = "fancy";
+      title.style = "margin-top: 12%; margin-left: 8%;";
       title.textContent = t("115");
       container.appendChild(title);
-      const subtitle = document.createElement("h3");
-      subtitle.className ="fancy mid";
-      subtitle.textContent = t("116");
-      container.appendChild(subtitle);
+      // Flower Divider
+      const image1 = document.createElement("image");
+      image1.src = "images/ui/divider3.png";
+      image1.style = "padding: 0 15% 0 20%;";
+      // Fancy Intro
+      const subtitle1 = document.createElement("h3");
+      subtitle1.className ="fancy";
+      subtitle1.textContent = t("116");
+      container.appendChild(subtitle1);
+      const subtitle2 = document.createElement("h3");
+      subtitle2.className ="fancy";
+      subtitle2.style = "margin-top: 6%; margin-right: 40%;";
+      subtitle2.textContent = t("117");
+      container.appendChild(subtitle2);
+      const subtitle3 = document.createElement("h3");
+      subtitle3.className ="fancy";
+      subtitle3.style = "margin-top: 4%; margin-left: 40%;";
+      subtitle3.textContent = t("118");
+      container.appendChild(subtitle3);
+      const subtitle4 = document.createElement("h3");
+      subtitle4.className ="fancy";
+      subtitle4.style = "margin: 6% 20% 0 15%;";
+      subtitle4.textContent = t("119");
+      container.appendChild(subtitle4);
       break;
     case 2:
       break;

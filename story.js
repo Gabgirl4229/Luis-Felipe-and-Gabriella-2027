@@ -8,7 +8,7 @@ function t(key) {
       ?? key;
 }
 
-function createPage(page) {
+function createPage(container, page) {
   // Helper: create a heading.
   function addHeading(text) {
     const heading = document.createElement("h3");
@@ -27,6 +27,10 @@ function createPage(page) {
   // Master list of pages for creation
   switch (page) {
     case 1:
+      const title = document.createElement("h2");
+      title.className = "fancy mid";
+      title.textContent = t("");
+      container.appendChild(title);
       break;
     case 2:
       break;
@@ -57,11 +61,13 @@ function loadPages(startPage) {
   if (!(document.getElementById("body").hasClass("mobile"))) {
     const container2 = document.getElementById("page-left");
     const container3 = document.getElementById("page-right");
+
+    // Load content into a two-page setup
+    createPage(container2, startPage);
+    createPage(container3, startPage + 1);
   }
-
-  
-
-
+  // Load content into a one-page setup
+  createPage(container1, startPage);
 }
 
 // Turn the page

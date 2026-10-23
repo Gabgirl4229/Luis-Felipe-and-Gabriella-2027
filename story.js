@@ -34,7 +34,7 @@ function createPage(container, page) {
       title.textContent = t("115");
       container.appendChild(title);
       // Flower Divider
-      const image1 = document.createElement("image");
+      const image1 = document.createElement("img");
       image1.src = "images/ui/divider3.png";
       image1.style = "padding: 0 15% 0 20%;";
       container.appendChild(image1);

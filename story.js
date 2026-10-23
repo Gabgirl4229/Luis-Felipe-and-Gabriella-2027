@@ -12,12 +12,13 @@ function t(key) {
 function getDevice() {
   const deviceType;
   if (document.body.classList.contains("mobile")) {
-    deviceType = 1; // Phones
+    deviceType = "mobile"; // Phones
   } else if (getElementById("page-center").hasClass("hidden")) {
-    deviceType = 3; // Laptops
+    deviceType = "laptop"; // Laptops
   } else {
-    deviceType = 2; // Tablets
+    deviceType = "tablet"; // Tablets
   }
+  return deviceType;
 }
 
 function stylePage(page) {

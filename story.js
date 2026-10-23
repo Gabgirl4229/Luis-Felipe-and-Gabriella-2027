@@ -21,11 +21,6 @@ function getDevice() {
   return deviceType;
 }
 
-function stylePage(element, num) {
-  element.style = pagestyles[getDevice()][element];
-  element.textContent = t(num);
-}
-
 function createPage(container, page) {
 
   // Master list of pages for creation
@@ -34,12 +29,13 @@ function createPage(container, page) {
       // Once Upon a Time
       const title = document.createElement("h1");
       title.className = "fancy";
-      stylePage(title, "115");
+      element.textContent = t("115");
+      element.style = pagestyles[getDevice()][title];
       container.appendChild(title);
       // Flower Divider
       const image1 = document.createElement("img");
       image1.src = "images/ui/divider3.png";
-      image1.style = "padding: 0 15% 0 20%;";
+      image1.style = pagestyles[getDevice()][image1];
       container.appendChild(image1);
       // Fancy Intro
       const subtitle1 = document.createElement("h3");

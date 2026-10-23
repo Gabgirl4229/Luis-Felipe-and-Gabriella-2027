@@ -10,7 +10,7 @@ function t(key) {
 
 // Prep for different sizes
 function getDevice() {
-  const deviceType = null;
+  deviceType = null;
   if (document.body.classList.contains("mobile")) {
     deviceType = "mobile";
   } else if (document.getElementById("page-center").classList.contains("hidden")) {

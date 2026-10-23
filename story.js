@@ -62,7 +62,7 @@ function createPage(container, page) {
 function loadPages(startPage) {
   // Find the empty pages
   const container1 = document.getElementById("page-center");
-  if (!(document.body.classList.contains("mobile"))) {
+  if (!$document.body.hasClass("mobile")) {
     const container2 = document.getElementById("page-left");
     const container3 = document.getElementById("page-right");
 

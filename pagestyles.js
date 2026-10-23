@@ -1,4 +1,4 @@
-const pageStyles = {
+const pagestyles = {
   laptop: {
     title: "margin-top: 10%; margin-left: 8%;",
     image1: "padding: 0 15% 0 20%;",

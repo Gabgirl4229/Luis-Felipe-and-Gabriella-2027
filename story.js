@@ -1,11 +1,23 @@
 let pageIndex = 1;
 
-// Translate text.
+// Translate text
 function t(key) {
   language = localStorage.getItem("site-language");
   return translations[language]?.[key]
       ?? translations.en[key]
       ?? key;
+}
+
+// Prep for different sizes
+function getDevice() {
+  const deviceType;
+  if (document.body.classList.contains("mobile")) {
+    deviceType = 1; // Phones
+  } else if (getElementById("page-center").hasClass("hidden")) {
+    deviceType = 3; // Laptops
+  } else {
+    deviceType = 2; // Tablets
+  }
 }
 
 function createPage(container, page) {

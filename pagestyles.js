@@ -1,1 +1,5 @@
+const pageStyles = {
+  mobile {
 
+}
+}

@@ -12,17 +12,17 @@ function t(key) {
 function getDevice() {
   const deviceType;
   if (document.body.classList.contains("mobile")) {
-    deviceType = "mobile"; // Phones
+    deviceType = "mobile";
   } else if (getElementById("page-center").hasClass("hidden")) {
-    deviceType = "laptop"; // Laptops
+    deviceType = "laptop";
   } else {
-    deviceType = "tablet"; // Tablets
+    deviceType = "tablet";
   }
   return deviceType;
 }
 
-function stylePage(page) {
-
+function stylePage(element) {
+  return pagestyles[getDevice()][element];
 }
 
 function createPage(container, page) {

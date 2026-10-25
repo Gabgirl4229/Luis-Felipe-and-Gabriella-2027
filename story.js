@@ -30,6 +30,8 @@ function createPage(container, page) {
       const title = document.createElement("h1");
       title.className = "fancy";
       title.textContent = t("115");
+      console.log("Device Type: ", getDevice());
+      console.log("Style - ", pagestyles[getDevice()][title]);
       title.style = pagestyles[getDevice()][title];
       container.appendChild(title);
       // Flower Divider

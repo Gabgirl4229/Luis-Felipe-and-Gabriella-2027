@@ -13,7 +13,7 @@ function getDevice() {
   deviceType = null;
   if (document.body.classList.contains("mobile")) {
     deviceType = "mobile";
-  } else if (document.getElementById("page-center").classList.contains("hidden")) {
+  } else if (document.getElementByClass("overlay-portrait").style.display == "none")) {
     deviceType = "laptop";
   } else {
     deviceType = "tablet";

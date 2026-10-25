@@ -748,7 +748,7 @@ details > summary {
     display: none;
   }
 
-  .portrait {
+  .portrait, .overlay-portrait {
     display: block;
   }
 

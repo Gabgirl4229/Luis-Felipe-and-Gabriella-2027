@@ -655,20 +655,17 @@ details > summary {
 
 #page-left, #page-right, #page-center {
   position: absolute;
+  height: 68%;
 }
 
 #page-left {
   width: 40%;
-  height: 62%;
   left: 10%;
-  top: 6%;
 }
 
 #page-right {
   width: 42%;
-  height: 60%;
   left: 50%;
-  top: 8%;
 }
 
 #page-center {

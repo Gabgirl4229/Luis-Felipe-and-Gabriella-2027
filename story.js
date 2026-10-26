@@ -97,22 +97,23 @@ function loadPages(startPage) {
   // Find the page containers
   const container1 = document.getElementById("page-center");
   if (!document.body.classList.contains("mobile")) {
+    // Only load laptop containers if not on mobile
     const container2 = document.getElementById("page-left");
     const container3 = document.getElementById("page-right");
-  }
 
-  // Make page adjustments if using the two-page storybook
-  if ((startPage % 2) == 0) {
-    startPage++;
-    // Load content into a two-page setup
-    createPage(container2, startPage);
-    createPage(container3, startPage + 1);
-    startPage--;
-  } else {
-    createPage(container2, startPage);
-    createPage(container3, startPage + 1);
+    // Make page adjustments if using the two-page storybook
+    if ((startPage % 2) == 0) {
+      startPage++;
+      // Load content into a two-page setup
+      createPage(container2, startPage);
+      createPage(container3, startPage + 1);
+      startPage--;
+    } else {
+      createPage(container2, startPage);
+      createPage(container3, startPage + 1);
+    }
   }
-    
+  
   // Load content into a one-page setup
   createPage(container1, startPage);
 }

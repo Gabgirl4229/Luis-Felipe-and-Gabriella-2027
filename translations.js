@@ -119,7 +119,17 @@ const translations = {
     117: "one from Botucatu, Sao Paulo,",
     118: "the other from Miami, Florida,",
     119: "converged at Florida Polytechnic University on an early Tuesday morning.",
-    120: ""
+    120: "",
+    121: "",
+    122: "",
+    123: "",
+    124: "",
+    125: "",
+    126: "",
+    127: "",
+    128: "",
+    129: "",
+    130: ""
     
   },
 
@@ -243,7 +253,17 @@ const translations = {
     117: "una de Botucatu, São Paulo,",
     118: "y la otra de Miami, Florida,",
     119: "se unieron en la Universidad Politécnica de Florida temprano un martes por la mañana.",
-    120: ""
+    120: "",
+    121: "",
+    122: "",
+    123: "",
+    124: "",
+    125: "",
+    126: "",
+    127: "",
+    128: "",
+    129: "",
+    130: ""
   },
 
   pt: {
@@ -366,6 +386,16 @@ const translations = {
     117: "",
     118: "",
     119: "",
-    120: ""
+    120: "",
+    121: "",
+    122: "",
+    123: "",
+    124: "",
+    125: "",
+    126: "",
+    127: "",
+    128: "",
+    129: "",
+    130: ""
   }
 }

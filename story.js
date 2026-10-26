@@ -59,6 +59,7 @@ function createPage(container, page) {
       title = document.createElement("h1");
       title.className = "fancy";
       title.textContent = t("120");
+      console.log("Style - ", pagestyles[deviceType][7]);
       title.style = pagestyles[deviceType][7];
       container.appendChild(title);
       

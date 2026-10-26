@@ -19,9 +19,9 @@ function createPage(container, page) {
       const title = document.createElement("h1");
       title.className = "fancy";
       title.textContent = t("115");
-      console.log("Device Type: ", getDevice());
+      console.log("Device Type: ", deviceType);
       console.log("Style - ", pagestyles[deviceType][title]);
-      title.style = pagestyles[getDevice()][title];
+      title.style = pagestyles[deviceType][title];
       container.appendChild(title);
       // Flower Divider
       const image1 = document.createElement("img");

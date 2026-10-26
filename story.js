@@ -65,8 +65,8 @@ function createPage(container, page) {
       // Links to Chapters
       chapter1 = document.createElement("a");
       chapter1.textContent = t("121");
-      chapter1.style = pagestyles[deviceType][8];
       chapter1.onclick = "loadPage(3)";
+      chapter1.style = pagestyles[deviceType][8];
       container.appendChild(chapter1);
       
       break;

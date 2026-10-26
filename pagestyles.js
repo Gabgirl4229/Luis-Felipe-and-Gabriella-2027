@@ -1,6 +1,6 @@
 const pagestyles = {
   "book-laptop": {
-    1: "margin-top: 10%; margin-left: 8%;",
+    1: "margin-top: 8%; margin-left: 11%;",
     2: "padding: 0 15% 0 20%;",
     subtitle1: "",
     subtitle2: "",

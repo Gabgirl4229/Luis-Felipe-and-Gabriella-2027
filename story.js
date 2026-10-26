@@ -99,7 +99,7 @@ function loadPages(startPage, direction) {
   // Load content into a one-page setup
   createPage(container1, startPage);
   
-  if (!container1.parentElement.checkVisibility())) {
+  if (!container1.parentElement.checkVisibility()) {
     // Only load laptop containers if tablet/mobile mode is hidden
     const container2 = document.getElementById("page-left");
     const container3 = document.getElementById("page-right");

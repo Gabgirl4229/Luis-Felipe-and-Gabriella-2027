@@ -1,6 +1,6 @@
 let pageIndex = 1;
 
-// Translate text
+// Translate text add somethhing different
 function t(key) {
   language = localStorage.getItem("site-language");
   return translations[language]?.[key]

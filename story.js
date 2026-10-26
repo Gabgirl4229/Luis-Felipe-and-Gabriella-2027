@@ -30,21 +30,22 @@ function createPage(container, page) {
       const subtitle1 = document.createElement("h3");
       subtitle1.className ="fancy";
       subtitle1.textContent = t("116");
+      subtitle1.style = pagestyles[deviceType][3];
       container.appendChild(subtitle1);
       const subtitle2 = document.createElement("h3");
       subtitle2.className ="fancy";
-      subtitle2.style = "margin-top: 6%; margin-right: 40%;";
       subtitle2.textContent = t("117");
+      subtitle2.style = pagestyles[deviceType][4];
       container.appendChild(subtitle2);
       const subtitle3 = document.createElement("h3");
       subtitle3.className ="fancy";
-      subtitle3.style = "margin-top: 4%; margin-left: 40%;";
       subtitle3.textContent = t("118");
+      subtitle3.style = pagestyles[deviceType][5];
       container.appendChild(subtitle3);
       const subtitle4 = document.createElement("h3");
       subtitle4.className ="fancy";
-      subtitle4.style = "margin: 6% 20% 0 15%;";
       subtitle4.textContent = t("119");
+      subtitle4.style = pagestyles[deviceType][6];
       container.appendChild(subtitle4);
       break;
     case 2:

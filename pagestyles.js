@@ -1,13 +1,13 @@
 const pagestyles = {
   "book-laptop": {
-    1: "margin-top: 8%; margin-left: 11%;",
+    1: "margin-top: 10%; margin-left: 11%;",
     2: "padding: 0 18% 0 28%;",
     3: "margin-left: 6%;",
     4: "margin-top: 5%; margin-right: 32%;",
     5: "margin-top: 2%; margin-left: 40%;",
     6: "margin: 5% 18% 0 18%;",
-    7: "",
-    8: "",
+    7: "margin-top: 10%; margin-right: 15%;",
+    8: "margin-top: 10%; margin-right: 25%; color: black;",
     9: "",
     10: "",
     11: "",

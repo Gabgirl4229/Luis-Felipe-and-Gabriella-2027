@@ -1,7 +1,7 @@
 const pagestyles = {
   "book-laptop": {
-    "title": "margin-top: 10%; margin-left: 8%;",
-    "image1": "padding: 0 15% 0 20%;",
+    1: "margin-top: 10%; margin-left: 8%;",
+    2: "padding: 0 15% 0 20%;",
     subtitle1: "",
     subtitle2: "",
     subtitle3: "",
@@ -9,8 +9,8 @@ const pagestyles = {
   },
   
   "book-tablet": {
-    title: "",
-    image1: "",
+    1: "",
+    2: "",
     subtitle1: "",
     subtitle2: "",
     subtitle3: "",
@@ -18,8 +18,8 @@ const pagestyles = {
   },
   
   "book-mobile": {
-    title: "",
-    image1: "",
+    1: "",
+    2: "",
     subtitle1: "",
     subtitle2: "",
     subtitle3: "",

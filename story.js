@@ -10,7 +10,8 @@ function t(key) {
 
 
 function createPage(container, page) {
-  const deviceType = container.parentElement.id;
+  const deviceType = container.parentElement.id; // Determine what type of device you're on
+  container.innerHTML = ""; // Clear out the container before adding anything to it
 
   // Master list of pages for creation
   switch (page) {
@@ -66,7 +67,7 @@ function createPage(container, page) {
       // Links to Chapters
       chapter1 = document.createElement("a");
       chapter1.textContent = t("121");
-      chapter1.onclick = "loadPage(3)";
+      chapter1.onclick = () => loadPage(3);
       chapter1.style = pagestyles[deviceType][8];
       container.appendChild(chapter1);
       

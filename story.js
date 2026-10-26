@@ -8,20 +8,9 @@ function t(key) {
       ?? key;
 }
 
-// Prep for different sizes
-function getDevice() {
-  deviceType = null;
-  if (document.body.classList.contains("mobile")) {
-    deviceType = "mobile";
-  } else if (document.getElementById("notebook-container").style.display == "none") {
-    deviceType = "laptop";
-  } else {
-    deviceType = "tablet";
-  }
-  return deviceType;
-}
 
 function createPage(container, page) {
+  const deviceType = container.parentElement.id;
 
   // Master list of pages for creation
   switch (page) {
@@ -31,13 +20,13 @@ function createPage(container, page) {
       title.className = "fancy";
       title.textContent = t("115");
       console.log("Device Type: ", getDevice());
-      console.log("Style - ", pagestyles[getDevice()][title]);
+      console.log("Style - ", pagestyles[deviceType][title]);
       title.style = pagestyles[getDevice()][title];
       container.appendChild(title);
       // Flower Divider
       const image1 = document.createElement("img");
       image1.src = "images/ui/divider3.png";
-      image1.style = pagestyles[getDevice()][image1];
+      image1.style = pagestyles[deviceType][image1];
       container.appendChild(image1);
       // Fancy Intro
       const subtitle1 = document.createElement("h3");

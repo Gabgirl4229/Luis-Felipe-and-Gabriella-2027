@@ -111,6 +111,7 @@ function loadPages(startPage, direction) {
       } else {
         startPage--;
       }
+    }
     // Load content into a two-page setup
     createPage(container2, startPage);
     createPage(container3, startPage + 1);

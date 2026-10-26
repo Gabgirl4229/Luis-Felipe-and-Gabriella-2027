@@ -1,4 +1,4 @@
-// Allow nav bar to open and close add something different
+// Allow nav bar to open and close
 function toggleMenu() {
   var x = document.getElementById("navLinks");
   if (x.style.display === "block") {

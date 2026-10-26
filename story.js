@@ -94,16 +94,25 @@ function createPage(container, page) {
 
 // Make the pages appear and disappear
 function loadPages(startPage) {
-  // Find the empty pages
+  // Find the page containers
   const container1 = document.getElementById("page-center");
   if (!document.body.classList.contains("mobile")) {
     const container2 = document.getElementById("page-left");
     const container3 = document.getElementById("page-right");
+  }
 
+  // Make page adjustments if using the two-page storybook
+  if ((startPage % 2) == 0) {
+    startPage++;
     // Load content into a two-page setup
     createPage(container2, startPage);
     createPage(container3, startPage + 1);
+    startPage--;
+  } else {
+    createPage(container2, startPage);
+    createPage(container3, startPage + 1);
   }
+    
   // Load content into a one-page setup
   createPage(container1, startPage);
 }
@@ -113,6 +122,7 @@ function turnPage(direction) {
   switch (direction) {
     case "next":
       pageIndex++;
+      
       if (pageIndex > 10) {
         pageIndex = 10;
       }
@@ -120,6 +130,7 @@ function turnPage(direction) {
       break;
     case "previous":
       pageIndex--;
+      
       if (pageIndex < 1) {
         pageIndex = 1;
       }

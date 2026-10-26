@@ -19,14 +19,13 @@ function createPage(container, page) {
       const title = document.createElement("h1");
       title.className = "fancy";
       title.textContent = t("115");
-      console.log("Style - ", pagestyles[deviceType]["1"]);
       title.style = pagestyles[deviceType]["1"];
       container.appendChild(title);
       // Flower Divider
       const image1 = document.createElement("img");
       image1.src = "images/ui/divider3.png";
-      image1.style = pagestyles[deviceType][image1];
-      container.appendChild(image1);
+      image1.style = pagestyles[deviceType][2];
+      container.appendChild(2);
       // Fancy Intro
       const subtitle1 = document.createElement("h3");
       subtitle1.className ="fancy";

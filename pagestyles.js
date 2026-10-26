@@ -9,20 +9,20 @@ const pagestyles = {
   },
   
   "book-tablet": {
-    1: "",
+    1: "margin-top: 5%;",
     2: "",
-    subtitle1: "",
-    subtitle2: "",
-    subtitle3: "",
-    subtitle4: ""
+    3: "margin-top: 10%;",
+    4: "margin-top: 10%; margin-right: 40%;",
+    5: "margin-top: 2%; margin-left: 40%;",
+    6: "margin: 10% 20%;"
   },
   
   "book-mobile": {
-    1: "",
-    2: "",
-    subtitle1: "",
-    subtitle2: "",
-    subtitle3: "",
-    subtitle4: ""
+    1: "margin-top: 15%;",
+    2: "display: none;",
+    3: "margin-top: 15%;",
+    4: "margin-top: 5%;",
+    5: "margin: 0;",
+    6: "margin-top: 5%;"
   }
 }

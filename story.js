@@ -25,7 +25,7 @@ function createPage(container, page) {
       const image1 = document.createElement("img");
       image1.src = "images/ui/divider3.png";
       image1.style = pagestyles[deviceType][2];
-      container.appendChild(2);
+      container.appendChild(image1);
       // Fancy Intro
       const subtitle1 = document.createElement("h3");
       subtitle1.className ="fancy";

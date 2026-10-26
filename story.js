@@ -16,39 +16,59 @@ function createPage(container, page) {
   switch (page) {
     case 1:
       // Once Upon a Time
-      const title = document.createElement("h1");
+      title = document.createElement("h1");
       title.className = "fancy";
       title.textContent = t("115");
       title.style = pagestyles[deviceType]["1"];
       container.appendChild(title);
-      // Flower Divider
-      const image1 = document.createElement("img");
+      
+      // Flower Divider (bigger screens only)
+      image1 = document.createElement("img");
       image1.src = "images/ui/divider3.png";
       image1.style = pagestyles[deviceType][2];
       container.appendChild(image1);
+      
       // Fancy Intro
-      const subtitle1 = document.createElement("h3");
-      subtitle1.className ="fancy";
+      subtitle1 = document.createElement("h3");
+      subtitle1.className = "fancy";
       subtitle1.textContent = t("116");
       subtitle1.style = pagestyles[deviceType][3];
       container.appendChild(subtitle1);
-      const subtitle2 = document.createElement("h3");
-      subtitle2.className ="fancy";
+      
+      subtitle2 = document.createElement("h3");
+      subtitle2.className = "fancy";
       subtitle2.textContent = t("117");
       subtitle2.style = pagestyles[deviceType][4];
       container.appendChild(subtitle2);
-      const subtitle3 = document.createElement("h3");
-      subtitle3.className ="fancy";
+      
+      subtitle3 = document.createElement("h3");
+      subtitle3.className = "fancy";
       subtitle3.textContent = t("118");
       subtitle3.style = pagestyles[deviceType][5];
       container.appendChild(subtitle3);
-      const subtitle4 = document.createElement("h3");
-      subtitle4.className ="fancy";
+      
+      subtitle4 = document.createElement("h3");
+      subtitle4.className = "fancy";
       subtitle4.textContent = t("119");
       subtitle4.style = pagestyles[deviceType][6];
       container.appendChild(subtitle4);
+      
       break;
     case 2:
+      // Table of Contents Title
+      title = document.createElement("h1");
+      title.className = "fancy";
+      title.textContent = t("120");
+      title.style = pagestyles[deviceType][7];
+      container.appendChild(title);
+      
+      // Links to Chapters
+      chapter1 = document.createElement("a");
+      chapter1.textContent = t("121");
+      chapter1.style = pagestyles[deviceType][8];
+      chapter1.onclick = "loadPage(3)";
+      container.appendChild(chapter1);
+      
       break;
     case 3:
       break;

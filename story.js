@@ -94,10 +94,12 @@ function createPage(container, page) {
 
 // Make the pages appear and disappear
 function loadPages(startPage, direction) {
+  pageIndex = startPage;
+  
   // Load tablet/mobile container
   const container1 = document.getElementById("page-center");
   // Load content into a one-page setup
-  createPage(container1, startPage);
+  createPage(container1, pageIndex);
   
   if (!container1.parentElement.checkVisibility()) {
     // Only load laptop containers if tablet/mobile mode is hidden
@@ -105,16 +107,16 @@ function loadPages(startPage, direction) {
     const container3 = document.getElementById("page-right");
 
     // Make page adjustments if using the two-page storybook
-    if ((startPage % 2) == 0) {
+    if ((pageIndex % 2) == 0) {
       if (direction == "next") {
-        startPage++;
+        pageIndex++;
       } else {
-        startPage--;
+        pageIndex--;
       }
     }
     // Load content into a two-page setup
-    createPage(container2, startPage);
-    createPage(container3, startPage + 1);
+    createPage(container2, pageIndex);
+    createPage(container3, pageIndex + 1);
   }
 }
 

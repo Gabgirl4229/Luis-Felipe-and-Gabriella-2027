@@ -262,6 +262,11 @@ img {
   padding: 0 2%;
 }
 
+#wedding-party img {
+  border: 4px solid;
+  border-radius: 1rem;
+}
+
 /* Desktop/Tablet responsive items */
 .fullscreen {
   height: calc(100dvh - 70px);

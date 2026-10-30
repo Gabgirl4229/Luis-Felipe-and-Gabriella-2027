@@ -262,7 +262,7 @@ img {
   padding: 0 2%;
 }
 
-#wedding-party img {
+#wedding-party img, #party img {
   border: 4px solid;
   border-radius: 1rem;
 }

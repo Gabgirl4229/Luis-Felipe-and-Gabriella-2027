@@ -122,6 +122,14 @@ hr {
   margin: 2% 0;
 }
 
+.hr-blue {
+  border-color: #84a1c4;
+}
+
+.hr-green {
+  border-color: #748469;
+}
+
 /* Schedule timeline */
 .vl {
   border-left: 4px solid #a7c1e1;

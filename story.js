@@ -142,3 +142,6 @@ function turnPage(direction) {
   }
   loadPages(pageIndex, direction);
 }
+
+// Display first page on startup
+loadPages(1, nexr);

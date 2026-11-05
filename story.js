@@ -144,4 +144,4 @@ function turnPage(direction) {
 }
 
 // Display first page on startup
-loadPages(1, nexr);
+loadPages(1, 'previous');

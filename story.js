@@ -73,6 +73,19 @@ function createPage(container, page) {
       
       break;
     case 3:
+      // Chapter Title
+      chapterTitle = document.createElement("h1");
+      chapterTitle.className = "fancy";
+      chapterTitle.textContent = t("122");
+      chapterTitle.style = pagestyles[deviceType][9];
+      container.appendChild(chapterTitle);
+
+      // Paragraphs
+      paragraph1 = document.createElement("p");
+      paragraph1.textContent = t("123");
+      paragraph1.style = pagestyles[deviceType][10];
+      container.appendChild(paragraph1);
+      
       break;
     case 4:
       break;

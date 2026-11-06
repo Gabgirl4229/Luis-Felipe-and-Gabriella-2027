@@ -705,6 +705,10 @@ details > summary {
 
 @media (max-width: 1024px) {
 
+  p {
+    font-size: 2.5vw;
+  }
+
   .rsvp-btn {
     font-size: 3.5rem;
   }
@@ -847,6 +851,10 @@ details > summary {
    ========================================================= */
 
 @media (max-width: 480px) {
+  
+  p {
+    font-size: 3.25vw;
+  }
   
   /* Padding changes */ 
   section {

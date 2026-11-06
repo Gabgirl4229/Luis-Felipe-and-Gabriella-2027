@@ -7,7 +7,7 @@ const pagestyles = {
     5: "margin-top: 2%; margin-left: 40%;",
     6: "margin: 5% 18% 0 18%;",
     7: "margin-top: 10%; margin-right: 15%;",
-    8: "margin-top: 10%; margin-right: 25%; color: black;",
+    8: "margin-top: 10%; text-align: center; transform: translate(-22%, 0); color: black;",
     9: "",
     10: "",
     11: "",

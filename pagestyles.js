@@ -1,12 +1,12 @@
 const pagestyles = {
   "book-laptop": {
-    1: "margin-top: 10%; margin-left: 11%;",
+    1: "margin-top: 10%; margin-left: 11%;", // Left Page Title
     2: "padding: 4% 16% 4% 26%;",
     3: "margin-left: 6%;",
     4: "margin-top: 5%; margin-right: 32%;",
     5: "margin-top: 2%; margin-left: 40%;",
     6: "margin: 5% 18% 0 18%;",
-    7: "margin-top: 10%; margin-right: 15%;",
+    7: "margin-top: 10%; margin-right: 15%;", // Right Page Title
     8: "margin-top: 10%; text-align: center; transform: translate(-22%, 0); color: black;",
     9: "",
     10: "",

@@ -122,12 +122,12 @@ const translations = {
     120: "Table of Contents",
     121: "1. Good Chemistry",
     122: "Good Chemistry",
-    123: "\t\t\"Good morning everyone! My name is Dr. Ajeet Kaushik and I will be your professor for this Chemistry 1 class.\" These were the first words Luis and Gabriella heard within each other's vicinity. Gabriella's eyelids drooped with each subsequent sentence as their first professor made small talk about the sunny weather that morning.",
-    124: "\t\tShe looked over at the young man to her right: the one she had chosen to sit next to. He sat up straight, nodding along to Dr. Kaushik's giddy speech as if it were completely normal to drag oneself out of bed at the buttcrack of dawn for an 8AM chemistry class and be excited about it.",
-    125: "",
-    126: "",
-    127: "",
-    128: "",
+    123: "    \"Good morning everyone! My name is Dr. Ajeet Kaushik and I will be your professor for this Chemistry 1 class.\" These were the first words Luis and Gabriella heard within each other's vicinity. Gabriella's eyelids drooped with each subsequent sentence as their first professor made small talk about the sunny weather that morning.",
+    124: "    She looked over at the young man to her right: the one she chose to sit next to. He sat up straight, nodding along to Dr. Kaushik's giddy speech as if it were completely normal to drag oneself out of bed at the buttcrack of dawn for an 8AM chemistry class and be excited about it.",
+    125: "    He had already snuck a few glances at her during their 10-minute conversation prior to class starting. He adjusted his posture every few minutes, his leg bouncing up and down as the pretty girl next to him fought to stay awake.",
+    126: "    Dr. Kaushik left the room to print out some worksheets. The instant he was out the door, Luis felt a tap on his shoulder and found himself face-to-face with a pair of alluring dark brown eyes. They hovered above a black mask which enshrouded the rest of her face.",
+    127: "    \"I just know I'm going to fall sleep in this class,\" she grumbled. \"Could you help keep me awake? Just tap me or something if you see me getting sleepy.\"",
+    128: "    From that moment on, he began to daydream about what might happen if she were to get very sleepy - and rest her head on his shoulder during class.",
     129: "",
     130: ""
     

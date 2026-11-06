@@ -8,8 +8,15 @@ function t(key) {
       ?? key;
 }
 
+function createMobilePage(container, page) {
 
-function createPage(container, page) {
+}
+
+function createTabletPage(container, page) {
+
+}
+
+function createLaptopPage(container, page) {
   const deviceType = container.parentElement.id; // Determine what type of device you're on
   container.innerHTML = ""; // Clear out the container before adding anything to it
 

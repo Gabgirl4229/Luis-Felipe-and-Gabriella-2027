@@ -12,6 +12,11 @@
   scroll-margin-top: 100px;
 }
 
+/* Allows most text to resize itself based on device width */
+p {
+  font-size: 1.2vw;
+}
+
 /* General webpage look */
 body {
   background: #e8e9ef; /* background page color */

@@ -24,8 +24,8 @@ const pagestyles = {
   
   "book-tablet": {
     1: "margin-top: 5%;",
-    2: "",
-    3: "margin-top: 10%;",
+    2: "padding: 10%;",
+    3: "",
     4: "margin-top: 10%; margin-right: 40%;",
     5: "margin-top: 2%; margin-left: 40%;",
     6: "margin: 10% 20%;",

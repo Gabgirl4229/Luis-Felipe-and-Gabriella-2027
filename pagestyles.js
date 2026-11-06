@@ -9,9 +9,9 @@ const pagestyles = {
     7: "margin-top: 10%; margin-right: 15%; margin-bottom: 4%;", // Right Page Title
     8: "margin-top: 10%; text-align: center; transform: translate(-22%, 0); color: black;", // Table of Contents Chapter 1
     9: "margin: 4% 8% 0 16%; text-align: left;", // Left Page Paragraphs
-    10: "margin: 22% 18% 0 6%; text-align: left;", // Right Page Top Paragraph
+    10: "margin: 14% 18% 0 6%; text-align: left;", // Right Page Top Paragraph
     11: "margin: 4% 18% 0 6%; text-align: left;", // Right Page Paragraphs
-    12: "",
+    12: "margin: 14% 8% 0 16%; text-align: left;", // Left Page Top Paragraph
     13: "",
     14: "",
     15: "",

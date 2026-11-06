@@ -77,13 +77,13 @@ function createPage(container, page) {
       chapterTitle = document.createElement("h1");
       chapterTitle.className = "fancy";
       chapterTitle.textContent = t("122");
-      chapterTitle.style = pagestyles[deviceType][9];
+      chapterTitle.style = pagestyles[deviceType][1];
       container.appendChild(chapterTitle);
 
       // Paragraphs
       paragraph1 = document.createElement("p");
       paragraph1.textContent = t("123");
-      paragraph1.style = pagestyles[deviceType][10];
+      paragraph1.style = pagestyles[deviceType][9];
       container.appendChild(paragraph1);
       
       break;

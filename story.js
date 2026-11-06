@@ -93,6 +93,17 @@ function createPage(container, page) {
       
       break;
     case 4:
+      // More Paragraphs
+      paragraph3 = document.createElement("p");
+      paragraph3.textContent = t("125");
+      paragraph3.style = pagestyles[deviceType][9];
+      container.appendChild(paragraph3);
+
+      paragraph4 = document.createElement("p");
+      paragraph4.textContent = t("126");
+      paragraph4.style = pagestyles[deviceType][9];
+      container.appendChild(paragraph4);
+      
       break;
     case 5:
       break;

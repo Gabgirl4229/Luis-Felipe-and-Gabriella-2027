@@ -117,7 +117,7 @@ function createLaptopPage(container, page) {
       title = document.createElement("h1");
       title.className = "fancy";
       title.textContent = t("115");
-      title.style = pagestyles[deviceType]["1"];
+      title.style = "margin-top: 10%; margin-left: 11%; margin-bottom: 4%;";
       container.appendChild(title);
       
       // Flower Divider (bigger screens only)

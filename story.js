@@ -9,15 +9,105 @@ function t(key) {
 }
 
 function createMobilePage(container, page) {
+  container.innerHTML = ""; // Clear out the container before adding anything to it
 
+  switch (page) {
+    case 1:
+      // Once Upon a Time
+      title = document.createElement("h1");
+      title.className = "fancy";
+      title.textContent = t("115");
+      title.style = pagestyles[deviceType]["1"];
+      container.appendChild(title);
+      
+      // Flower Divider (bigger screens only)
+      image1 = document.createElement("img");
+      image1.src = "images/ui/divider3.png";
+      image1.style = pagestyles[deviceType][2];
+      container.appendChild(image1);
+      
+      // Fancy Intro
+      subtitle1 = document.createElement("h3");
+      subtitle1.className = "fancy";
+      subtitle1.textContent = t("116");
+      subtitle1.style = pagestyles[deviceType][3];
+      container.appendChild(subtitle1);
+      
+      subtitle2 = document.createElement("h3");
+      subtitle2.className = "fancy";
+      subtitle2.textContent = t("117");
+      subtitle2.style = pagestyles[deviceType][4];
+      container.appendChild(subtitle2);
+      
+      subtitle3 = document.createElement("h3");
+      subtitle3.className = "fancy";
+      subtitle3.textContent = t("118");
+      subtitle3.style = pagestyles[deviceType][5];
+      container.appendChild(subtitle3);
+      
+      subtitle4 = document.createElement("h3");
+      subtitle4.className = "fancy";
+      subtitle4.textContent = t("119");
+      subtitle4.style = pagestyles[deviceType][6];
+      container.appendChild(subtitle4);
+      
+      break;
+    case 2:
+      break;
+  }
 }
 
 function createTabletPage(container, page) {
+  container.innerHTML = ""; // Clear out the container before adding anything to it
 
+  switch (page) {
+    case 1:
+      // Once Upon a Time
+      title = document.createElement("h1");
+      title.className = "fancy";
+      title.textContent = t("115");
+      title.style = pagestyles[deviceType]["1"];
+      container.appendChild(title);
+      
+      // Flower Divider (bigger screens only)
+      image1 = document.createElement("img");
+      image1.src = "images/ui/divider3.png";
+      image1.style = pagestyles[deviceType][2];
+      container.appendChild(image1);
+      
+      // Fancy Intro
+      subtitle1 = document.createElement("h3");
+      subtitle1.className = "fancy";
+      subtitle1.textContent = t("116");
+      subtitle1.style = pagestyles[deviceType][3];
+      container.appendChild(subtitle1);
+      
+      subtitle2 = document.createElement("h3");
+      subtitle2.className = "fancy";
+      subtitle2.textContent = t("117");
+      subtitle2.style = pagestyles[deviceType][4];
+      container.appendChild(subtitle2);
+      
+      subtitle3 = document.createElement("h3");
+      subtitle3.className = "fancy";
+      subtitle3.textContent = t("118");
+      subtitle3.style = pagestyles[deviceType][5];
+      container.appendChild(subtitle3);
+      
+      subtitle4 = document.createElement("h3");
+      subtitle4.className = "fancy";
+      subtitle4.textContent = t("119");
+      subtitle4.style = pagestyles[deviceType][6];
+      container.appendChild(subtitle4);
+      
+      break;
+    case 2:
+      break;
+
+  }
 }
 
 function createLaptopPage(container, page) {
-  const deviceType = container.parentElement.id; // Determine what type of device you're on
   container.innerHTML = ""; // Clear out the container before adding anything to it
 
   // Master list of pages for creation

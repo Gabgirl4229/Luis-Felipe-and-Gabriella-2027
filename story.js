@@ -233,7 +233,7 @@ function loadPages(startPage, direction) {
   const container1 = document.getElementById("page-center"); // Load tablet/mobile container
   
   switch (deviceType) {
-    "book-laptop":
+    case "book-laptop":
       // Make new containers
       const container2 = document.getElementById("page-left");
       const container3 = document.getElementById("page-right");
@@ -251,10 +251,10 @@ function loadPages(startPage, direction) {
       createLaptopPage(container2, pageIndex);
       createLaptopPage(container3, pageIndex + 1);
       break;
-    "book-tablet":
+    case "book-tablet":
       createTabletPage(container1, pageIndex);
       break;
-    "book-mobile":
+    case "book-mobile":
       createMobilePage(container1, pageIndex);
       break;
   }

@@ -144,11 +144,11 @@ function loadPages(startPage, direction) {
   const deviceType = container.parentElement.id; // Determine what type of device you're on
   
   switch (deviceType) {
-    "":
+    "book-laptop":
       break;
-    "":
+    "book-tablet":
       break;
-    "":
+    "book-mobile":
       break;
   }
   

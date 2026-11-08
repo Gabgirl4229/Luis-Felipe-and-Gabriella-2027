@@ -141,6 +141,16 @@ function createLaptopPage(container, page) {
 // Make the pages appear and disappear
 function loadPages(startPage, direction) {
   pageIndex = startPage;
+  const deviceType = container.parentElement.id; // Determine what type of device you're on
+  
+  switch (deviceType) {
+    "":
+      break;
+    "":
+      break;
+    "":
+      break;
+  }
   
   // Load tablet/mobile container
   const container1 = document.getElementById("page-center");
@@ -186,8 +196,9 @@ function turnPage(direction) {
       alert("turn to page: " + pageIndex);
       break;
   }
+
   loadPages(pageIndex, direction);
 }
 
 // Display first page on startup
-loadPages(1, 'previous');
+turnPage("previous");

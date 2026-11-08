@@ -142,37 +142,33 @@ function createLaptopPage(container, page) {
 function loadPages(startPage, direction) {
   pageIndex = startPage;
   const deviceType = container.parentElement.id; // Determine what type of device you're on
+  const container1 = document.getElementById("page-center"); // Load tablet/mobile container
   
   switch (deviceType) {
     "book-laptop":
+      // Make new containers
+      const container2 = document.getElementById("page-left");
+      const container3 = document.getElementById("page-right");
+
+      // Make page adjustments
+      if ((pageIndex % 2) == 0) {
+        if (direction == "next") {
+          pageIndex++;
+        } else {
+          pageIndex--;
+        }
+      }
+      
+      // Load content into a two-page setup
+      createLaptopPage(container2, pageIndex);
+      createLaptopPage(container3, pageIndex + 1);
       break;
     "book-tablet":
+      createTabletPage(container1, pageIndex);
       break;
     "book-mobile":
+      createMobilePage(container1, pageIndex);
       break;
-  }
-  
-  // Load tablet/mobile container
-  const container1 = document.getElementById("page-center");
-  // Load content into a one-page setup
-  createPage(container1, pageIndex);
-  
-  if (!container1.parentElement.checkVisibility()) {
-    // Only load laptop containers if tablet/mobile mode is hidden
-    const container2 = document.getElementById("page-left");
-    const container3 = document.getElementById("page-right");
-
-    // Make page adjustments if using the two-page storybook
-    if ((pageIndex % 2) == 0) {
-      if (direction == "next") {
-        pageIndex++;
-      } else {
-        pageIndex--;
-      }
-    }
-    // Load content into a two-page setup
-    createPage(container2, pageIndex);
-    createPage(container3, pageIndex + 1);
   }
 }
 

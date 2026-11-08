@@ -128,11 +128,11 @@ hr {
 }
 
 .hr-blue {
-  border-color: #84a1c4;
+  border-top-color: #84a1c4;
 }
 
 .hr-green {
-  border-color: #748469;
+  border-top-color: #748469;
 }
 
 /* Schedule timeline */

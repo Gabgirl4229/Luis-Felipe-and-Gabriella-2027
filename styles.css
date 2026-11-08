@@ -870,7 +870,10 @@ details > summary {
 
   footer {
     padding: 20px 10px;
-    font-size: 0.875rem;
+  }
+
+  footer p {
+    font-size: 0.875rem !important;
   }
 
   hr {

@@ -229,7 +229,7 @@ function createLaptopPage(container, page) {
 // Make the pages appear and disappear
 function loadPages(startPage, direction) {
   pageIndex = startPage;
-  const deviceType = clickedElement.parentElement.id; // Determine what type of device you're on
+  const deviceType = event.target.parentElement.id; // Determine what type of device you're on
   const container1 = document.getElementById("page-center"); // Load tablet/mobile container
   
   switch (deviceType) {

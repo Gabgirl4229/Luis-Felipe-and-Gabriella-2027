@@ -928,7 +928,7 @@ details > summary {
   }
 
   #party .row {
-    align-content: center;
+    align-items: end;
   }
 
   #party .sixth {

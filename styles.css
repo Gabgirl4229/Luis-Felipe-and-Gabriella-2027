@@ -853,7 +853,7 @@ details > summary {
 @media (max-width: 480px) {
   
   p {
-    font-size: 3.5vw;
+    font-size: 4.4vw;
   }
   
   /* Padding changes */ 
@@ -922,6 +922,10 @@ details > summary {
   /*Alternate display of wedding party grid on smaller phones*/
   #party .two-thirds {
     grid-column: span 12;
+  }
+
+  #party .row {
+    align-content: center;
   }
 
   #party .sixth {

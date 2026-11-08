@@ -123,7 +123,10 @@ section {
 
 /* Line dividers */
 hr {
-  border-top: 4px solid #bbb;
+  border-top: 4px solid;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
   margin: 2% 0;
 }
 

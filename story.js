@@ -130,25 +130,25 @@ function createLaptopPage(container, page) {
       subtitle1 = document.createElement("h3");
       subtitle1.className = "fancy";
       subtitle1.textContent = t("116");
-      subtitle1.style = pagestyles[deviceType][3];
+      subtitle1.style = "margin-left: 6%;";
       container.appendChild(subtitle1);
       
       subtitle2 = document.createElement("h3");
       subtitle2.className = "fancy";
       subtitle2.textContent = t("117");
-      subtitle2.style = pagestyles[deviceType][4];
+      subtitle2.style = "margin-top: 5%; margin-right: 32%;";
       container.appendChild(subtitle2);
       
       subtitle3 = document.createElement("h3");
       subtitle3.className = "fancy";
       subtitle3.textContent = t("118");
-      subtitle3.style = pagestyles[deviceType][5];
+      subtitle3.style = "margin-top: 2%; margin-left: 40%;";
       container.appendChild(subtitle3);
       
       subtitle4 = document.createElement("h3");
       subtitle4.className = "fancy";
       subtitle4.textContent = t("119");
-      subtitle4.style = pagestyles[deviceType][6];
+      subtitle4.style = "margin: 5% 18% 0 18%;";
       container.appendChild(subtitle4);
       
       break;
@@ -157,15 +157,14 @@ function createLaptopPage(container, page) {
       title = document.createElement("h1");
       title.className = "fancy";
       title.textContent = t("120");
-      console.log("Style - ", pagestyles[deviceType][7]);
-      title.style = pagestyles[deviceType][7];
+      title.style = "margin-top: 10%; margin-right: 15%; margin-bottom: 4%;";
       container.appendChild(title);
       
       // Links to Chapters
       chapter1 = document.createElement("a");
       chapter1.textContent = t("121");
       chapter1.onclick = () => loadPages(3);
-      chapter1.style = pagestyles[deviceType][8];
+      chapter1.style = "margin-top: 10%; text-align: center; transform: translate(-22%, 0); color: black;";
       container.appendChild(chapter1);
       
       break;
@@ -174,18 +173,18 @@ function createLaptopPage(container, page) {
       chapterTitle = document.createElement("h1");
       chapterTitle.className = "fancy";
       chapterTitle.textContent = t("122");
-      chapterTitle.style = pagestyles[deviceType][1];
+      chapterTitle.style = "margin-top: 10%; margin-left: 11%; margin-bottom: 4%;";
       container.appendChild(chapterTitle);
 
       // Paragraphs
       paragraph1 = document.createElement("p");
       paragraph1.textContent = t("123");
-      paragraph1.style = pagestyles[deviceType][9];
+      paragraph1.style = "margin: 4% 8% 0 16%; text-align: left;";
       container.appendChild(paragraph1);
 
       paragraph2 = document.createElement("p");
       paragraph2.textContent = t("124");
-      paragraph2.style = pagestyles[deviceType][9];
+      paragraph2.style = "margin: 4% 8% 0 16%; text-align: left;";
       container.appendChild(paragraph2);
       
       break;
@@ -193,12 +192,12 @@ function createLaptopPage(container, page) {
       // More Paragraphs
       paragraph3 = document.createElement("p");
       paragraph3.textContent = t("125");
-      paragraph3.style = pagestyles[deviceType][10];
+      paragraph3.style = "margin: 14% 18% 0 6%; text-align: left;";
       container.appendChild(paragraph3);
 
       paragraph4 = document.createElement("p");
       paragraph4.textContent = t("126");
-      paragraph4.style = pagestyles[deviceType][11];
+      paragraph4.style = "margin: 4% 18% 0 6%; text-align: left;";
       container.appendChild(paragraph4);
       
       break;
@@ -206,12 +205,12 @@ function createLaptopPage(container, page) {
       // More Paragraphs
       paragraph5 = document.createElement("p");
       paragraph5.textContent = t("127");
-      paragraph5.style = pagestyles[deviceType][12];
+      paragraph5.style = "margin: 14% 8% 0 16%; text-align: left;";
       container.appendChild(paragraph5);
 
       paragraph6 = document.createElement("p");
       paragraph6.textContent = t("128");
-      paragraph6.style = pagestyles[deviceType][9];
+      paragraph6.style = "margin: 4% 8% 0 16%; text-align: left;";
       container.appendChild(paragraph6);
       break;
     case 6:

@@ -123,7 +123,7 @@ function createLaptopPage(container, page) {
       // Flower Divider (bigger screens only)
       image1 = document.createElement("img");
       image1.src = "images/ui/divider3.png";
-      image1.style = pagestyles[deviceType][2];
+      image1.style = "padding: 0% 16% 4% 26%;";
       container.appendChild(image1);
       
       // Fancy Intro

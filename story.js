@@ -291,10 +291,10 @@ function getDeviceType(event) {
 // Display first page on startup
 if (document.querySelector('#book-mobile')) {
   deviceType = "book-mobile";
-} else if (document.querySelector('#book-tablet')) {
-  alert(document.getElementById("book-tablet").class("overlay-portrait").style);
-} else {
+} else if (window.getComputedStyle(document.querySelector('#book-tablet')).display == 'none') {
   deviceType = "book-laptop";
+} else {
+  deviceType = "book-tablet";
 }
 alert(deviceType);
 turnPage("previous");

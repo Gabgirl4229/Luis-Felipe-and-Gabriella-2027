@@ -288,13 +288,16 @@ function getDeviceType(event) {
   deviceType = event.currentTarget.closest("#book-laptop, #book-tablet, #book-mobile")?.id;
 }
 
-// Display first page on startup
+// Get device type and display first page on startup
 if (document.querySelector('#book-mobile')) {
   deviceType = "book-mobile";
 } else if (window.getComputedStyle(document.querySelector('#book-tablet')).display == 'none') {
+  deviceType = "book-tablet";
+  loadPages(1, "previous");
   deviceType = "book-laptop";
 } else {
+  deviceType = "book-laptop";
+  loadPages(1, "previous");
   deviceType = "book-tablet";
 }
-alert(deviceType);
-turnPage("previous");
+loadPages(1, "previous");

@@ -292,7 +292,7 @@ function getDeviceType(event) {
 if (document.querySelector('#book-mobile')) {
   deviceType = "book-mobile";
 } else if (document.querySelector('#book-tablet')) {
-  alert(document.getElementById("book-tablet").style);
+  alert(document.getElementById("book-tablet").class("portrait").style);
 } else {
   deviceType = "book-laptop";
 }

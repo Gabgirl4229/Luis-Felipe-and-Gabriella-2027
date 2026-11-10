@@ -1,4 +1,5 @@
 let pageIndex = 1;
+let deviceType;
 
 // Translate text do something else
 function t(key) {
@@ -229,7 +230,6 @@ function createLaptopPage(container, page) {
 // Make the pages appear and disappear
 function loadPages(startPage, direction) {
   pageIndex = startPage;
-  const deviceType = window.event.target.closest("book-laptop, book-tablet, book-mobile")?.id; // Determine what type of device you're on
   const container1 = document.getElementById("page-center"); // Load tablet/mobile container
   
   switch (deviceType) {
@@ -282,6 +282,10 @@ function turnPage(direction) {
   }
 
   loadPages(pageIndex, direction);
+}
+
+function getDeviceType(event) {
+  deviceType = event.currentTarget.closest("#book-laptop, #book-tablet, #book-mobile")?.id;
 }
 
 // Display first page on startup

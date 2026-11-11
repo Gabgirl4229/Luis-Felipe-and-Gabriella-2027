@@ -15,42 +15,24 @@ function createMobilePage(container, page) {
   switch (page) {
     case 1:
       // Once Upon a Time
-      title = document.createElement("h1");
+      title = document.createElement("h2");
       title.className = "fancy";
       title.textContent = t("115");
-      title.style = "margin-top: 10%; margin-bottom: 8%;"
+      title.style = "margin: 5%;"
       container.appendChild(title);
       
       // Flower Divider (bigger screens only)
       image1 = document.createElement("img");
       image1.src = "images/ui/divider3.png";
-      image1.style = "padding: 0 15%;";
+      image1.style = "padding: 0 20%;";
       container.appendChild(image1);
       
       // Fancy Intro
       subtitle1 = document.createElement("h3");
       subtitle1.className = "fancy";
-      subtitle1.textContent = t("116");
-      subtitle1.style = "margin-top: 10%;";
+      subtitle1.textContent = t("116") + ", " + t("117") + t("118") + t("119");
+      subtitle1.style = "margin-top: 5%;";
       container.appendChild(subtitle1);
-      
-      subtitle2 = document.createElement("h3");
-      subtitle2.className = "fancy";
-      subtitle2.textContent = t("117");
-      subtitle2.style = "margin-top: 10%; margin-right: 40%;";
-      container.appendChild(subtitle2);
-      
-      subtitle3 = document.createElement("h3");
-      subtitle3.className = "fancy";
-      subtitle3.textContent = t("118");
-      subtitle3.style = "margin-top: 2%; margin-left: 40%;";
-      container.appendChild(subtitle3);
-      
-      subtitle4 = document.createElement("h3");
-      subtitle4.className = "fancy";
-      subtitle4.textContent = t("119");
-      subtitle4.style = "margin: 10% 20%;";
-      container.appendChild(subtitle4);
       
       break;
     case 2:

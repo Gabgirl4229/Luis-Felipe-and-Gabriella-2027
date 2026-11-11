@@ -67,7 +67,7 @@ function createTabletPage(container, page) {
       title = document.createElement("h1");
       title.className = "fancy";
       title.textContent = t("115");
-      title.style = "margin-top: 5%; margin-bottom: 8%;";
+      title.style = "margin-top: 10%; margin-bottom: 8%;";
       container.appendChild(title);
       
       // Flower Divider (bigger screens only)
@@ -80,6 +80,7 @@ function createTabletPage(container, page) {
       subtitle1 = document.createElement("h3");
       subtitle1.className = "fancy";
       subtitle1.textContent = t("116");
+      subtitle1.style = "margin-top: 10%;";
       container.appendChild(subtitle1);
       
       subtitle2 = document.createElement("h3");
@@ -152,7 +153,7 @@ function createLaptopPage(container, page) {
       container.appendChild(subtitle4);
       
       break;
-    case 2:
+    case 5:
       // Table of Contents Title
       title = document.createElement("h1");
       title.className = "fancy";
@@ -168,7 +169,7 @@ function createLaptopPage(container, page) {
       container.appendChild(chapter1);
       
       break;
-    case 3:
+    case 6:
       // Chapter Title
       chapterTitle = document.createElement("h1");
       chapterTitle.className = "fancy";
@@ -188,7 +189,7 @@ function createLaptopPage(container, page) {
       container.appendChild(paragraph2);
       
       break;
-    case 4:
+    case 7:
       // More Paragraphs
       paragraph3 = document.createElement("p");
       paragraph3.textContent = t("125");
@@ -201,7 +202,7 @@ function createLaptopPage(container, page) {
       container.appendChild(paragraph4);
       
       break;
-    case 5:
+    case 8:
       // More Paragraphs
       paragraph5 = document.createElement("p");
       paragraph5.textContent = t("127");
@@ -213,15 +214,7 @@ function createLaptopPage(container, page) {
       paragraph6.style = "margin: 4% 8% 0 16%; text-align: left;";
       container.appendChild(paragraph6);
       break;
-    case 6:
-      break;
-    case 7:
-      break;
-    case 8:
-      break;
     case 9:
-      break;
-    case 10:
       break;
   }
 

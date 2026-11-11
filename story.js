@@ -30,7 +30,7 @@ function createMobilePage(container, page) {
       // Fancy Intro
       subtitle1 = document.createElement("h3");
       subtitle1.className = "fancy";
-      subtitle1.textContent = t("116") + ", " + t("117") + t("118") + t("119");
+      subtitle1.textContent = t("116") + "\n" + t("117") + "\n" + t("118") + "\n" + t("119");
       subtitle1.style = "margin-top: 5%;";
       container.appendChild(subtitle1);
       

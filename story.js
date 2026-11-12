@@ -54,6 +54,13 @@ function createMobilePage(container, page) {
       
       break;
     case 2:
+      // Chapter 1 Title
+      chapterTitle = document.createElement("h2");
+      chapterTitle.className = "fancy";
+      chapterTitle.textContent = t("122");
+      chapterTitle.style = "margin: 5%;";
+      container.appendChild(chapterTitle);
+      
       break;
   }
 }

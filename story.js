@@ -64,6 +64,7 @@ function createMobilePage(container, page) {
       // Paragraph 1
       paragraph1 = document.createElement("p");
       paragraph1.textContent = t("130");
+      paragraph1.style = "text-align: left;";
       container.appendChild(paragraph1);
       
       break;

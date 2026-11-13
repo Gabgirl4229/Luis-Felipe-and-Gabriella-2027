@@ -60,6 +60,11 @@ function createMobilePage(container, page) {
       chapterTitle.textContent = t("129");
       chapterTitle.style = "margin: 5%;";
       container.appendChild(chapterTitle);
+
+      // Paragraph 1
+      paragraph1 = document.createElement("p");
+      paragraph1.textContent = t("130");
+      container.appendChild(paragraph1);
       
       break;
   }

@@ -129,7 +129,7 @@ const translations = {
     127: "Clothes should fit well (not too loose or too tight) and be wrinkle-free.",
     128: "Table of Contents",
     129: "Good Chemistry",
-    130: "",
+    130: "As their professor began his introductory syllabus lecture, Luis Felipe and Gabriella sat side by side with notebooks at the ready. Luis sat up straight, nodding along to Dr. Kaushik's cheery remarks about the weather. Gabriella's eyelids drooped as she contemplated what a world without 8AM classes would be like.",
     131: "    \"Good morning everyone! My name is Dr. Ajeet Kaushik and I will be your professor for this Chemistry 1 class.\" These were the first words Luis and Gabriella heard within each other's vicinity. Gabriella's eyelids drooped with each subsequent sentence as their first professor made small talk about the sunny weather that morning.",
     132: "    She looked over at the young man to her right: the one she chose to sit next to. He sat up straight, nodding along to Dr. Kaushik's giddy speech as if it were completely normal to drag oneself out of bed at the buttcrack of dawn for an 8AM chemistry class and be excited about it.",
     133: "    He had already snuck a few glances at her during their 10-minute conversation prior to class starting. He adjusted his posture every few minutes, his leg bouncing up and down as the pretty girl next to him fought to stay awake.",

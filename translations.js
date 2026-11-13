@@ -130,7 +130,7 @@ const translations = {
     128: "Table of Contents",
     129: "Good Chemistry",
     130: "As their professor began his introductory syllabus lecture, Luis Felipe and Gabriella sat side by side with notebooks at the ready. Luis sat up straight, nodding along to Dr. Kaushik's cheery remarks about the weather. Gabriella's eyelids drooped as she contemplated what a world without 8AM classes would be like.",
-    131: "They'd enjoyed a lively conversation minutes prior, chatting about the duck embroidered on his pencil case and the freshly drawn doodle in her notebook. Through the nect few weeks, the two became fast friends.",
+    131: "They'd enjoyed a lively conversation minutes prior, chatting about the duck embroidered on his pencil case and the freshly drawn doodle in her notebook. Through the next few weeks, the two became fast friends.",
     132: "Someone Else",
     133: "",
     141: "    \"Good morning everyone! My name is Dr. Ajeet Kaushik and I will be your professor for this Chemistry 1 class.\" These were the first words Luis and Gabriella heard within each other's vicinity. Gabriella's eyelids drooped with each subsequent sentence as their first professor made small talk about the sunny weather that morning.",

@@ -57,7 +57,7 @@ function createMobilePage(container, page) {
       // Chapter 1 Title
       chapterTitle = document.createElement("h2");
       chapterTitle.className = "fancy";
-      chapterTitle.textContent = t("122");
+      chapterTitle.textContent = t("129");
       chapterTitle.style = "margin: 5%;";
       container.appendChild(chapterTitle);
       
@@ -164,13 +164,13 @@ function createLaptopPage(container, page) {
       // Table of Contents Title
       title = document.createElement("h1");
       title.className = "fancy";
-      title.textContent = t("120");
+      title.textContent = t("128");
       title.style = "margin-top: 10%; margin-right: 15%; margin-bottom: 4%;";
       container.appendChild(title);
       
       // Links to Chapters
       chapter1 = document.createElement("a");
-      chapter1.textContent = t("121");
+      chapter1.textContent = "1. " + t("129");
       chapter1.onclick = () => loadPages(3);
       chapter1.style = "margin-top: 10%; text-align: center; transform: translate(-22%, 0); color: black;";
       container.appendChild(chapter1);

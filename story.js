@@ -62,12 +62,32 @@ function createMobilePage(container, page) {
       container.appendChild(chapterTitle);
 
       // Paragraph 1
-      paragraph1 = document.createElement("p");
-      paragraph1.textContent = t("130");
-      paragraph1.style = "text-align: left;";
-      container.appendChild(paragraph1);
+      paragraph = document.createElement("p");
+      paragraph.textContent = t("130");
+      paragraph.style = "text-align: left;";
+      container.appendChild(paragraph);
       
       break;
+
+    case 3:
+      // Paragraph 2
+      paragraph = document.createElement("p");
+      paragraph.textContent = t("131");
+      paragraph.style = "text-align: left;";
+      container.appendChild(paragraph);
+
+      break;
+
+    case 4:
+      // Chapter 2 Title
+      chapterTitle = document.createElement("h2");
+      chapterTitle.className = "fancy";
+      chapterTitle.textContent = t("132");
+      chapterTitle.style = "margin: 5%;";
+      container.appendChild(chapterTitle);
+
+      break;
+      
   }
 }
 

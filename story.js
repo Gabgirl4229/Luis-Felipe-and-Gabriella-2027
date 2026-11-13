@@ -86,6 +86,12 @@ function createMobilePage(container, page) {
       chapterTitle.style = "margin: 5%;";
       container.appendChild(chapterTitle);
 
+      // Paragraph 1
+      paragraph = document.createElement("p");
+      paragraph.textContent = t("133");
+      paragraph.style = "text-align: left;";
+      container.appendChild(paragraph);
+
       break;
       
   }

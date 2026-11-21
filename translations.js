@@ -278,9 +278,12 @@ const translations = {
     125: "Evita usar los tonos de azul y verde que aparecen en este sitio web, ya que dichos colores están reservados para el cortejo nupcial.",
     126: "Los invitados con tatuajes son bienvenidos y no necesitan cubrirlos por motivos de decoro.",
     127: "La ropa debe quedar bien (ni demasiado suelta ni demasiado ajustada) y no debe estar arrugada.",
-    128: "",
+    128: "Al conocerse el primer día en la Universidad Polytechnic de Florida, Luis Felipe y Gabriella se sintieron como extraños en tierra ajena. Aun así, una sonrisa amable y un asiento vacío dieron la oportunidad de relajarse y conocerse.",
     129: "",
-    130: ""
+    130: "",
+    131: "",
+    132: "",
+    133: ""
   },
 
   pt: {

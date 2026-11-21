@@ -282,7 +282,7 @@ const translations = {
     129: "Los dos tenían varias cosas en común: les apasionaba la música, jugaban mucho a los videojuegos con amigos y se tomaban muy en serio los estudios. Con el tiempo, esas charlas profundas mientras estudiaban y salían en grupo dieron paso a un amor que empezaba a florecer.",
     130: "Eran los pequeños detalles lo que más les importaban: las notas de ánimo que se pasaban antes de los exámenes, las partidas de Mario Kart y Minecraft, las canciones que cantaban y tocaban, y esas largas noches que pasaban hablando por teléfono...",
     131: "Se confesaron su amor una tarde fría, justo antes de los exámenes finales. Desde entonces, la pareja se volvió imparable. Se motivaron el uno al otro para liderar clubes y se sostuvieron en los momentos más duros de la universidad.",
-    132: "",
+    132: "Dos años después, se graduaron juntos de Florida Poly. Gabriella siguió estudiando para su maestría y Luis Felipe",
     133: ""
   },
 

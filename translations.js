@@ -132,7 +132,7 @@ const translations = {
     130: "It was the little things that mattered most to them. The encouraging notes passed before exams, the Mario Kart and Minecraft sessions, the many songs they sang and played on their instruments, and those long nights spent talking on the phone...",
     131: "They confessed their love to each other on a cold evening just before final exams. From then on, the pair became a total power couple. They inspired each other to seek leadership positions in clubs and supported each other during the roughest times university can offer.",
     132: "Two years later, they graduated from Florida Poly together and Luis Felipe started his first full-time job as an engineer. They knew it was time for them to begin the next chapter of their lives.",
-    133: "",
+    133: "Gaby and Luis made arrangements to move in together, and when they first entered their new apartment - decorated with roses, candles, and pictures of their most beautiful moments - he got down on one knee and proposed to her. Of course, she said yes!!",
     134: "Table of Contents",
     135: "Good Chemistry",
     136: "As their professor began his introductory syllabus lecture, Luis Felipe and Gabriella sat side by side with notebooks at the ready. Luis sat up straight, nodding along to Dr. Kaushik's cheery remarks about the weather. Gabriella's eyelids drooped as she contemplated what a world without 8AM classes would be like.",

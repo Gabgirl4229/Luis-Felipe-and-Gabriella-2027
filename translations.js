@@ -280,7 +280,7 @@ const translations = {
     127: "La ropa debe quedar bien (ni demasiado suelta ni demasiado ajustada) y no debe estar arrugada.",
     128: "Al conocerse el primer día en la Universidad Polytechnic de Florida, Luis Felipe y Gabriella se sintieron como extraños en tierra ajena. Aun así, una sonrisa amable y un asiento vacío dieron la oportunidad de relajarse y conocerse.",
     129: "Los dos tenían varias cosas en común: les apasionaba la música, jugaban mucho a los videojuegos con amigos y se tomaban muy en serio los estudios. Con el tiempo, esas charlas profundas mientras estudiaban y salían en grupo dieron paso a un amor que empezaba a florecer.",
-    130: "",
+    130: "Eran los pequeños detalles lo que más les importaban: las notas de ánimo que se pasaban antes de los exámenes, las partidas de Mario Kart y Minecraft, las canciones que cantaban y tocaban, y esas largas noches que pasaban hablando por teléfono...",
     131: "",
     132: "",
     133: ""

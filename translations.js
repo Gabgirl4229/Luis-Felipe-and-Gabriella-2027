@@ -128,7 +128,7 @@ const translations = {
     126: "Guests with tattoos are welcome and do not need to cover them up for decorum.",
     127: "Clothes should fit well (not too loose or too tight) and be wrinkle-free.",
     128: "When Luis Felipe and Gabriella met on their first day at Florida Polytechnic University, they both felt like strangers in a strange land. However, a friendly face and an empty seat provided the opportunity for them to feel at ease and get acquainted.",
-    129: "",
+    129: "The two shared several common interests: they were avid music lovers, often played videogames with friends, and were quite dedicated to their studies. Over time, those heartfelt conversations during study sessions and group hangouts became the foundation for a budding romance.",
     130: "",
     131: "",
     132: "",

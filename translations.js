@@ -127,7 +127,7 @@ const translations = {
     125: "Avoid wearing the shades of blue and green used in this website, as those colors are reserved for the wedding party.",
     126: "Guests with tattoos are welcome and do not need to cover them up for decorum.",
     127: "Clothes should fit well (not too loose or too tight) and be wrinkle-free.",
-    128: "",
+    128: "When Luis Felipe and Gabriella met on their first day at Florida Polytechnic University, they both felt like strangers in a strange land. However, a friendly face and an empty seat provided the opportunity for them to feel at ease and get acquainted.",
     129: "",
     130: "",
     131: "",

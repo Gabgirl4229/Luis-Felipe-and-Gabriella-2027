@@ -131,7 +131,7 @@ const translations = {
     129: "The two shared several common interests: they were avid music lovers, often played videogames with friends, and were quite dedicated to their studies. Over time, those heartfelt conversations during study sessions and group hangouts became the foundation for a budding romance.",
     130: "It was the little things that mattered most to them. The encouraging notes passed before exams, the Mario Kart and Minecraft sessions, the many songs they sang and played on their instruments, and those long nights spent talking on the phone...",
     131: "They confessed their love to each other on a cold evening just before final exams. From then on, the pair became a total power couple. They inspired each other to seek leadership positions in clubs and supported each other during the roughest times university can offer.",
-    132: "",
+    132: "Two years later, they graduated from Florida Poly together and Luis Felipe started his first full-time job as an engineer. They knew it was time for them to begin the next chapter of their lives.",
     133: "",
     134: "Table of Contents",
     135: "Good Chemistry",

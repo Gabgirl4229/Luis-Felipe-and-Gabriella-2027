@@ -414,8 +414,11 @@ const translations = {
     125: "Evite usar os tons de azul e verde que aparecem neste site, já que essas cores estão reservadas para o cortejo nupcial.",
     126: "Os convidados com tatuagens são bem-vindos e não precisam cobri-las por motivos de decoro.",
     127: "A roupa deve ficar bem (nem muito folgada, nem muito justa) e não deve estar amassada.",
-    128: "",
-    129: "",
-    130: ""
+    128: "Ao se conhecerem no primeiro dia na Universidade Politécnica da Flórida, Luis Felipe e Gabriella sentiram-se como estranhos em terra alheia. Ainda assim, um sorriso gentil e um assento vazio deram a oportunidade de relaxarem e se conhecerem.",
+    129: "Os dois tinham várias coisas em comum: eram apaixonados por música, jogavam bastante videogame com amigos e levavam os estudos muito a sério. Com o tempo, aquelas conversas profundas enquanto estudavam e saíam em grupo deram lugar a um amor que começava a florescer.",
+    130: "Eram os pequenos detalhes que mais importavam para eles: os bilhetinhos de incentivo que trocavam antes das provas, as partidas de Mario Kart e Minecraft, as músicas que cantavam e tocavam, e aquelas longas noites que passavam conversando ao telefone...",
+    131: "Declararam seu amor um ao outro em uma tarde fria, pouco antes das provas finais. Desde então, o casal tornou-se imparável. Incentivaram-se mutuamente a liderar clubes e apoiaram-se nos momentos mais difíceis da vida universitária.",
+    132: "Dois anos depois, formaram-se juntos na Florida Poly. Gabriella continuou os estudos no mestrado, e Luis Felipe começou seu primeiro emprego em tempo integral como engenheiro. Sabiam que era hora de iniciar o próximo capítulo de suas vidas juntos.",
+    133: "Gaby e Luis planejaram ir morar juntos e, ao entrarem pela primeira vez no novo apartamento — decorado com rosas, velas e fotografias de suas lembranças mais especiais —, ele se ajoelhou e a pediu em casamento. É claro que ela aceitou!"
   }
 }

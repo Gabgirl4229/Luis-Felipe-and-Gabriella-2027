@@ -9,94 +9,6 @@ function t(key) {
       ?? key;
 }
 
-function createMobilePage(container, page) {
-  container.innerHTML = ""; // Clear out the container before adding anything to it
-
-  switch (page) {
-    case 1:
-      // Once Upon a Time
-      title = document.createElement("h2");
-      title.className = "fancy";
-      title.textContent = t("115");
-      title.style = "margin: 5%;"
-      container.appendChild(title);
-      
-      // Flower Divider (bigger screens only)
-      image1 = document.createElement("img");
-      image1.src = "images/ui/divider3.png";
-      image1.style = "padding: 0 20%;";
-      container.appendChild(image1);
-      
-      // Fancy Intro
-      subtitle1 = document.createElement("h3");
-      subtitle1.className = "fancy";
-      subtitle1.textContent = t("116") + ",";
-      subtitle1.style = "margin-top: 5%;";
-      container.appendChild(subtitle1);
-
-      subtitle2 = document.createElement("h3");
-      subtitle2.className = "fancy";
-      subtitle2.textContent = t("117");
-      subtitle2.style = "margin-top: 1%;";
-      container.appendChild(subtitle2);
-
-      subtitle3 = document.createElement("h3");
-      subtitle3.className = "fancy";
-      subtitle3.textContent = t("118");
-      subtitle3.style = "margin-top: 1%;";
-      container.appendChild(subtitle3);
-
-      subtitle4 = document.createElement("h3");
-      subtitle4.className = "fancy";
-      subtitle4.textContent = t("119");
-      subtitle4.style = "margin-top: 1%;";
-      container.appendChild(subtitle4);
-      
-      break;
-    case 2:
-      // Chapter 1 Title
-      chapterTitle = document.createElement("h2");
-      chapterTitle.className = "fancy";
-      chapterTitle.textContent = t("129");
-      chapterTitle.style = "margin: 5%;";
-      container.appendChild(chapterTitle);
-
-      // Paragraph 1
-      paragraph = document.createElement("p");
-      paragraph.textContent = t("130");
-      paragraph.style = "text-align: left;";
-      container.appendChild(paragraph);
-      
-      break;
-
-    case 3:
-      // Paragraph 2
-      paragraph = document.createElement("p");
-      paragraph.textContent = t("131");
-      paragraph.style = "margin-top: 5%; text-align: left;";
-      container.appendChild(paragraph);
-
-      break;
-
-    case 4:
-      // Chapter 2 Title
-      chapterTitle = document.createElement("h2");
-      chapterTitle.className = "fancy";
-      chapterTitle.textContent = t("132");
-      chapterTitle.style = "margin: 5%;";
-      container.appendChild(chapterTitle);
-
-      // Paragraph 1
-      paragraph = document.createElement("p");
-      paragraph.textContent = t("133");
-      paragraph.style = "text-align: left;";
-      container.appendChild(paragraph);
-
-      break;
-      
-  }
-}
-
 function createTabletPage(container, page) {
   container.innerHTML = ""; // Clear out the container before adding anything to it
 
@@ -262,7 +174,7 @@ function createLaptopPage(container, page) {
 // Make the pages appear and disappear
 function loadPages(startPage, direction) {
   pageIndex = startPage;
-  const container1 = document.getElementById("page-center"); // Load tablet/mobile container
+  const container1 = document.getElementById("page-center"); // Load tablet container
   
   switch (deviceType) {
     case "book-laptop":
@@ -285,9 +197,6 @@ function loadPages(startPage, direction) {
       break;
     case "book-tablet":
       createTabletPage(container1, pageIndex);
-      break;
-    case "book-mobile":
-      createMobilePage(container1, pageIndex);
       break;
   }
 }
@@ -317,19 +226,12 @@ function turnPage(direction) {
 }
 
 function getDeviceType(event) {
-  deviceType = event.currentTarget.closest("#book-laptop, #book-tablet, #book-mobile")?.id;
+  deviceType = event.currentTarget.closest("#book-laptop, #book-tablet)?.id;
 }
 
 // Get device type and display first page on startup
-if (document.querySelector('#book-mobile')) {
-  deviceType = "book-mobile";
-} else if (window.getComputedStyle(document.querySelector('#book-tablet')).display == 'none') {
-  deviceType = "book-tablet";
-  loadPages(1, "previous");
-  deviceType = "book-laptop";
-} else {
-  deviceType = "book-laptop";
-  loadPages(1, "previous");
-  deviceType = "book-tablet";
-}
+deviceType = "book-tablet";
 loadPages(1, "previous");
+deviceType = "book-laptop";
+loadPages(1, "previous");
+getDeviceType();

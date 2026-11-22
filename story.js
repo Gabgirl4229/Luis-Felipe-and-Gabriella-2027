@@ -54,8 +54,29 @@ function createTabletPage(container, page) {
       
       break;
     case 2:
-      break;
+      // Table of Contents Title
+      title = document.createElement("h1");
+      title.className = "fancy";
+      title.textContent = t("134");
+      title.style = "margin-top: 10%; margin-right: 15%; margin-bottom: 4%;";
+      container.appendChild(title);
+      
+      // Links to Chapters
+      chapter1 = document.createElement("a");
+      chapter1.textContent = "1. " + t("135");
+      chapter1.onclick = () => loadPages(3);
+      chapter1.style = "margin-top: 10%; text-align: center; transform: translate(-22%, 0); color: black;";
+      container.appendChild(chapter1);
 
+      chapter2 = document.createElement("a");
+      chapter2.textContent = "1. " + t("136");
+      chapter2.onclick = () => loadPages(3);
+      chapter2.style = "margin-top: 10%; text-align: center; transform: translate(-22%, 0); color: black;";
+      container.appendChild(chapter2);
+      
+      break;
+    case 3:
+      break;
   }
 }
 
@@ -104,20 +125,26 @@ function createLaptopPage(container, page) {
       container.appendChild(subtitle4);
       
       break;
-    case 5:
+    case 2:
       // Table of Contents Title
       title = document.createElement("h1");
       title.className = "fancy";
-      title.textContent = t("128");
+      title.textContent = t("134");
       title.style = "margin-top: 10%; margin-right: 15%; margin-bottom: 4%;";
       container.appendChild(title);
       
       // Links to Chapters
       chapter1 = document.createElement("a");
-      chapter1.textContent = "1. " + t("129");
+      chapter1.textContent = "1. " + t("135");
       chapter1.onclick = () => loadPages(3);
       chapter1.style = "margin-top: 10%; text-align: center; transform: translate(-22%, 0); color: black;";
       container.appendChild(chapter1);
+
+      chapter2 = document.createElement("a");
+      chapter2.textContent = "1. " + t("136");
+      chapter2.onclick = () => loadPages(3);
+      chapter2.style = "margin-top: 10%; text-align: center; transform: translate(-22%, 0); color: black;";
+      container.appendChild(chapter2);
       
       break;
     case 6:

@@ -210,7 +210,6 @@ function turnPage(direction) {
       if (pageIndex > 10) {
         pageIndex = 10;
       }
-      alert("turn to page: " + pageIndex);
       break;
     case "previous":
       pageIndex--;
@@ -218,7 +217,6 @@ function turnPage(direction) {
       if (pageIndex < 1) {
         pageIndex = 1;
       }
-      alert("turn to page: " + pageIndex);
       break;
   }
 

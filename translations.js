@@ -135,9 +135,9 @@ const translations = {
     133: "Gaby and Luis made arrangements to move in together, and when they first entered their new apartment - decorated with roses, candles, and pictures of their most beautiful moments - he got down on one knee and proposed to her. Of course, she said yes!!",
     134: "Table of Contents",
     135: "Good Chemistry",
-    136: "As their professor began his introductory syllabus lecture, Luis Felipe and Gabriella sat side by side with notebooks at the ready. Luis sat up straight, nodding along to Dr. Kaushik's cheery remarks about the weather. Gabriella's eyelids drooped as she contemplated what a world without 8AM classes would be like.",
-    137: "They'd enjoyed a lively conversation minutes prior, chatting about the duck embroidered on his pencil case and the freshly drawn doodle in her notebook. Throughout the next few weeks, the two became fast friends.",
-    138: "Someone New",
+    136: "Someone New",
+    137: "As their professor began his introductory syllabus lecture, Luis Felipe and Gabriella sat side by side with notebooks at the ready. Luis sat up straight, nodding along to Dr. Kaushik's cheery remarks about the weather. Gabriella's eyelids drooped as she contemplated what a world without 8AM classes would be like.",
+    138: "They'd enjoyed a lively conversation minutes prior, chatting about the duck embroidered on his pencil case and the freshly drawn doodle in her notebook. Throughout the next few weeks, the two became fast friends.",
     139: "Luis was disappointed to learn that the pretty girl in class had a boyfriend already. She was surprised he happened to be single. He didn't let that affect their friendship, though. Instead, he began gravitating towards a different girl.",
     140: "    \"Good morning everyone! My name is Dr. Ajeet Kaushik and I will be your professor for this Chemistry 1 class.\" These were the first words Luis and Gabriella heard within each other's vicinity. Gabriella's eyelids drooped with each subsequent sentence as their first professor made small talk about the sunny weather that morning.",
     141: "    She looked over at the young man to her right: the one she chose to sit next to. He sat up straight, nodding along to Dr. Kaushik's giddy speech as if it were completely normal to drag oneself out of bed at the buttcrack of dawn for an 8AM chemistry class and be excited about it.",
@@ -283,7 +283,14 @@ const translations = {
     130: "Eran los pequeños detalles lo que más les importaban: las notas de ánimo que se pasaban antes de los exámenes, las partidas de Mario Kart y Minecraft, las canciones que cantaban y tocaban, y esas largas noches que pasaban hablando por teléfono...",
     131: "Se confesaron su amor una tarde fría, justo antes de los exámenes finales. Desde entonces, la pareja se volvió imparable. Se motivaron el uno al otro para liderar clubes y se sostuvieron en los momentos más duros de la universidad.",
     132: "Dos años después, se graduaron juntos de Florida Poly. Gabriella siguió estudiando para su maestría y Luis Felipe comenzó su primer trabajo de tiempo completo como ingeniero. Sabían que era hora de comenzar el siguiente capítulo de su vida juntos.",
-    133: "Gaby y Luis se organizaron para irse a vivir juntos, y al pisar por primera vez su nuevo piso — decorado con rosas, velas y fotografías de sus recuerdos más especiales — él se arrodilló y le pidió matrimonio. ¡Por supuesto, ella aceptó!"
+    133: "Gaby y Luis se organizaron para irse a vivir juntos, y al pisar por primera vez su nuevo piso — decorado con rosas, velas y fotografías de sus recuerdos más especiales — él se arrodilló y le pidió matrimonio. ¡Por supuesto, ella aceptó!",
+    134: "",
+    135: "",
+    136: "",
+    137: "",
+    138: "",
+    139: "",
+    140: ""
   },
 
   pt: {
@@ -395,9 +402,9 @@ const translations = {
     106: "Mãe da Noiva",
     107: "\"Minha mãe é o tipo de pessoa que está sempre preparada para tudo; ela aguenta a pressão como ninguém. Amo muito a minha mãe!\"",
     108: "Pai do Noivo",
-    109: "\"\"",
+    109: "\"Meu pai é o campeão da família. Ele me ensinou por meio de suas ações e por sua disciplina como conquistar a vida e crescer.\"",
     110: "Mãe do Noivo",
-    111: "\"\"",
+    111: "\"Minha mãe é o coração da família. Ela me ensinou por meio de sua dedicação e amor como viver feliz.\"",
     112: "Por favor, contribua para o nosso álbum compartilhado com qualquer foto que você tenha tirado no casamento!",
     113: "Adicione as Suas",
     114: "Estamos ansiosos para te ver! ❤️ Com muito carinho, Luís e Gaby",
@@ -419,6 +426,13 @@ const translations = {
     130: "Eram os pequenos detalhes que mais importavam para eles: os bilhetinhos de incentivo que trocavam antes das provas, as partidas de Mario Kart e Minecraft, as músicas que cantavam e tocavam, e aquelas longas noites que passavam conversando ao telefone...",
     131: "Declararam seu amor um ao outro em uma tarde fria, pouco antes das provas finais. Desde então, o casal tornou-se imparável. Incentivaram-se mutuamente a liderar clubes e apoiaram-se nos momentos mais difíceis da vida universitária.",
     132: "Dois anos depois, formaram-se juntos na Florida Poly. Gabriella continuou os estudos no mestrado, e Luis Felipe começou seu primeiro emprego em tempo integral como engenheiro. Sabiam que era hora de iniciar o próximo capítulo de suas vidas juntos.",
-    133: "Gaby e Luis planejaram ir morar juntos e, ao entrarem pela primeira vez no novo apartamento — decorado com rosas, velas e fotografias de suas lembranças mais especiais —, ele se ajoelhou e a pediu em casamento. É claro que ela aceitou!"
+    133: "Gaby e Luis planejaram ir morar juntos e, ao entrarem pela primeira vez no novo apartamento — decorado com rosas, velas e fotografias de suas lembranças mais especiais —, ele se ajoelhou e a pediu em casamento. É claro que ela aceitou!",
+    134: "",
+    135: "",
+    136: "",
+    137: "",
+    138: "",
+    139: "",
+    140: "'
   }
 }

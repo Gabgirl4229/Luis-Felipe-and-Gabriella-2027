@@ -23,7 +23,7 @@ const translations = {
     21: "More drinks, good food and dancing will all take place in the reception room to celebrate us becoming newly-weds!",
     22: "Venue",
     23: "", // Parking instructions
-    24: "Be sure to book your hotel room using the link above! Doing so will get you a discounted rate on a room 15 minutes away from the venue. Carpooling with family and friends is recommended, as self-parking is $9 per night.", // Hotel instructions
+    24: "Be sure to book your hotel room using the link above! Doing so will get you a discounted rate on a room 15 minutes away from the venue. Carpooling with family and friends is recommended, as self-parking is $9 per night. Check-in starts at 3PM.", // Hotel instructions
     25: "Please enter your full name (as shown on your invitation):",
     26: "First Name: ",
     27: "Last Name: ",

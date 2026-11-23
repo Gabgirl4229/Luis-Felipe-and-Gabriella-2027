@@ -91,9 +91,23 @@ function createTabletPage(container, page) {
 
       paragraph2 = document.createElement("p");
       paragraph2.textContent = t("138");
-      paragraph2.style = "margin-top: 1%; text-align: left;";
+      paragraph2.style = "margin-top: 5%; text-align: left;";
       container.appendChild(paragraph2);
       
+      break;
+    case 4:
+      // Chapter 2 Title
+      chapterTitle = document.createElement("h1");
+      chapterTitle.className = "fancy";
+      chapterTitle.textContent = t("136");
+      chapterTitle.style = "margin: 10% 0;";
+      container.appendChild(chapterTitle);
+
+      // Chapter 2 Paragraphs
+      paragraph1 = document.createElement("p");
+      paragraph1.textContent = t("139");
+      paragraph1.style = "text-align: left;";
+      container.appendChild(paragraph1);
       break;
   }
 }
@@ -165,48 +179,48 @@ function createLaptopPage(container, page) {
       container.appendChild(chapter2);
       
       break;
-    case 6:
+    case 3:
       // Chapter Title
       chapterTitle = document.createElement("h1");
       chapterTitle.className = "fancy";
-      chapterTitle.textContent = t("122");
+      chapterTitle.textContent = t("135");
       chapterTitle.style = "margin-top: 10%; margin-left: 11%; margin-bottom: 4%;";
       container.appendChild(chapterTitle);
 
       // Paragraphs
       paragraph1 = document.createElement("p");
-      paragraph1.textContent = t("123");
+      paragraph1.textContent = t("140");
       paragraph1.style = "margin: 4% 8% 0 16%; text-align: left;";
       container.appendChild(paragraph1);
 
       paragraph2 = document.createElement("p");
-      paragraph2.textContent = t("124");
+      paragraph2.textContent = t("141");
       paragraph2.style = "margin: 4% 8% 0 16%; text-align: left;";
       container.appendChild(paragraph2);
       
       break;
-    case 7:
+    case 4:
       // More Paragraphs
       paragraph3 = document.createElement("p");
-      paragraph3.textContent = t("125");
+      paragraph3.textContent = t("142");
       paragraph3.style = "margin: 14% 18% 0 6%; text-align: left;";
       container.appendChild(paragraph3);
 
       paragraph4 = document.createElement("p");
-      paragraph4.textContent = t("126");
+      paragraph4.textContent = t("143");
       paragraph4.style = "margin: 4% 18% 0 6%; text-align: left;";
       container.appendChild(paragraph4);
       
       break;
-    case 8:
+    case 5:
       // More Paragraphs
       paragraph5 = document.createElement("p");
-      paragraph5.textContent = t("127");
+      paragraph5.textContent = t("144");
       paragraph5.style = "margin: 14% 8% 0 16%; text-align: left;";
       container.appendChild(paragraph5);
 
       paragraph6 = document.createElement("p");
-      paragraph6.textContent = t("128");
+      paragraph6.textContent = t("145");
       paragraph6.style = "margin: 4% 8% 0 16%; text-align: left;";
       container.appendChild(paragraph6);
       break;

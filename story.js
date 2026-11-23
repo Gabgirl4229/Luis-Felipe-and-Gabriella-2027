@@ -58,20 +58,20 @@ function createTabletPage(container, page) {
       title = document.createElement("h1");
       title.className = "fancy";
       title.textContent = t("134");
-      title.style = "margin-top: 10%; margin-right: 15%; margin-bottom: 4%;";
+      title.style = "margin: 10% 0;";
       container.appendChild(title);
       
       // Links to Chapters
       chapter1 = document.createElement("a");
       chapter1.textContent = "1. " + t("135");
       chapter1.onclick = () => loadPages(3);
-      chapter1.style = "margin-top: 10%; text-align: center; transform: translate(-22%, 0); color: black;";
+      chapter1.style = "text-align: center; color: black;";
       container.appendChild(chapter1);
 
       chapter2 = document.createElement("a");
-      chapter2.textContent = "1. " + t("136");
+      chapter2.textContent = "2. " + t("136");
       chapter2.onclick = () => loadPages(3);
-      chapter2.style = "margin-top: 10%; text-align: center; transform: translate(-22%, 0); color: black;";
+      chapter2.style = "margin-top: 1%; text-align: center; color: black;";
       container.appendChild(chapter2);
       
       break;
@@ -130,20 +130,20 @@ function createLaptopPage(container, page) {
       title = document.createElement("h1");
       title.className = "fancy";
       title.textContent = t("134");
-      title.style = "margin-top: 10%; margin-right: 15%; margin-bottom: 4%;";
+      title.style = "margin: 10% 15% 10% 0;";
       container.appendChild(title);
       
       // Links to Chapters
       chapter1 = document.createElement("a");
       chapter1.textContent = "1. " + t("135");
       chapter1.onclick = () => loadPages(3);
-      chapter1.style = "margin-top: 10%; text-align: center; transform: translate(-22%, 0); color: black;";
+      chapter1.style = "text-align: center; transform: translate(-22%, 0); color: black;";
       container.appendChild(chapter1);
 
       chapter2 = document.createElement("a");
-      chapter2.textContent = "1. " + t("136");
+      chapter2.textContent = "2. " + t("136");
       chapter2.onclick = () => loadPages(3);
-      chapter2.style = "margin-top: 10%; text-align: center; transform: translate(-22%, 0); color: black;";
+      chapter2.style = "margin-top: 1%; text-align: center; transform: translate(-22%, 0); color: black;";
       container.appendChild(chapter2);
       
       break;

@@ -251,7 +251,7 @@ function turnPage(direction) {
 }
 
 function getDeviceType(event) {
-  deviceType = event.currentTarget.closest("#book-laptop, #book-tablet)?.id;
+  deviceType = event.currentTarget.closest("#book-laptop, #book-tablet")?.id;
 }
 
 // Get device type and display first page on startup

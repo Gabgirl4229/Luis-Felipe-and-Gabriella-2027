@@ -76,6 +76,24 @@ function createTabletPage(container, page) {
       
       break;
     case 3:
+      // Chapter 1 Title
+      chapterTitle = document.createElement("h1");
+      chapterTitle.className = "fancy";
+      chapterTitle.textContent = t("135");
+      chapterTitle.style = "margin: 10% 0;";
+      container.appendChild(chapterTitle);
+
+      // Chapter 1 Paragraphs
+      paragraph1 = document.createElement("p");
+      paragraph1.textContent = t("137");
+      paragraph1.style = "text-align: left;";
+      container.appendChild(paragraph1);
+
+      paragraph2 = document.createElement("p");
+      paragraph2.textContent = t("138");
+      paragraph2.style = "margin-top: 1%; text-align: left;";
+      container.appendChild(paragraph2);
+      
       break;
   }
 }

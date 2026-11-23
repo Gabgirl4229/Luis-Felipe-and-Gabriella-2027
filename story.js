@@ -139,7 +139,7 @@ function createLaptopPage(container, page) {
       subtitle4 = document.createElement("h3");
       subtitle4.className = "fancy";
       subtitle4.textContent = t("119");
-      subtitle4.style = "margin: 5% 18% 0 18%;";
+      subtitle4.style = "margin: 5% 15% 0;";
       container.appendChild(subtitle4);
       
       break;

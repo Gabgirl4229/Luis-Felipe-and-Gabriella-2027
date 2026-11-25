@@ -291,4 +291,3 @@ deviceType = "book-tablet";
 loadPages(1, "previous");
 deviceType = "book-laptop";
 loadPages(1, "previous");
-getDeviceType();

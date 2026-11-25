@@ -546,7 +546,10 @@ async function collectResponses() {
       hotel: hotel,
       preferredLanguage: preferredLanguage,
       foodRestrictions: foodRestrictions,
-      messages: message ? [message] : []
+      messages: [
+        ...(existingResponse?.messages || []),
+        ...(message ? [message] : [])
+      ]
     });
   }
 

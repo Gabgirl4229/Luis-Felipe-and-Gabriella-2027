@@ -417,7 +417,9 @@ function renderGroupRSVP() {
     messageInput.rows = 4;
     messageInput.maxLength = 1000;
     messageInput.placeholder = t("67");
-    messageInput.value = messages.join("\n");
+    messageInput.value = messages.length
+      ? messages[messages.length - 1]
+      : "";
 
     content.appendChild(messageInput);
 
@@ -536,9 +538,9 @@ async function collectResponses() {
       foodRestrictions.push(`Other: ${otherText}`);
     }
 
-    const message =
-      details.querySelector('textarea[data-field="comment"]')
-        ?.value.trim() || "";
+    const updatedMessages = message
+      ? [...existingMessages, message]
+      : existingMessages;
 
     responses.push({
       guestId: guestId,
@@ -546,10 +548,7 @@ async function collectResponses() {
       hotel: hotel,
       preferredLanguage: preferredLanguage,
       foodRestrictions: foodRestrictions,
-      messages: [
-        ...(existingResponse?.messages || []),
-        ...(message ? [message] : [])
-      ]
+      messages: updatedMessages
     });
   }
 
@@ -595,7 +594,7 @@ async function collectResponses() {
     setLanguage(selectedLanguage);
   }
   
-  loadGuestGroup();
+  await loadGuestGroup();
   renderGroupRSVP();
 }
 

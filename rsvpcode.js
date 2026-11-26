@@ -9,10 +9,6 @@ const supabaseClient = window.supabase.createClient(
 let currentGuest = null;
 let currentGroup = [];
 
-function tryMe() {
-  alert("YIPPEE");
-}
-
 // Translate text.
 function t(key) {
   language = localStorage.getItem("site-language");
@@ -537,6 +533,12 @@ async function collectResponses() {
       );
       foodRestrictions.push(`Other: ${otherText}`);
     }
+
+    const message = details.querySelector('textarea[data-field="comment"]')
+      ?.value.trim() || "";
+
+    const existingMessages = currentGroup.find(guest => String(guest.id) === String(guestId))
+      ?.messages || [];
 
     const updatedMessages = message
       ? [...existingMessages, message]

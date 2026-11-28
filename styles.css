@@ -744,6 +744,12 @@ details > summary {
     grid-column: span 12;
   }
 
+  #wedding-party .third, 
+  #wedding-party .quarter {
+    margin: 0 10%;
+  }
+  
+
   #home-responsive .sixth {
     display: none;
   }
